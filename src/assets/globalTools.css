@@ -1,0 +1,26 @@
+.textCenter {
+    text-align: center;
+}
+
+.textClick {
+    cursor: pointer;
+    user-select: none;
+}
+
+a:hover {
+    color: inherit;
+    font-weight: bold;
+}
+
+img.centerImg {
+    display: block;
+    margin: auto;
+}
+
+div.centerDiv {
+    margin: auto;
+}
+
+body {
+    background-color: black;
+}
