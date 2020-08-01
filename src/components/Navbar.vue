@@ -50,8 +50,6 @@
 </template>
 
 <script>
-require('bootstrap')
-
 export default {
   data() {
     return {
