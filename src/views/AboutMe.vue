@@ -1,6 +1,5 @@
 <template>
   <div>
-    <navbar></navbar>
     <div class="container-fluid">
       <div class="row justify-content-center textCenter">
         <div class="col-md-12">
