@@ -3,6 +3,7 @@ import App from './App.vue'
 import router from './router'
 
 require('bootstrap')
+require('@/assets/globalTools.css')
 
 Vue.config.productionTip = false
 
