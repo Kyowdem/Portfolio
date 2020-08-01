@@ -74,6 +74,11 @@ export default {
 
 <style>
 nav.navbar {
-  padding: 16px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+nav.navbar a {
+  text-align: start;
 }
 </style>
