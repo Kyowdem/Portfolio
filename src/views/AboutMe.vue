@@ -34,7 +34,7 @@
             <p v-if="showCV">Voir mon CV</p>
             <a v-else :href="$parent.assetsPath+'PDF/CV.pdf'" target="_blank">
               <img
-                :src="$parent.assetsPath+'img/icones/document_PDF.png'"
+                src="@/assets/img/document_PDF.png"
                 alt="document_PDF.png"
                 class="img-fluid"
               />
