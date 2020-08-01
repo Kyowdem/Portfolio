@@ -23,5 +23,8 @@ div.centerDiv {
 
 body {
     background-color: rgb(21, 32, 43) !important;
-    color: white !important;
+}
+
+* {
+    color: white;
 }
