@@ -3,7 +3,7 @@ import App from './App.vue'
 import router from './router'
 
 
-window.$ = window.jQuery = require('jquery');
+// window.$ = window.jQuery = require('jquery');
 require('bootstrap')
 require('@/assets/globalTools.css')
 
