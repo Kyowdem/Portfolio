@@ -11,7 +11,7 @@
         <div class="col-md-3 col-lg-2">
           <img
             class="img-fluid"
-            :src="this.$parent.assetsPath+'img/photo-CV.jpeg'"
+            src="@/assets/img/Photo-CV.jpeg"
             alt="Photo de moi-même"
           />
         </div>

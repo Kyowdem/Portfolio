@@ -5,7 +5,7 @@ import router from './router'
 
 // window.$ = window.jQuery = require('jquery');
 require('bootstrap')
-require('@/assets/globalTools.css')
+require('@/assets/css/globalTools.css')
 
 Vue.config.productionTip = false
 
