@@ -116,7 +116,7 @@ export default {
   },
   created() {
     // set Host url to href img
-    this.activitiesSchool = (JSON.parse(JSON.stringify(this.activitiesSchool).replace(/hostName/g, this.$parent.getHostName())));
+    this.activitiesSchool = (JSON.parse(JSON.stringify(this.activitiesSchool).replace(/hostName/g, this.getHostName())));
     this.setActivities();
   },
   mounted() {
@@ -128,6 +128,9 @@ export default {
     }
   },
   methods: {
+    getHostName() {
+      return window.location.host
+    },
     setActivities() {
       this.activitiesSchool = this.activitiesSchool[this.schoolType];
       for (let property in this.activitiesSchool) {
