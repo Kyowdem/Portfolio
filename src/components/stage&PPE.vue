@@ -7,7 +7,7 @@
         </div>
       </div>
 
-      <div class="col-md-12 col-lg-8 explainActivity">
+      <div class="col-md-12 col-lg-8 explainActivity" v-if="this.name == 'Le maquetage des pages'">
         <div data-aos="fade-right">
           <h2>Présentation de l'entreprise</h2>
           <p>
@@ -108,6 +108,7 @@
           <p>J'ai réalisé un site web interne à une entreprise utilisant du JavaScript, avec le Framework jQuery. Grâce à l’utilisation de ces outils, j’ai pu ajouter des animations facilitant la compréhension et l’utilisation du site. Le site n'est pas parfaitement achevé. Néanmoins, les quatre pages que j'ai mises au point sont sans bug et sont prêtes à l'utilisation. J'avais beaucoup de mal au début, j’ai dû m’adapter au Framework jQuery, inconnu pour moi avant de travailler sur ce projet. Je n’avais pas énormément d’expérience sur JavaScript non plus. Toutefois, j’ai eu la chance d’avoir un bon tuteur qui me cadrais. Ce stage était par conséquent très enrichissant pour moi.</p>
         </div>
       </div>
+
     </div>
   </div>
 </template>
