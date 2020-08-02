@@ -1,6 +1,6 @@
 <template>
   <div>
-    <navbar></navbar>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <div class="container-fluid school" v-if="activityOrSchool">
       <div class="row justify-content-md-center textCenter">
         <div class="col-md-12">
@@ -93,9 +93,12 @@
   </div>
 </template>
 
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
 <script>
-import etude from "./assets/JSON/etude.json";
-import activitiesSchool from "./assets/JSON/stage&PPE.json";
+import AOS from 'aos';
+import etude from "@/assets/json/etude.json";
+import activitiesSchool from "@/assets/json/stage&PPE.json";
 
 export default {
   data() {
