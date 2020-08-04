@@ -90,16 +90,68 @@
                 <p>Enfin ça c’était le screen final, nous ne voyons pas mais grâce à jQuery j’ai pu faire quelque animation qui était aussi là pour faire camoufler le temps de chargement de la prochaine div</p>
               </div>
               <div class="col-lg-12 col-md-12">
-                <img
-                  src="@/assets/img/stage/1ere_annee/RTT.png"
-                  alt="rtt.png"
-                  class="img-fluid"
-                />
+                <img src="@/assets/img/stage/1ere_annee/RTT.png" alt="rtt.png" class="img-fluid" />
               </div>
             </div>
             <div data-aos="fade-right" class="row">
               <div class="col-lg-12 col-md-12">
                 <p>Je n’ai plus le code mais cette page était elle aussi complètement en objet. On pouvait dans le code sélectionner les jours et ou les demi-journée qu’on voulait griser simplement en tapant le nom de la journée.</p>
+              </div>
+            </div>
+          </div>
+
+          <div v-if="name == 'Ajax, le chargement des pages'">
+            <div data-aos="fade-right" class="row">
+              <div
+                class="col-lg-12 col-md-12"
+              >J’ai beaucoup utilisé la documentation de jQuery et d’Ajax, qui sont très bien faites. La présence de mon tuteur m’a aussi permis de mieux m’initier là-dedans.</div>
+            </div>
+            <div data-aos="fade-right" class="row">
+              <div
+                class="col-lg-12 col-md-12"
+              >Après plusieurs modifications, cette page était utilisée comme principale pour le site. Cette dernière complètement orienté objet permet la facilité au futur modification qu’ils voudront apporter.</div>
+              <div class="col-lg-12 col-md-12">
+                <img
+                  src="@/assets/img/stage/1ere_annee/accueil(menuOuvert).png"
+                  alt="Accueil(menuOuvert).png"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+            <div data-aos="fade-right" class="row">
+              <div
+                class="col-lg-12 col-md-12"
+              >Dans ce menu, quand on allait dans un contexte, par exemple une entrée, on se retrouvait sur cette page qui étais généré complètement en JavaScript et faisais charger les données des menus déroulant grâce à Ajax, car nous avions besoin de charger les données sans recharger la page.</div>
+              <div class="col-lg-12 col-md-12">
+                <img
+                  src="@/assets/img/stage/1ere_annee/entre.png"
+                  alt="Entre.png"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+            <div data-aos="fade-right" class="row">
+              <div
+                class="col-lg-12 col-md-12"
+              >Je pouvais ensuite me rediriger vers les autres pages lors d’un clic sur le bouton suivant ou précédent, sans changer de page c'était juste un remplacement de div, et donc lorsque je cliquais cela faisais charger grâce à Ajax les données de la page concerné.</div>
+              <div class="col-lg-12 col-md-12">
+                <img
+                  src="@/assets/img/stage/1ere_annee/equipement.png"
+                  alt="equipement.png"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+            <div data-aos="fade-right" class="row">
+              <div
+                class="col-lg-12 col-md-12"
+              >On peut voir sur un bout de code ci-dessous où lors d’un clic, Ajax allais faire charger la page souhaité.</div>
+              <div class="col-lg-12 col-md-12">
+                <img
+                  src="@/assets/img/stage/1ere_annee/ajax_code.png"
+                  alt="ajax_code.png"
+                  class="img-fluid"
+                />
               </div>
             </div>
           </div>
