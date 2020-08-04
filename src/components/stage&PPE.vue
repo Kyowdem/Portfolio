@@ -36,71 +36,73 @@
 
         <div data-aos="fade-right">
           <h2>Réalisation</h2>
-          <!-- <div data-aos="fade-right" class="row">
-            <div class="col-lg-12 col-md-12">
-              <p>J’ai fait une première page avec le peu de donnée que l’on m’avait dit avec de simple carré et du texte dedans.</p>
+          <div v-if="name == 'Le maquetage des pages'">
+            <div data-aos="fade-right" class="row">
+              <div class="col-lg-12 col-md-12">
+                <p>J’ai fait une première page avec le peu de donnée que l’on m’avait dit avec de simple carré et du texte dedans.</p>
+              </div>
+              <div class="col-lg-12 col-md-12">
+                <img
+                  src="@/assets/img/stage/1ere_annee/premiere_page.png"
+                  alt="premiere_page.png"
+                  class="img-fluid"
+                />
+              </div>
             </div>
-            <div class="col-lg-12 col-md-12">
-              <img
-                src="http://hostName/src/assets/img/stage/1ere_annee/premiere_page.png"
-                alt="premiere_page.png"
-                class="img-fluid"
-              />
+            <div data-aos="fade-right" class="row">
+              <div class="col-lg-12 col-md-12">
+                <p>Une première page peut être trop simple pour les personnes venant des Ressources Humaine j’ai donc dû la refaire et j’ai finis par faire ça</p>
+              </div>
+              <div class="col-lg-12 col-md-12">
+                <img
+                  src="@/assets/img/stage/1ere_annee/accueil(menuOuvert).png"
+                  alt="accueil(menuOuvert).png"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+            <div data-aos="fade-right" class="row">
+              <div class="col-lg-12 col-md-12">
+                <p>Une page simple avec la possibilité de faire de sous menu j’ai montré ça aux RH et le code à mon tuteur puis il m’a dit de tout refaire mais en orienté objet. J’ai eu beaucoup de mal au début puis j’y ai pris gout et toute cette première page était en objet</p>
+              </div>
+              <div class="col-lg-12 col-md-12">
+                <img
+                  src="@/assets/img/stage/1ere_annee/Atom_code_accueil.png"
+                  alt="Atom_code_accueil.png"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+            <div data-aos="fade-right" class="row">
+              <div class="col-lg-12 col-md-12">
+                <p>Un ajout, une modification ou une suppression à la fois simple et rapide tout était fait pour que le développeur fasse simplement ce qu’il voulait. Il fallait donc ensuite continuer comme cela et faire la suite de ce site, j’ai commencé par faire l’entrée d’une personne dans l’entreprise, mais avant de commencer j’ai demandé les attentes de mon tuteur, soit, une page qui reste la même cela sera seulement un remplacement de div que l’on fera avec Ajax (Voir dans le 2eme contexte). J’ai alors produis cela</p>
+              </div>
+              <div class="col-lg-12 col-md-12">
+                <img
+                  src="@/assets/img/stage/1ere_annee/entre.png"
+                  alt="entre.png"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+            <div data-aos="fade-right" class="row">
+              <div class="col-lg-12 col-md-12">
+                <p>Enfin ça c’était le screen final, nous ne voyons pas mais grâce à jQuery j’ai pu faire quelque animation qui était aussi là pour faire camoufler le temps de chargement de la prochaine div</p>
+              </div>
+              <div class="col-lg-12 col-md-12">
+                <img
+                  src="@/assets/img/stage/1ere_annee/RTT.png"
+                  alt="rtt.png"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+            <div data-aos="fade-right" class="row">
+              <div class="col-lg-12 col-md-12">
+                <p>Je n’ai plus le code mais cette page était elle aussi complètement en objet. On pouvait dans le code sélectionner les jours et ou les demi-journée qu’on voulait griser simplement en tapant le nom de la journée.</p>
+              </div>
             </div>
           </div>
-          <div data-aos="fade-right" class="row">
-            <div class="col-lg-12 col-md-12">
-              <p>Une première page peut être trop simple pour les personnes venant des Ressources Humaine j’ai donc dû la refaire et j’ai finis par faire ça</p>
-            </div>
-            <div class="col-lg-12 col-md-12">
-              <img
-                src="http://hostName/src/assets/img/stage/1ere_annee/accueil(menuOuvert).png"
-                alt="accueil(menuOuvert).png"
-                class="img-fluid"
-              />
-            </div>
-          </div>
-          <div data-aos="fade-right" class="row">
-            <div class="col-lg-12 col-md-12">
-              <p>Une page simple avec la possibilité de faire de sous menu j’ai montré ça aux RH et le code à mon tuteur puis il m’a dit de tout refaire mais en orienté objet. J’ai eu beaucoup de mal au début puis j’y ai pris gout et toute cette première page était en objet</p>
-            </div>
-            <div class="col-lg-12 col-md-12">
-              <img
-                src="http://hostName/src/assets/img/stage/1ere_annee/Atom_code_accueil.png"
-                alt="Atom_code_accueil.png"
-                class="img-fluid"
-              />
-            </div>
-          </div>
-          <div data-aos="fade-right" class="row">
-            <div class="col-lg-12 col-md-12">
-              <p>Un ajout, une modification ou une suppression à la fois simple et rapide tout était fait pour que le développeur fasse simplement ce qu’il voulait. Il fallait donc ensuite continuer comme cela et faire la suite de ce site, j’ai commencé par faire l’entrée d’une personne dans l’entreprise, mais avant de commencer j’ai demandé les attentes de mon tuteur, soit, une page qui reste la même cela sera seulement un remplacement de div que l’on fera avec Ajax (Voir dans le 2eme contexte). J’ai alors produis cela</p>
-            </div>
-            <div class="col-lg-12 col-md-12">
-              <img
-                src="http://hostName/src/assets/img/stage/1ere_annee/entre.png"
-                alt="entre.png"
-                class="img-fluid"
-              />
-            </div>
-          </div>
-          <div data-aos="fade-right" class="row">
-            <div class="col-lg-12 col-md-12">
-              <p>Enfin ça c’était le screen final, nous ne voyons pas mais grâce à jQuery j’ai pu faire quelque animation qui était aussi là pour faire camoufler le temps de chargement de la prochaine div</p>
-            </div>
-            <div class="col-lg-12 col-md-12">
-              <img
-                src="http://hostName/src/assets/img/stage/1ere_annee/rtt.png"
-                alt="rtt.png"
-                class="img-fluid"
-              />
-            </div>
-          </div>
-          <div data-aos="fade-right" class="row">
-            <div class="col-lg-12 col-md-12">
-              <p>Je n’ai plus le code mais cette page était elle aussi complètement en objet. On pouvait dans le code sélectionner les jours et ou les demi-journée qu’on voulait griser simplement en tapant le nom de la journée.</p>
-            </div>
-          </div>-->
         </div>
 
         <div data-aos="fade-right">
@@ -126,8 +128,6 @@ export default {
     this.activity = this.schoolDesc[this.$route.params.etudeName][
       this.$route.params.typeOfActivity
     ].find((element) => element.name == this.name).description;
-
-    console.dir(this.activity);
   },
   props: {
     name: String,
