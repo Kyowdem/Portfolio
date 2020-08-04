@@ -36,7 +36,7 @@
 
         <div data-aos="fade-right">
           <h2>Réalisation</h2>
-          <div data-aos="fade-right" class="row">
+          <!-- <div data-aos="fade-right" class="row">
             <div class="col-lg-12 col-md-12">
               <p>J’ai fait une première page avec le peu de donnée que l’on m’avait dit avec de simple carré et du texte dedans.</p>
             </div>
@@ -100,7 +100,7 @@
             <div class="col-lg-12 col-md-12">
               <p>Je n’ai plus le code mais cette page était elle aussi complètement en objet. On pouvait dans le code sélectionner les jours et ou les demi-journée qu’on voulait griser simplement en tapant le nom de la journée.</p>
             </div>
-          </div>
+          </div> -->
         </div>
 
         <div data-aos="fade-right">
@@ -114,7 +114,18 @@
 </template>
 
 <script>
+import schoolDesc from '@/assets/json/schoolDesc.json'
+
 export default {
+  data() {
+    return {
+      schoolDesc
+    }
+  },
+  mounted() {
+    var prt = this.schoolDesc[this.$route.params.etudeName][this.$route.params.typeOfActivity]
+    console.dir(prt);
+  },
   props: {
     name: String,
   },

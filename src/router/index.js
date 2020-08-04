@@ -15,8 +15,9 @@ const routes = [
     component: () => import( /* webpackChunkName: "about" */ '../views/AboutMe.vue')
   },
   { path: '/test', component: () => import('../views/Test.vue') },
+  { path: '/etude/:etudeName/:typeOfActivity/:activity', component: () => import('../views/Test.vue') },
   { path: '/etude/:etudeName', component: () => import('../views/Etude.vue') },
-  { path: '/etude/:etudeName/:typeOfActivity/:activity', component: () => import('../views/Etude.vue') },
+  // { path: '/etude/:etudeName/:typeOfActivity/:activity', component: () => import('../views/Etude.vue') },
 ]
 
 const router = new VueRouter({
