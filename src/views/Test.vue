@@ -3,7 +3,9 @@
       <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
       <!-- <StagePPE name="Le maquetage des pages" /> -->
-      <StagePPE name="Ajax, le chargement des pages" />
+      <!-- <StagePPE name="Ajax, le chargement des pages" /> -->
+      <!-- <StagePPE name="Signalement d'une erreur, popup" /> -->
+      <StagePPE name="Lire une facture avec nodeJs et Tesseract" />
   </div>
 </template>
 

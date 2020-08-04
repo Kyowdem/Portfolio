@@ -229,7 +229,7 @@
                 >J’ai ensuite bien pris le temps de me renseigner sur NodeJs car pour lancer un exe je n’avais pas le choix de l’utiliser, et c’est sur YouTube avec les tutoriels de grafikart, qui sont d’une clarté extrême. Après 2 jours, je me suis enfin lancé et j’ai commencé par essayer de lancer Tesseract avec l’invite de commande</div>
                 <div class="col-lg-12 col-md-12">
                   <img
-                    src="http://hostName/src/assets/img/stage/2eme_annee/launch_tesseract_with_cmd.png"
+                    src="@/assets/img/stage/2eme_annee/launch_tesseract_with_cmd.png"
                     alt="launch_tesseract_with_cmd.png"
                     class="img-fluid"
                   />
@@ -242,7 +242,7 @@
                 </div>
                 <div class="col-lg-12 col-md-12">
                   <img
-                    src="http://hostName/src/assets/img/stage/2eme_annee/code_start_tesseract.png"
+                    src="@/assets/img/stage/2eme_annee/code_start_tesseract.png"
                     alt="code_start_tesseract.png"
                     class="img-fluid"
                   />
@@ -252,7 +252,7 @@
                 <div class="col-lg-6 col-md-6">
                   <div>J’ai pris cette facture</div>
                   <img
-                    src="http://hostName/src/assets/img/stage/2eme_annee/ticket_caisse.png"
+                    src="@/assets/img/stage/2eme_annee/ticket_caisse.png"
                     alt="ticket_caisse.png"
                     class="img-fluid"
                     width="350px"
@@ -261,7 +261,7 @@
                 <div class="col-lg-6 col-md-6">
                   et le résultat de Tesseract donnait ça
                   <img
-                    src="http://hostName/src/assets/img/stage/2eme_annee/texte_stdout.png"
+                    src="@/assets/img/stage/2eme_annee/texte_stdout.png"
                     alt="texte_stdout.png"
                     class="img-fluid"
                   />
@@ -273,7 +273,7 @@
                 >Avec mon tuteur on s’est aperçu que souvent le prix était affiché plusieurs fois sur une facture alors ma fonction avait pour but de prendre tous les chiffres du fichier texte, pour prendre ensuite le chiffre qui apparaissait le plus de fois j’ai alors écrit ma fonction, lancer mon script et il retournait ça</div>
                 <div class="col-lg-12 col-md-12">
                   <img
-                    src="http://hostName/src/assets/img/stage/2eme_annee/resultat_tesseract.png"
+                    src="@/assets/img/stage/2eme_annee/resultat_tesseract.png"
                     alt="resultat_tesseract.png"
                     class="img-fluid"
                   />
