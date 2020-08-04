@@ -1,165 +1,167 @@
 <template>
   <div>
     <div class="container-fluid activity">
-      <div class="row justify-content-md-center textCenter">
+      <div class="row justify-content-lg-center textCenter">
         <div class="col-md-12">
           <h1>{{name}}</h1>
         </div>
       </div>
 
-      <div class="col-md-12 col-lg-8 explainActivity">
-        <div data-aos="fade-right">
-          <h2>Présentation de l'entreprise</h2>
-          <p>
-            <a
-              href="https://www.lmhabitat.fr/home/mieux-nous-connaitre/qui-sommes-nous/nos-missions.html"
-              target="_blank"
-              rel="noopener noreferrer"
-            >Lyon Métropole Habitat</a> est une grande entreprise située sur plusieurs secteurs. Le siège de cette dernière se trouve dans le troisième arrondissement de Lyon. L’entreprise a pour but principal de vendre et de faire louer des appartements. Ils possèdent plusieurs secteurs tel que le secteur informatique ou les ressources humaines.
-          </p>
-        </div>
+      <div class="row justify-content-lg-center">
+        <div class="col-md-12 col-lg-8 explainActivity">
+          <div data-aos="fade-right">
+            <h2>Présentation de l'entreprise</h2>
+            <p>
+              <a
+                href="https://www.lmhabitat.fr/home/mieux-nous-connaitre/qui-sommes-nous/nos-missions.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >Lyon Métropole Habitat</a> est une grande entreprise située sur plusieurs secteurs. Le siège de cette dernière se trouve dans le troisième arrondissement de Lyon. L’entreprise a pour but principal de vendre et de faire louer des appartements. Ils possèdent plusieurs secteurs tel que le secteur informatique ou les ressources humaines.
+            </p>
+          </div>
 
-        <div data-aos="fade-right">
-          <h2>Contexte</h2>
-          <p>{{activity.contexte}}</p>
-        </div>
+          <div data-aos="fade-right">
+            <h2>Contexte</h2>
+            <p>{{activity.contexte}}</p>
+          </div>
 
-        <div data-aos="fade-right">
-          <h2>Besoin</h2>
-          <p>{{activity.besoin}}</p>
-        </div>
+          <div data-aos="fade-right">
+            <h2>Besoin</h2>
+            <p>{{activity.besoin}}</p>
+          </div>
 
-        <div data-aos="fade-right">
-          <h2>Environnement technologique</h2>
-          <p>{{activity['environnement technologique']}}</p>
-        </div>
+          <div data-aos="fade-right">
+            <h2>Environnement technologique</h2>
+            <p>{{activity['environnement technologique']}}</p>
+          </div>
 
-        <div data-aos="fade-right">
-          <h2>Réalisation</h2>
-          <div v-if="name == 'Le maquetage des pages'">
-            <div data-aos="fade-right" class="row">
-              <div class="col-lg-12 col-md-12">
-                <p>J’ai fait une première page avec le peu de donnée que l’on m’avait dit avec de simple carré et du texte dedans.</p>
+          <div data-aos="fade-right">
+            <h2>Réalisation</h2>
+            <div v-if="name == 'Le maquetage des pages'">
+              <div data-aos="fade-right" class="row">
+                <div class="col-lg-12 col-md-12">
+                  <p>J’ai fait une première page avec le peu de donnée que l’on m’avait dit avec de simple carré et du texte dedans.</p>
+                </div>
+                <div class="col-lg-12 col-md-12">
+                  <img
+                    src="@/assets/img/stage/1ere_annee/premiere_page.png"
+                    alt="premiere_page.png"
+                    class="img-fluid"
+                  />
+                </div>
               </div>
-              <div class="col-lg-12 col-md-12">
-                <img
-                  src="@/assets/img/stage/1ere_annee/premiere_page.png"
-                  alt="premiere_page.png"
-                  class="img-fluid"
-                />
+              <div data-aos="fade-right" class="row">
+                <div class="col-lg-12 col-md-12">
+                  <p>Une première page peut être trop simple pour les personnes venant des Ressources Humaine j’ai donc dû la refaire et j’ai finis par faire ça</p>
+                </div>
+                <div class="col-lg-12 col-md-12">
+                  <img
+                    src="@/assets/img/stage/1ere_annee/accueil(menuOuvert).png"
+                    alt="accueil(menuOuvert).png"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+              <div data-aos="fade-right" class="row">
+                <div class="col-lg-12 col-md-12">
+                  <p>Une page simple avec la possibilité de faire de sous menu j’ai montré ça aux RH et le code à mon tuteur puis il m’a dit de tout refaire mais en orienté objet. J’ai eu beaucoup de mal au début puis j’y ai pris gout et toute cette première page était en objet</p>
+                </div>
+                <div class="col-lg-12 col-md-12">
+                  <img
+                    src="@/assets/img/stage/1ere_annee/Atom_code_accueil.png"
+                    alt="Atom_code_accueil.png"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+              <div data-aos="fade-right" class="row">
+                <div class="col-lg-12 col-md-12">
+                  <p>Un ajout, une modification ou une suppression à la fois simple et rapide tout était fait pour que le développeur fasse simplement ce qu’il voulait. Il fallait donc ensuite continuer comme cela et faire la suite de ce site, j’ai commencé par faire l’entrée d’une personne dans l’entreprise, mais avant de commencer j’ai demandé les attentes de mon tuteur, soit, une page qui reste la même cela sera seulement un remplacement de div que l’on fera avec Ajax (Voir dans le 2eme contexte). J’ai alors produis cela</p>
+                </div>
+                <div class="col-lg-12 col-md-12">
+                  <img
+                    src="@/assets/img/stage/1ere_annee/entre.png"
+                    alt="entre.png"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+              <div data-aos="fade-right" class="row">
+                <div class="col-lg-12 col-md-12">
+                  <p>Enfin ça c’était le screen final, nous ne voyons pas mais grâce à jQuery j’ai pu faire quelque animation qui était aussi là pour faire camoufler le temps de chargement de la prochaine div</p>
+                </div>
+                <div class="col-lg-12 col-md-12">
+                  <img src="@/assets/img/stage/1ere_annee/RTT.png" alt="rtt.png" class="img-fluid" />
+                </div>
+              </div>
+              <div data-aos="fade-right" class="row">
+                <div class="col-lg-12 col-md-12">
+                  <p>Je n’ai plus le code mais cette page était elle aussi complètement en objet. On pouvait dans le code sélectionner les jours et ou les demi-journée qu’on voulait griser simplement en tapant le nom de la journée.</p>
+                </div>
               </div>
             </div>
-            <div data-aos="fade-right" class="row">
-              <div class="col-lg-12 col-md-12">
-                <p>Une première page peut être trop simple pour les personnes venant des Ressources Humaine j’ai donc dû la refaire et j’ai finis par faire ça</p>
+
+            <div v-if="name == 'Ajax, le chargement des pages'">
+              <div data-aos="fade-right" class="row">
+                <div
+                  class="col-lg-12 col-md-12"
+                >J’ai beaucoup utilisé la documentation de jQuery et d’Ajax, qui sont très bien faites. La présence de mon tuteur m’a aussi permis de mieux m’initier là-dedans.</div>
               </div>
-              <div class="col-lg-12 col-md-12">
-                <img
-                  src="@/assets/img/stage/1ere_annee/accueil(menuOuvert).png"
-                  alt="accueil(menuOuvert).png"
-                  class="img-fluid"
-                />
+              <div data-aos="fade-right" class="row">
+                <div
+                  class="col-lg-12 col-md-12"
+                >Après plusieurs modifications, cette page était utilisée comme principale pour le site. Cette dernière complètement orienté objet permet la facilité au futur modification qu’ils voudront apporter.</div>
+                <div class="col-lg-12 col-md-12">
+                  <img
+                    src="@/assets/img/stage/1ere_annee/accueil(menuOuvert).png"
+                    alt="Accueil(menuOuvert).png"
+                    class="img-fluid"
+                  />
+                </div>
               </div>
-            </div>
-            <div data-aos="fade-right" class="row">
-              <div class="col-lg-12 col-md-12">
-                <p>Une page simple avec la possibilité de faire de sous menu j’ai montré ça aux RH et le code à mon tuteur puis il m’a dit de tout refaire mais en orienté objet. J’ai eu beaucoup de mal au début puis j’y ai pris gout et toute cette première page était en objet</p>
+              <div data-aos="fade-right" class="row">
+                <div
+                  class="col-lg-12 col-md-12"
+                >Dans ce menu, quand on allait dans un contexte, par exemple une entrée, on se retrouvait sur cette page qui étais généré complètement en JavaScript et faisais charger les données des menus déroulant grâce à Ajax, car nous avions besoin de charger les données sans recharger la page.</div>
+                <div class="col-lg-12 col-md-12">
+                  <img
+                    src="@/assets/img/stage/1ere_annee/entre.png"
+                    alt="Entre.png"
+                    class="img-fluid"
+                  />
+                </div>
               </div>
-              <div class="col-lg-12 col-md-12">
-                <img
-                  src="@/assets/img/stage/1ere_annee/Atom_code_accueil.png"
-                  alt="Atom_code_accueil.png"
-                  class="img-fluid"
-                />
+              <div data-aos="fade-right" class="row">
+                <div
+                  class="col-lg-12 col-md-12"
+                >Je pouvais ensuite me rediriger vers les autres pages lors d’un clic sur le bouton suivant ou précédent, sans changer de page c'était juste un remplacement de div, et donc lorsque je cliquais cela faisais charger grâce à Ajax les données de la page concerné.</div>
+                <div class="col-lg-12 col-md-12">
+                  <img
+                    src="@/assets/img/stage/1ere_annee/equipement.png"
+                    alt="equipement.png"
+                    class="img-fluid"
+                  />
+                </div>
               </div>
-            </div>
-            <div data-aos="fade-right" class="row">
-              <div class="col-lg-12 col-md-12">
-                <p>Un ajout, une modification ou une suppression à la fois simple et rapide tout était fait pour que le développeur fasse simplement ce qu’il voulait. Il fallait donc ensuite continuer comme cela et faire la suite de ce site, j’ai commencé par faire l’entrée d’une personne dans l’entreprise, mais avant de commencer j’ai demandé les attentes de mon tuteur, soit, une page qui reste la même cela sera seulement un remplacement de div que l’on fera avec Ajax (Voir dans le 2eme contexte). J’ai alors produis cela</p>
-              </div>
-              <div class="col-lg-12 col-md-12">
-                <img
-                  src="@/assets/img/stage/1ere_annee/entre.png"
-                  alt="entre.png"
-                  class="img-fluid"
-                />
-              </div>
-            </div>
-            <div data-aos="fade-right" class="row">
-              <div class="col-lg-12 col-md-12">
-                <p>Enfin ça c’était le screen final, nous ne voyons pas mais grâce à jQuery j’ai pu faire quelque animation qui était aussi là pour faire camoufler le temps de chargement de la prochaine div</p>
-              </div>
-              <div class="col-lg-12 col-md-12">
-                <img src="@/assets/img/stage/1ere_annee/RTT.png" alt="rtt.png" class="img-fluid" />
-              </div>
-            </div>
-            <div data-aos="fade-right" class="row">
-              <div class="col-lg-12 col-md-12">
-                <p>Je n’ai plus le code mais cette page était elle aussi complètement en objet. On pouvait dans le code sélectionner les jours et ou les demi-journée qu’on voulait griser simplement en tapant le nom de la journée.</p>
+              <div data-aos="fade-right" class="row">
+                <div
+                  class="col-lg-12 col-md-12"
+                >On peut voir sur un bout de code ci-dessous où lors d’un clic, Ajax allais faire charger la page souhaité.</div>
+                <div class="col-lg-12 col-md-12">
+                  <img
+                    src="@/assets/img/stage/1ere_annee/ajax_code.png"
+                    alt="ajax_code.png"
+                    class="img-fluid"
+                  />
+                </div>
               </div>
             </div>
           </div>
 
-          <div v-if="name == 'Ajax, le chargement des pages'">
-            <div data-aos="fade-right" class="row">
-              <div
-                class="col-lg-12 col-md-12"
-              >J’ai beaucoup utilisé la documentation de jQuery et d’Ajax, qui sont très bien faites. La présence de mon tuteur m’a aussi permis de mieux m’initier là-dedans.</div>
-            </div>
-            <div data-aos="fade-right" class="row">
-              <div
-                class="col-lg-12 col-md-12"
-              >Après plusieurs modifications, cette page était utilisée comme principale pour le site. Cette dernière complètement orienté objet permet la facilité au futur modification qu’ils voudront apporter.</div>
-              <div class="col-lg-12 col-md-12">
-                <img
-                  src="@/assets/img/stage/1ere_annee/accueil(menuOuvert).png"
-                  alt="Accueil(menuOuvert).png"
-                  class="img-fluid"
-                />
-              </div>
-            </div>
-            <div data-aos="fade-right" class="row">
-              <div
-                class="col-lg-12 col-md-12"
-              >Dans ce menu, quand on allait dans un contexte, par exemple une entrée, on se retrouvait sur cette page qui étais généré complètement en JavaScript et faisais charger les données des menus déroulant grâce à Ajax, car nous avions besoin de charger les données sans recharger la page.</div>
-              <div class="col-lg-12 col-md-12">
-                <img
-                  src="@/assets/img/stage/1ere_annee/entre.png"
-                  alt="Entre.png"
-                  class="img-fluid"
-                />
-              </div>
-            </div>
-            <div data-aos="fade-right" class="row">
-              <div
-                class="col-lg-12 col-md-12"
-              >Je pouvais ensuite me rediriger vers les autres pages lors d’un clic sur le bouton suivant ou précédent, sans changer de page c'était juste un remplacement de div, et donc lorsque je cliquais cela faisais charger grâce à Ajax les données de la page concerné.</div>
-              <div class="col-lg-12 col-md-12">
-                <img
-                  src="@/assets/img/stage/1ere_annee/equipement.png"
-                  alt="equipement.png"
-                  class="img-fluid"
-                />
-              </div>
-            </div>
-            <div data-aos="fade-right" class="row">
-              <div
-                class="col-lg-12 col-md-12"
-              >On peut voir sur un bout de code ci-dessous où lors d’un clic, Ajax allais faire charger la page souhaité.</div>
-              <div class="col-lg-12 col-md-12">
-                <img
-                  src="@/assets/img/stage/1ere_annee/ajax_code.png"
-                  alt="ajax_code.png"
-                  class="img-fluid"
-                />
-              </div>
-            </div>
+          <div data-aos="fade-right">
+            <h2>Bilan</h2>
+            <p>{{activity.bilan}}</p>
           </div>
-        </div>
-
-        <div data-aos="fade-right">
-          <h2>Bilan</h2>
-          <p>{{activity.bilan}}</p>
         </div>
       </div>
     </div>
