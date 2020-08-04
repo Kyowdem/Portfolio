@@ -21,17 +21,17 @@
 
         <div data-aos="fade-right">
           <h2>Contexte</h2>
-          <p>Etant une grande entreprise, ils ont besoin de gérer des entrants, des sortants ou des migrations vers d’autres postes ou endroits. J’étais donc chargé de faire un site web interne à l’entreprise lié à la base de données que je montrerais prochainement. Je vais vous montrer uniquement ce que j’ai pu faire dans la rubrique entrée.</p>
+          <p>{{activity.contexte}}</p>
         </div>
 
         <div data-aos="fade-right">
           <h2>Besoin</h2>
-          <p>L'entreprise nécessitait une application, simple d'utilisation et de compréhension, permettant de suivre la trace d'une entrée ou d'une sortie d'une personne. Le produit sera utilisé par les Ressources Humaines.</p>
+          <p>{{activity.besoin}}</p>
         </div>
 
         <div data-aos="fade-right">
           <h2>Environnement technologique</h2>
-          <p>J'ai utilisé le logiciel Atom, très simple d'utilisation, et prenant peu de place sur le poste à ma disposition. J’ai majoritairement utilisé du JavaScript ainsi qu’un Framework au nom de jQuery. Le Framework permet non seulement de réduire le code JS mais également d’utiliser Ajax, nous le verrons dans le second contexte.</p>
+          <p>{{activity['environnement technologique']}}</p>
         </div>
 
         <div data-aos="fade-right">
@@ -100,31 +100,32 @@
             <div class="col-lg-12 col-md-12">
               <p>Je n’ai plus le code mais cette page était elle aussi complètement en objet. On pouvait dans le code sélectionner les jours et ou les demi-journée qu’on voulait griser simplement en tapant le nom de la journée.</p>
             </div>
-          </div> -->
+          </div>-->
         </div>
 
         <div data-aos="fade-right">
           <h2>Bilan</h2>
-          <p>J'ai réalisé un site web interne à une entreprise utilisant du JavaScript, avec le Framework jQuery. Grâce à l’utilisation de ces outils, j’ai pu ajouter des animations facilitant la compréhension et l’utilisation du site. Le site n'est pas parfaitement achevé. Néanmoins, les quatre pages que j'ai mises au point sont sans bug et sont prêtes à l'utilisation. J'avais beaucoup de mal au début, j’ai dû m’adapter au Framework jQuery, inconnu pour moi avant de travailler sur ce projet. Je n’avais pas énormément d’expérience sur JavaScript non plus. Toutefois, j’ai eu la chance d’avoir un bon tuteur qui me cadrais. Ce stage était par conséquent très enrichissant pour moi.</p>
+          <p>{{activity.bilan}}</p>
         </div>
       </div>
-
     </div>
   </div>
 </template>
 
 <script>
-import schoolDesc from '@/assets/json/schoolDesc.json'
+import schoolDesc from "@/assets/json/schoolDesc.json";
 
 export default {
   data() {
     return {
-      schoolDesc
-    }
+      schoolDesc,
+      activity: Object,
+    };
   },
   mounted() {
-    var prt = this.schoolDesc[this.$route.params.etudeName][this.$route.params.typeOfActivity]
-    console.dir(prt);
+    this.activity = this.schoolDesc[this.$route.params.etudeName][
+      this.$route.params.typeOfActivity
+    ].find((element) => element.name == this.name).description;
   },
   props: {
     name: String,
