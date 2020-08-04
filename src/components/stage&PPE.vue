@@ -35,8 +35,10 @@
             <p>{{activity['environnement technologique']}}</p>
           </div>
 
-          <div data-aos="fade-right">
-            <h2>Réalisation</h2>
+          <div>
+            <div data-aos="fade-right">
+              <h2>Réalisation</h2>
+            </div>
             <div v-if="name == 'Le maquetage des pages'">
               <div data-aos="fade-right" class="row">
                 <div class="col-lg-12 col-md-12">
@@ -101,7 +103,7 @@
               </div>
             </div>
 
-            <div v-if="name == 'Ajax, le chargement des pages'">
+            <div class="realisation" v-if="name == 'Ajax, le chargement des pages'">
               <div data-aos="fade-right" class="row">
                 <div
                   class="col-lg-12 col-md-12"
@@ -205,17 +207,17 @@ export default {
   text-decoration: underline dotted gold;
 }
 
-.explainActivity > .aos-init:first-child {
+.explainActivity > div:first-child {
   margin-top: 18rem;
 }
-.explainActivity > .aos-init:not(:first-child) {
+.explainActivity > div:not(:first-child) {
   margin-top: 30rem;
 }
-.explainActivity > .aos-init:last-child {
+.explainActivity > div:last-child {
   margin-bottom: 25rem;
 }
 
-.realisation .aos-init:not(:nth-child(1)):not(:nth-child(2)) {
+.realisation div:not(:nth-child(1)):not(:nth-child(2)) {
   margin-top: 3rem;
 }
 
