@@ -1,6 +1,6 @@
 <template>
   <div>
-      <StagePPE name="Le maquetage des page" />
+      <StagePPE name="Le maquetage des pages" />
   </div>
 </template>
 

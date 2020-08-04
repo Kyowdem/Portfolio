@@ -1,0 +1,19 @@
+{
+    "BTS": {
+        "stage": [
+            {
+                "name" : "Le maquetage des pages",
+                "description": {
+                    "presentation de l'entreprise": null,
+                    "contexte": "Etant une grande entreprise, ils ont besoin de gérer des entrants, des sortants ou des migrations vers d’autres postes ou endroits. J’étais donc chargé de faire un site web interne à l’entreprise lié à la base de données que je montrerais prochainement. Je vais vous montrer uniquement ce que j’ai pu faire dans la rubrique entrée.",
+                    "besoin": "L'entreprise nécessitait une application, simple d'utilisation et de compréhension, permettant de suivre la trace d'une entrée ou d'une sortie d'une personne. Le produit sera utilisé par les Ressources Humaines.",
+                    "environnement technologique" : "J'ai utilisé le logiciel Atom, très simple d'utilisation, et prenant peu de place sur le poste à ma disposition. J’ai majoritairement utilisé du JavaScript ainsi qu’un Framework au nom de jQuery. Le Framework permet non seulement de réduire le code JS mais également d’utiliser Ajax, nous le verrons dans le second contexte.",
+                    "realisation": null,
+                    "bilan": "J'ai réalisé un site web interne à une entreprise utilisant du JavaScript, avec le Framework jQuery. Grâce à l’utilisation de ces outils, j’ai pu ajouter des animations facilitant la compréhension et l’utilisation du site. Le site n'est pas parfaitement achevé. Néanmoins, les quatre pages que j'ai mises au point sont sans bug et sont prêtes à l'utilisation. J'avais beaucoup de mal au début, j’ai dû m’adapter au Framework jQuery, inconnu pour moi avant de travailler sur ce projet. Je n’avais pas énormément d’expérience sur JavaScript non plus. Toutefois, j’ai eu la chance d’avoir un bon tuteur qui me cadrais. Ce stage était par conséquent très enrichissant pour moi."
+                }
+            }
+        ],
+        "PPE": []
+    },
+    "UQAM": {}
+}
