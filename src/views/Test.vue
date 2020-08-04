@@ -1,6 +1,7 @@
 <template>
   <div>
       <StagePPE name="Le maquetage des pages" />
+      <StagePPE name="Ajax, le chargement des pages" />
   </div>
 </template>
 

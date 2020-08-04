@@ -14,10 +14,9 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () => import( /* webpackChunkName: "about" */ '../views/AboutMe.vue')
   },
-  { path: '/test', component: () => import('../views/Test.vue') },
-  { path: '/etude/:etudeName/:typeOfActivity/:activity', component: () => import('../views/Test.vue') },
+  { path: '/test/:etudeName/:typeOfActivity/', component: () => import('../views/Test.vue') },
   { path: '/etude/:etudeName', component: () => import('../views/Etude.vue') },
-  // { path: '/etude/:etudeName/:typeOfActivity/:activity', component: () => import('../views/Etude.vue') },
+  { path: '/etude/:etudeName/:typeOfActivity/:activity', component: () => import('../views/Etude.vue') },
 ]
 
 const router = new VueRouter({

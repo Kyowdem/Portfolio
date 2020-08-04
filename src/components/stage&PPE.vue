@@ -7,7 +7,7 @@
         </div>
       </div>
 
-      <div class="col-md-12 col-lg-8 explainActivity" v-if="this.name == 'Le maquetage des pages'">
+      <div class="col-md-12 col-lg-8 explainActivity">
         <div data-aos="fade-right">
           <h2>Présentation de l'entreprise</h2>
           <p>
@@ -126,6 +126,8 @@ export default {
     this.activity = this.schoolDesc[this.$route.params.etudeName][
       this.$route.params.typeOfActivity
     ].find((element) => element.name == this.name).description;
+
+    console.dir(this.activity);
   },
   props: {
     name: String,
