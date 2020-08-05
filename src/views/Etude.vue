@@ -10,11 +10,7 @@
 
       <div class="row justify-content-md-center">
         <div class="col-md-6 col-lg-4">
-          <img
-            :src="'/assets/img/'+this.etude.imgName"
-            class="img-fluid"
-            :alt="this.etude.imgName"
-          />
+          <img :src="'/assets/img/'+this.etude.imgName" class="img-fluid" :alt="this.etude.imgName" />
         </div>
         <div class="col-md-6 offset-lg-2 col-lg-4">
           <p>{{etude.DescBackSchool}}</p>
@@ -35,13 +31,11 @@
               </tr>
             </tbody>
           </table>
-        </div> -->
+        </div>-->
       </div>
     </div>
 
-    <div class="container-fluid activity" v-else>
-      <StagePPE name="Mission n°2 : GSB" />
-    </div>
+    <StagePPE name="Mission n°2 : GSB" v-else />
   </div>
 </template>
 
@@ -50,6 +44,7 @@
 <script>
 import AOS from "aos";
 import etude from "@/assets/json/etude.json";
+import schoolDesc from "@/assets/json/schoolDesc.json";
 import StagePPE from "@/components/stage&PPE.vue";
 
 export default {
@@ -61,11 +56,13 @@ export default {
     return {
       schoolType: this.$route.params.etudeName,
       etude: etude[this.$route.params.etudeName], // Can't do this.title cause title isn't defined when etude is create
-      activityOrSchool: true
+      activityOrSchool: true,
+      activityName: { PPE: [], stage: [] },
     };
   },
   mounted() {
-    this.setActivityOrSchool();
+    // this.setActivityOrSchool();
+    this.setActivityName();
   },
   watch: {
     "$route.params.activity": function () {
@@ -73,6 +70,13 @@ export default {
     },
   },
   methods: {
+    setActivityName() {
+      for (let prop in schoolDesc["BTS"]) {
+        schoolDesc["BTS"][prop].forEach((el) =>
+          this.activityName[prop].push(el.name)
+        );
+      }
+    },
     setActivityOrSchool() {
       if (this.$route.params.typeOfActivity && this.$route.params.activity) {
         this.activityOrSchool = false;
@@ -91,7 +95,6 @@ AOS.init();
 </script>
 
 <style>
-
 thead th {
   text-align: center;
   text-transform: capitalize;
