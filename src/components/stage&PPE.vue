@@ -367,6 +367,185 @@
                 </div>
               </div>
             </div>
+
+            <div v-if="name == 'Mission n°1 : Judge Movies'">
+              <div data-aos="fade-right" class="row">
+                <div
+                  class="col-lg-12 col-md-12"
+                >Dans notre groupe, je me suis occupé de la partie design et dynamique du site. Pour cela, j’ai utilisé jQuery et Ajax. J’ai également utilisé la librairie slick, afin de produire un carrousel qui répondais à mes attentes et qui était très facile d’utilisation.</div>
+                <div class="col-lg-12 col-md-12">
+                  <img
+                    src="@/assets/img/PPE/2eme_annee/Judge_movies/accueil.png"
+                    alt="accueil.png"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+              <div data-aos="fade-right" class="row">
+                <div
+                  class="col-lg-12 col-md-12"
+                >Mais pour voir un film et l’acheter il faut d’abord se connecter. Pour donner un rendu tout aussi simple que dynamique et en mettant surtout une petite touche de jaune aux pages login et inscription, j’ai paramétré un fond avec des particules animées dans un fond noir grâce à l’outil « particules.js ».</div>
+                <div class="col-lg-12 col-md-12">
+                  <img
+                    src="@/assets/img/PPE/2eme_annee/Judge_movies/login.png"
+                    alt="login.png"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+              <div data-aos="fade-right" class="row">
+                <div
+                  class="col-lg-12 col-md-12"
+                >Une fois le login crée ainsi que la page d’accueil avec le carrousel des films, lors du clic il fallait afficher une page simple et semblable pour toute. Je me suis donc occupé de la page film en faisant une page qui envoyais directement le lien de la bande annonce du film, son titre, ces réalisateurs, ces acteurs et ça note sur le site</div>
+                <div class="col-lg-12 col-md-12">
+                  <img
+                    src="@/assets/img/PPE/2eme_annee/Judge_movies/Film_haut.png"
+                    alt="Film_haut.png"
+                    class="img-fluid"
+                  />
+                </div>
+                <div
+                  class="col-lg-12 col-md-12"
+                >sur la photo la balise iframe a juste un petit problème. La page faisait juste charger les données depuis la base mais j’ai quand même voulu garder l’aspect dynamique alors j’ai juste rajouté des étoiles pour que l’utilisateur note sur 5 le film.</div>
+                <div class="col-lg-6 col-md-6">
+                  <img
+                    src="@/assets/img/PPE/2eme_annee/Judge_movies/film_bas.png"
+                    alt="film_bas.png"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="col-lg-6 col-md-6">
+                  <img
+                    src="@/assets/img/PPE/2eme_annee/Judge_movies/code_etoile_film.png"
+                    alt="code_etoile.png"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+              <div data-aos="fade-right" class="row">
+                <div
+                  class="col-lg-12 col-md-12"
+                >En tant qu’admin nous pouvons rajouter des films et même cela est animé.</div>
+                <div class="col-lg-12 col-md-12">
+                  <img
+                    src="@/assets/img/PPE/2eme_annee/Judge_movies/ajout_film.png"
+                    alt="ajout_film.png"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+              <div data-aos="fade-right" class="row">
+                <div
+                  class="col-lg-12 col-md-12"
+                >Si un Acteur n’est pas dans la liste, nous avons juste à cliquer sur le bouton à droite pour faire apparaitre un formulaire de saisie. Ce dernier ajoute l’acteur au select sans avoir à rafraichir la page, elle se charge automatiquement grâce à Ajax.</div>
+                <div class="col-lg-12 col-md-12">
+                  <img
+                    src="@/assets/img/PPE/2eme_annee/Judge_movies/ajoute_real.png"
+                    alt="ajoute_real.png"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div v-if="name == 'Mission n°2 : GSB'">
+              <div data-aos="fade-right" class="row">
+                <div
+                  class="col-lg-12 col-md-12"
+                >J’ai commencé par faire la partie graphique du site avant de commencer tout le back-end. Je voulais que la page de recherche soit éducative, simple d’utilisation. J’ai alors mis une barre de recherche au milieu de l’écran et qui montera lorsqu’on saisit une information.</div>
+                <div class="col-lg-6 col-md-6">
+                  <img
+                    src="@/assets/img/PPE/2eme_annee/GSB/barre_recherche.png"
+                    alt="barre_recherche.png"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="col-lg-6 col-md-6">
+                  <img
+                    src="@/assets/img/PPE/2eme_annee/GSB/recherche_visiteur.png"
+                    alt="recherche_visiteur.png"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+              <div data-aos="fade-right" class="row">
+                <div
+                  class="col-lg-12 col-md-12"
+                >La recherche d’un visiteur se fait grâce à un web service où la méthode GET est utilisé. On envoie les données GET dans l’url en tapant simplement le nom de la page suivis d’un point d’interrogation, le nom de la variable et la donnée à envoyer. On peut aussi tester notre Api avec Postman qui est un environnement de développement pour les API.</div>
+                <div class="col-lg-12 col-md-12">
+                  <img
+                    src="@/assets/img/PPE/2eme_annee/GSB/postman_visiteur_id.png"
+                    alt="postman_visiteur_id.png"
+                    class="img-fluid centerImg"
+                  />
+                </div>
+              </div>
+              <div data-aos="fade-right" class="row">
+                <div
+                  class="col-lg-12 col-md-12"
+                >On récupère donc la variable “id“ dans le script read.php sous la forme d’une variable dans la collection $_GET. Pour me simplifier, je fais un parcours de celle-ci pour garder dans la variable $getVariable et pouvoir faire ensuite un switch case.</div>
+                <div class="col-lg-12 col-md-12">
+                  <img
+                    src="@/assets/img/PPE/2eme_annee/GSB/controler_visiteur_read.png"
+                    alt="controler_visiteur_read.png"
+                    class="img-fluid centerImg"
+                  />
+                </div>
+              </div>
+              <div data-aos="fade-right" class="row">
+                <div
+                  class="col-lg-12 col-md-12"
+                >On voit que lorsqu’il récupère l’Id il va dans la fonction “readById“ dans la classe “tableVisiteur“. Dans cette fonction on peut voir que la requête est préparée avant d’être exécutée et retournée vers le Controller read.php.</div>
+                <div class="col-lg-12 col-md-12">
+                  <img
+                    src="@/assets/img/PPE/2eme_annee/GSB/metier_visiteur_update.png"
+                    alt="metier_visiteur_update.png"
+                    class="img-fluid"
+                  />
+                </div>
+                <div
+                  class="col-lg-12 col-md-12"
+                >Pour finir, le résultat de la requête est traité pour être convertie sous le format JSON. On peut maintenant récupérer le résultat de la requête, comme nous l’avons vu plus haut avec Postman.</div>
+              </div>
+              <div data-aos="fade-right" class="row">
+                <div
+                  class="col-lg-12 col-md-12"
+                >Pour un ajout, une modification ou une suppression, c’est à peu près la même chose sauf qu’au lieu d’utiliser GET nous prendrons : POST pour un ajout, PUT pour une modification et DELETE pour une suppression. L’envoie de donnée ne se passe pas par l’url du web service mais par l’envoie des données en JSON et le traitement de ces données dans le Controller.</div>
+                <div class="col-lg-6 col-md-6">
+                  <img
+                    src="@/assets/img/PPE/2eme_annee/GSB/postman_visiteur_update.png"
+                    alt="postman_visiteur_update.png"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="col-lg-6 col-md-6 divCenter">
+                  <img
+                    src="@/assets/img/PPE/2eme_annee/GSB/metier_visiteur_update.png"
+                    alt="metier_visiteur_update.png"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="col-lg-12 col-md-12">
+                  <img
+                    src="@/assets/img/PPE/2eme_annee/GSB/modif_visiteur.png"
+                    alt="modif_visiteur.png"
+                    class="img-fluid centerImg"
+                  />
+                </div>
+              </div>
+              <div data-aos="fade-right" class="row">
+                <div
+                  class="col-lg-12 col-md-12"
+                >Revenons à notre recherche. Après avoir fait la recherche par nom nous avons une collection de visiteur que je stock dans une variable locale pour réutiliser les données. Je fais ensuite un v-for pour parcourir tous les visiteurs et faire afficher le tableau.</div>
+                <div class="col-lg-12 col-md-12">
+                  <img
+                    src="@/assets/img/PPE/2eme_annee/GSB/code_rechercher_visiteur.png"
+                    alt="code_rechercher_visiteur.png"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
 
           <div data-aos="fade-right">
