@@ -105,14 +105,14 @@
 
             <div v-if="name == 'Ajax, le chargement des pages'">
               <div data-aos="fade-right" class="row">
-                <div
-                  class="col-lg-12 col-md-12"
-                >J’ai beaucoup utilisé la documentation de jQuery et d’Ajax, qui sont très bien faites. La présence de mon tuteur m’a aussi permis de mieux m’initier là-dedans.</div>
+                <div class="col-lg-12 col-md-12">
+                  <p>J’ai beaucoup utilisé la documentation de jQuery et d’Ajax, qui sont très bien faites. La présence de mon tuteur m’a aussi permis de mieux m’initier là-dedans.</p>
+                </div>
               </div>
               <div data-aos="fade-right" class="row">
-                <div
-                  class="col-lg-12 col-md-12"
-                >Après plusieurs modifications, cette page était utilisée comme principale pour le site. Cette dernière complètement orienté objet permet la facilité au futur modification qu’ils voudront apporter.</div>
+                <div class="col-lg-12 col-md-12">
+                  <p>Après plusieurs modifications, cette page était utilisée comme principale pour le site. Cette dernière complètement orienté objet permet la facilité au futur modification qu’ils voudront apporter.</p>
+                </div>
                 <div class="col-lg-12 col-md-12">
                   <img
                     src="@/assets/img/stage/1ere_annee/accueil(menuOuvert).png"
@@ -122,9 +122,9 @@
                 </div>
               </div>
               <div data-aos="fade-right" class="row">
-                <div
-                  class="col-lg-12 col-md-12"
-                >Dans ce menu, quand on allait dans un contexte, par exemple une entrée, on se retrouvait sur cette page qui étais généré complètement en JavaScript et faisais charger les données des menus déroulant grâce à Ajax, car nous avions besoin de charger les données sans recharger la page.</div>
+                <div class="col-lg-12 col-md-12">
+                  <p>Dans ce menu, quand on allait dans un contexte, par exemple une entrée, on se retrouvait sur cette page qui étais généré complètement en JavaScript et faisais charger les données des menus déroulant grâce à Ajax, car nous avions besoin de charger les données sans recharger la page.</p>
+                </div>
                 <div class="col-lg-12 col-md-12">
                   <img
                     src="@/assets/img/stage/1ere_annee/entre.png"
@@ -134,9 +134,9 @@
                 </div>
               </div>
               <div data-aos="fade-right" class="row">
-                <div
-                  class="col-lg-12 col-md-12"
-                >Je pouvais ensuite me rediriger vers les autres pages lors d’un clic sur le bouton suivant ou précédent, sans changer de page c'était juste un remplacement de div, et donc lorsque je cliquais cela faisais charger grâce à Ajax les données de la page concerné.</div>
+                <div class="col-lg-12 col-md-12">
+                  <p>Je pouvais ensuite me rediriger vers les autres pages lors d’un clic sur le bouton suivant ou précédent, sans changer de page c'était juste un remplacement de div, et donc lorsque je cliquais cela faisais charger grâce à Ajax les données de la page concerné.</p>
+                </div>
                 <div class="col-lg-12 col-md-12">
                   <img
                     src="@/assets/img/stage/1ere_annee/equipement.png"
@@ -146,9 +146,9 @@
                 </div>
               </div>
               <div data-aos="fade-right" class="row">
-                <div
-                  class="col-lg-12 col-md-12"
-                >On peut voir sur un bout de code ci-dessous où lors d’un clic, Ajax allais faire charger la page souhaité.</div>
+                <div class="col-lg-12 col-md-12">
+                  <p>On peut voir sur un bout de code ci-dessous où lors d’un clic, Ajax allais faire charger la page souhaité.</p>
+                </div>
                 <div class="col-lg-12 col-md-12">
                   <img
                     src="@/assets/img/stage/1ere_annee/ajax_code.png"
@@ -161,9 +161,9 @@
 
             <div v-if="name == 'Signalement d\'une erreur, popup'">
               <div data-aos="fade-right" class="row">
-                <div
-                  class="col-lg-12 col-md-12"
-                >Au début je n’étais pas partie sur un pop-up mais sur une page entière, mais j’ai trouvé ça trop lourd et moins intuitif pour l’utilisateur alors j’ai changé en utilisant le pop-up appeler aussi dialog, de jQuery-ui.</div>
+                <div class="col-lg-12 col-md-12">
+                  <p>Au début je n’étais pas partie sur un pop-up mais sur une page entière, mais j’ai trouvé ça trop lourd et moins intuitif pour l’utilisateur alors j’ai changé en utilisant le pop-up appeler aussi dialog, de jQuery-ui.</p>
+                </div>
                 <div class="col-lg-12 col-md-12">
                   <img
                     src="@/assets/img/stage/2eme_annee/ouverture_dialog.png"
@@ -173,9 +173,9 @@
                 </div>
               </div>
               <div data-aos="fade-right" class="row">
-                <div
-                  class="col-lg-12 col-md-12"
-                >Il fallait ensuite bien organiser tout ça, j’ai donc utilisé les mêmes titres que les Tabs qu’on peut voir au-dessus du dialog et il y avait même déjà toute l’architecture alors j’ai utilisé ça pour produire la suite.</div>
+                <div class="col-lg-12 col-md-12">
+                  <p>Il fallait ensuite bien organiser tout ça, j’ai donc utilisé les mêmes titres que les Tabs qu’on peut voir au-dessus du dialog et il y avait même déjà toute l’architecture alors j’ai utilisé ça pour produire la suite.</p>
+                </div>
                 <div class="col-lg-12 col-md-12">
                   <img
                     src="@/assets/img/stage/2eme_annee/modif_date.png"
@@ -185,9 +185,9 @@
                 </div>
               </div>
               <div data-aos="fade-right" class="row">
-                <div
-                  class="col-lg-12 col-md-12"
-                >On peut aussi voir le datapicker de jQuery-ui que j’ai utilisé à chaque fois que le mot date apparaissant dans la sous-catégorie (Contexte = Situation de famille, Sous-catégorie = Date[…]changement, on ne voit pas la catégorie sur ce screen) J’ai donc ensuite pris toute ces informations et je les ai ajoutés à la base de données qu’on avait créée.</div>
+                <div class="col-lg-12 col-md-12">
+                  <p>On peut aussi voir le datapicker de jQuery-ui que j’ai utilisé à chaque fois que le mot date apparaissant dans la sous-catégorie (Contexte = Situation de famille, Sous-catégorie = Date[…]changement, on ne voit pas la catégorie sur ce screen) J’ai donc ensuite pris toute ces informations et je les ai ajoutés à la base de données qu’on avait créée.</p>
+                </div>
                 <div class="col-lg-12 col-md-12">
                   <img
                     src="@/assets/img/stage/2eme_annee/ajout_donnees_enfant.png"
@@ -197,9 +197,9 @@
                 </div>
               </div>
               <div data-aos="fade-right" class="row">
-                <div
-                  class="col-lg-12 col-md-12"
-                >Le code que j’ai fait a principalement été fait en orienté objet mais aussi aspect pour permettre de gérer chaque objet qui sera créé, cela permet d’éviter le mot clé new mais surtout de centralisé tous les objets dans un objet mère.</div>
+                <div class="col-lg-12 col-md-12">
+                  <p>Le code que j’ai fait a principalement été fait en orienté objet mais aussi aspect pour permettre de gérer chaque objet qui sera créé, cela permet d’éviter le mot clé new mais surtout de centralisé tous les objets dans un objet mère.</p>
+                </div>
                 <div class="col-lg-12 col-md-12">
                   <img
                     src="@/assets/img/stage/2eme_annee/code_create_select.png"
@@ -212,17 +212,17 @@
 
             <div v-if="name == 'Lire une facture avec nodeJs et Tesseract'">
               <div data-aos="fade-right" class="row">
-                <div
-                  class="col-lg-12 col-md-12"
-                >Avant de commencer à coder, j’ai modéliser un MLR grâce à une ancienne application que l’entreprise avait développée, c’est alors à partir de ça que j’ai fait toute les entités et que j’ai finis et valider par mon tuteur le MLR qui ressemblais à ça.</div>
+                <div class="col-lg-12 col-md-12">
+                  <p>Avant de commencer à coder, j’ai modéliser un MLR grâce à une ancienne application que l’entreprise avait développée, c’est alors à partir de ça que j’ai fait toute les entités et que j’ai finis et valider par mon tuteur le MLR qui ressemblais à ça.</p>
+                </div>
                 <div class="col-lg-12 col-md-12">
                   <img src="@/assets/img/stage/2eme_annee/MCD.png" alt="MCD.png" class="img-fluid" />
                 </div>
               </div>
               <div data-aos="fade-right" class="row">
-                <div
-                  class="col-lg-12 col-md-12"
-                >J’ai ensuite bien pris le temps de me renseigner sur NodeJs car pour lancer un exe je n’avais pas le choix de l’utiliser, et c’est sur YouTube avec les tutoriels de grafikart, qui sont d’une clarté extrême. Après 2 jours, je me suis enfin lancé et j’ai commencé par essayer de lancer Tesseract avec l’invite de commande</div>
+                <div class="col-lg-12 col-md-12">
+                  <p>J’ai ensuite bien pris le temps de me renseigner sur NodeJs car pour lancer un exe je n’avais pas le choix de l’utiliser, et c’est sur YouTube avec les tutoriels de grafikart, qui sont d’une clarté extrême. Après 2 jours, je me suis enfin lancé et j’ai commencé par essayer de lancer Tesseract avec l’invite de commande</p>
+                </div>
                 <div class="col-lg-12 col-md-12">
                   <img
                     src="@/assets/img/stage/2eme_annee/launch_tesseract_with_cmd.png"
@@ -233,8 +233,10 @@
               </div>
               <div data-aos="fade-right" class="row">
                 <div class="col-lg-12 col-md-12">
-                  On lance le logiciel, on lui dit l’image à prendre et enfin le chemin de sortie du fichier texte. Maintenant que je sais comment l’utiliser, je vais faire mon programme JavaScript pour qu’il soit lancé par NodeJS. J’ai utilisé la fonction 'spawn' qui permet de lancer programme.
-                  <br />J’ai alors pris des tickets de caisse sur internet pour faire des tests et après que c’est dernier étaient concluant, j’ai pris mes photos sur le téléphone et je me suis aperçu qu’elles étaient automatiquement penchées, alors j’ai cherché un programme déjà fais par la communauté pour retourner automatiquement ma photo. Mon code donnait à la fin ça :
+                  <p>
+                    On lance le logiciel, on lui dit l’image à prendre et enfin le chemin de sortie du fichier texte. Maintenant que je sais comment l’utiliser, je vais faire mon programme JavaScript pour qu’il soit lancé par NodeJS. J’ai utilisé la fonction 'spawn' qui permet de lancer programme.
+                    <br />J’ai alors pris des tickets de caisse sur internet pour faire des tests et après que c’est dernier étaient concluant, j’ai pris mes photos sur le téléphone et je me suis aperçu qu’elles étaient automatiquement penchées, alors j’ai cherché un programme déjà fais par la communauté pour retourner automatiquement ma photo. Mon code donnait à la fin ça :
+                  </p>
                 </div>
                 <div class="col-lg-12 col-md-12">
                   <img
@@ -246,7 +248,9 @@
               </div>
               <div data-aos="fade-right" class="row">
                 <div class="col-lg-6 col-md-6">
-                  <div>J’ai pris cette facture</div>
+                  <div>
+                    <p>J’ai pris cette facture</p>
+                  </div>
                   <img
                     src="@/assets/img/stage/2eme_annee/ticket_caisse.png"
                     alt="ticket_caisse.png"
@@ -255,7 +259,7 @@
                   />
                 </div>
                 <div class="col-lg-6 col-md-6">
-                  et le résultat de Tesseract donnait ça
+                  <p>et le résultat de Tesseract donnait ça</p>
                   <img
                     src="@/assets/img/stage/2eme_annee/texte_stdout.png"
                     alt="texte_stdout.png"
@@ -264,9 +268,9 @@
                 </div>
               </div>
               <div data-aos="fade-right" class="row">
-                <div
-                  class="col-lg-12 col-md-12"
-                >Avec mon tuteur on s’est aperçu que souvent le prix était affiché plusieurs fois sur une facture alors ma fonction avait pour but de prendre tous les chiffres du fichier texte, pour prendre ensuite le chiffre qui apparaissait le plus de fois j’ai alors écrit ma fonction, lancer mon script et il retournait ça</div>
+                <div class="col-lg-12 col-md-12">
+                  <p>Avec mon tuteur on s’est aperçu que souvent le prix était affiché plusieurs fois sur une facture alors ma fonction avait pour but de prendre tous les chiffres du fichier texte, pour prendre ensuite le chiffre qui apparaissait le plus de fois j’ai alors écrit ma fonction, lancer mon script et il retournait ça</p>
+                </div>
                 <div class="col-lg-12 col-md-12">
                   <img
                     src="@/assets/img/stage/2eme_annee/resultat_tesseract.png"
@@ -276,30 +280,30 @@
                 </div>
               </div>
               <div data-aos="fade-right" class="row">
-                <div
-                  class="col-lg-12 col-md-12"
-                >Une première ligne disant que le fichier est déjà droit alors pas besoin de le retourner, il m’affiche en second le prix et le reste se sont simplement des indications qui explique que le programme a été arrêter et que le fichier texte a bien été supprimer.</div>
+                <div class="col-lg-12 col-md-12">
+                  <p>Une première ligne disant que le fichier est déjà droit alors pas besoin de le retourner, il m’affiche en second le prix et le reste se sont simplement des indications qui explique que le programme a été arrêter et que le fichier texte a bien été supprimer.</p>
+                </div>
               </div>
             </div>
 
             <div v-if="name == 'Mission n°1 : Music Gone\'s'">
               <div data-aos="fade-right" class="row">
-                <div
-                  class="col-lg-12 col-md-12"
-                >Tout au long du PPE j’ai appris les bases de JavaScript ce qu’il fallait faire et ne pas faire, j’ai aussi fait quelque recherche personnel et j’ai aussi appris grâce à ce site : http://es6-features.org. C’est un site qui répertorie les dernières normes de JavaScript.</div>
+                <div class="col-lg-12 col-md-12">
+                  <p>Tout au long du PPE j’ai appris les bases de JavaScript ce qu’il fallait faire et ne pas faire, j’ai aussi fait quelque recherche personnel et j’ai aussi appris grâce à ce site : http://es6-features.org. C’est un site qui répertorie les dernières normes de JavaScript.</p>
+                </div>
               </div>
               <div data-aos="fade-right" class="row">
-                <div
-                  class="col-lg-12 col-md-12"
-                >Plus le site avançait et moins le rendu était lourd visuellement. Sur la page principale on y fait afficher des infos générales pour ensuite lors d’un clic, un défilement se met en place et les informations souhaitées apparaissent dans une div en dessous.</div>
+                <div class="col-lg-12 col-md-12">
+                  <p>Plus le site avançait et moins le rendu était lourd visuellement. Sur la page principale on y fait afficher des infos générales pour ensuite lors d’un clic, un défilement se met en place et les informations souhaitées apparaissent dans une div en dessous.</p>
+                </div>
               </div>
             </div>
 
             <div v-if="name == 'Mission n°2 : Duch’Bagels'">
               <div data-aos="fade-right" class="row justify-content-lg-center">
-                <div
-                  class="col-lg-12 col-md-12"
-                >Dans le PPE, les tables et les colonnes pour le jeu d’essai étaient déjà existants dans un fichier au format SQL. Avant d’insérer les tables et les données, il fallait d’abord créer la base de données.</div>
+                <div class="col-lg-12 col-md-12">
+                  <p>Dans le PPE, les tables et les colonnes pour le jeu d’essai étaient déjà existants dans un fichier au format SQL. Avant d’insérer les tables et les données, il fallait d’abord créer la base de données.</p>
+                </div>
                 <div class="col-lg-12 col-md-12">
                   <img
                     src="@/assets/img/PPE/1ere_annee/create_database.png"
@@ -309,9 +313,9 @@
                 </div>
               </div>
               <div data-aos="fade-right" class="row justify-content-md-center">
-                <div
-                  class="col-md-12"
-                >Après avoir créé la base, j’ai ouvert le fichier .sql dans un éditeur de texte pour pouvoir copiercoller tout le script des tables et du jeux d’essai dans MYSQL.</div>
+                <div class="col-md-12">
+                  <p>Après avoir créé la base, j’ai ouvert le fichier .sql dans un éditeur de texte pour pouvoir copiercoller tout le script des tables et du jeux d’essai dans MYSQL.</p>
+                </div>
                 <div class="col-md-6">
                   <img
                     src="@/assets/img/PPE/1ere_annee/scriptSQL.png"
@@ -331,9 +335,9 @@
                 <div class="col-lg-12 col-md-12">
                   <h4>Requête SQL</h4>
                 </div>
-                <div
-                  class="col-md-12 col-lg-12"
-                >Une suite de requête était demandée par l’entreprise, elle voulait par exemple savoir le prix moyen d’un bagel, une requête plutôt simple et courte.</div>
+                <div class="col-md-12 col-lg-12">
+                  <p>Une suite de requête était demandée par l’entreprise, elle voulait par exemple savoir le prix moyen d’un bagel, une requête plutôt simple et courte.</p>
+                </div>
                 <div class="col-ld-6 col-md-6">
                   <img
                     src="@/assets/img/PPE/1ere_annee/req2.png"
@@ -348,9 +352,9 @@
                     class="img-fluid centerImg"
                   />
                 </div>
-                <div
-                  class="col-lg-12 col-md-12"
-                >La requête du dessous est un peu plus longue car on voulait les ingrédients d’un bagel spécifique, « le chèvre miel ».</div>
+                <div class="col-lg-12 col-md-12">
+                  <p>La requête du dessous est un peu plus longue car on voulait les ingrédients d’un bagel spécifique, « le chèvre miel ».</p>
+                </div>
                 <div class="col-lg-6 col-md-6">
                   <img
                     src="@/assets/img/PPE/1ere_annee/req1.png"
@@ -370,9 +374,9 @@
 
             <div v-if="name == 'Mission n°1 : Judge Movies'">
               <div data-aos="fade-right" class="row">
-                <div
-                  class="col-lg-12 col-md-12"
-                >Dans notre groupe, je me suis occupé de la partie design et dynamique du site. Pour cela, j’ai utilisé jQuery et Ajax. J’ai également utilisé la librairie slick, afin de produire un carrousel qui répondais à mes attentes et qui était très facile d’utilisation.</div>
+                <div class="col-lg-12 col-md-12">
+                  <p>Dans notre groupe, je me suis occupé de la partie design et dynamique du site. Pour cela, j’ai utilisé jQuery et Ajax. J’ai également utilisé la librairie slick, afin de produire un carrousel qui répondais à mes attentes et qui était très facile d’utilisation.</p>
+                </div>
                 <div class="col-lg-12 col-md-12">
                   <img
                     src="@/assets/img/PPE/2eme_annee/Judge_movies/accueil.png"
@@ -382,9 +386,9 @@
                 </div>
               </div>
               <div data-aos="fade-right" class="row">
-                <div
-                  class="col-lg-12 col-md-12"
-                >Mais pour voir un film et l’acheter il faut d’abord se connecter. Pour donner un rendu tout aussi simple que dynamique et en mettant surtout une petite touche de jaune aux pages login et inscription, j’ai paramétré un fond avec des particules animées dans un fond noir grâce à l’outil « particules.js ».</div>
+                <div class="col-lg-12 col-md-12">
+                  <p>Mais pour voir un film et l’acheter il faut d’abord se connecter. Pour donner un rendu tout aussi simple que dynamique et en mettant surtout une petite touche de jaune aux pages login et inscription, j’ai paramétré un fond avec des particules animées dans un fond noir grâce à l’outil « particules.js ».</p>
+                </div>
                 <div class="col-lg-12 col-md-12">
                   <img
                     src="@/assets/img/PPE/2eme_annee/Judge_movies/login.png"
@@ -394,9 +398,9 @@
                 </div>
               </div>
               <div data-aos="fade-right" class="row">
-                <div
-                  class="col-lg-12 col-md-12"
-                >Une fois le login crée ainsi que la page d’accueil avec le carrousel des films, lors du clic il fallait afficher une page simple et semblable pour toute. Je me suis donc occupé de la page film en faisant une page qui envoyais directement le lien de la bande annonce du film, son titre, ces réalisateurs, ces acteurs et ça note sur le site</div>
+                <div class="col-lg-12 col-md-12">
+                  <p>Une fois le login crée ainsi que la page d’accueil avec le carrousel des films, lors du clic il fallait afficher une page simple et semblable pour toute. Je me suis donc occupé de la page film en faisant une page qui envoyais directement le lien de la bande annonce du film, son titre, ces réalisateurs, ces acteurs et ça note sur le site</p>
+                </div>
                 <div class="col-lg-12 col-md-12">
                   <img
                     src="@/assets/img/PPE/2eme_annee/Judge_movies/film_haut.png"
@@ -404,9 +408,9 @@
                     class="img-fluid"
                   />
                 </div>
-                <div
-                  class="col-lg-12 col-md-12"
-                >sur la photo la balise iframe a juste un petit problème. La page faisait juste charger les données depuis la base mais j’ai quand même voulu garder l’aspect dynamique alors j’ai juste rajouté des étoiles pour que l’utilisateur note sur 5 le film.</div>
+                <div class="col-lg-12 col-md-12">
+                  <p>sur la photo la balise iframe a juste un petit problème. La page faisait juste charger les données depuis la base mais j’ai quand même voulu garder l’aspect dynamique alors j’ai juste rajouté des étoiles pour que l’utilisateur note sur 5 le film.</p>
+                </div>
                 <div class="col-lg-6 col-md-6">
                   <img
                     src="@/assets/img/PPE/2eme_annee/Judge_movies/film_bas.png"
@@ -423,9 +427,9 @@
                 </div>
               </div>
               <div data-aos="fade-right" class="row">
-                <div
-                  class="col-lg-12 col-md-12"
-                >En tant qu’admin nous pouvons rajouter des films et même cela est animé.</div>
+                <div class="col-lg-12 col-md-12">
+                  <p>En tant qu’admin nous pouvons rajouter des films et même cela est animé.</p>
+                </div>
                 <div class="col-lg-12 col-md-12">
                   <img
                     src="@/assets/img/PPE/2eme_annee/Judge_movies/ajout_film.png"
@@ -435,9 +439,9 @@
                 </div>
               </div>
               <div data-aos="fade-right" class="row">
-                <div
-                  class="col-lg-12 col-md-12"
-                >Si un Acteur n’est pas dans la liste, nous avons juste à cliquer sur le bouton à droite pour faire apparaitre un formulaire de saisie. Ce dernier ajoute l’acteur au select sans avoir à rafraichir la page, elle se charge automatiquement grâce à Ajax.</div>
+                <div class="col-lg-12 col-md-12">
+                  <p>Si un Acteur n’est pas dans la liste, nous avons juste à cliquer sur le bouton à droite pour faire apparaitre un formulaire de saisie. Ce dernier ajoute l’acteur au select sans avoir à rafraichir la page, elle se charge automatiquement grâce à Ajax.</p>
+                </div>
                 <div class="col-lg-12 col-md-12">
                   <img
                     src="@/assets/img/PPE/2eme_annee/Judge_movies/ajoute_real.png"
@@ -450,9 +454,9 @@
 
             <div v-if="name == 'Mission n°2 : GSB'">
               <div data-aos="fade-right" class="row">
-                <div
-                  class="col-lg-12 col-md-12"
-                >J’ai commencé par faire la partie graphique du site avant de commencer tout le back-end. Je voulais que la page de recherche soit éducative, simple d’utilisation. J’ai alors mis une barre de recherche au milieu de l’écran et qui montera lorsqu’on saisit une information.</div>
+                <div class="col-lg-12 col-md-12">
+                  <p>J’ai commencé par faire la partie graphique du site avant de commencer tout le back-end. Je voulais que la page de recherche soit éducative, simple d’utilisation. J’ai alors mis une barre de recherche au milieu de l’écran et qui montera lorsqu’on saisit une information.</p>
+                </div>
                 <div class="col-lg-6 col-md-6">
                   <img
                     src="@/assets/img/PPE/2eme_annee/GSB/barre_recherche.png"
@@ -469,9 +473,9 @@
                 </div>
               </div>
               <div data-aos="fade-right" class="row">
-                <div
-                  class="col-lg-12 col-md-12"
-                >La recherche d’un visiteur se fait grâce à un web service où la méthode GET est utilisé. On envoie les données GET dans l’url en tapant simplement le nom de la page suivis d’un point d’interrogation, le nom de la variable et la donnée à envoyer. On peut aussi tester notre Api avec Postman qui est un environnement de développement pour les API.</div>
+                <div class="col-lg-12 col-md-12">
+                  <p>La recherche d’un visiteur se fait grâce à un web service où la méthode GET est utilisé. On envoie les données GET dans l’url en tapant simplement le nom de la page suivis d’un point d’interrogation, le nom de la variable et la donnée à envoyer. On peut aussi tester notre Api avec Postman qui est un environnement de développement pour les API.</p>
+                </div>
                 <div class="col-lg-12 col-md-12">
                   <img
                     src="@/assets/img/PPE/2eme_annee/GSB/postman_visiteur_id.png"
@@ -481,9 +485,9 @@
                 </div>
               </div>
               <div data-aos="fade-right" class="row">
-                <div
-                  class="col-lg-12 col-md-12"
-                >On récupère donc la variable “id“ dans le script read.php sous la forme d’une variable dans la collection $_GET. Pour me simplifier, je fais un parcours de celle-ci pour garder dans la variable $getVariable et pouvoir faire ensuite un switch case.</div>
+                <div class="col-lg-12 col-md-12">
+                  <p>On récupère donc la variable “id“ dans le script read.php sous la forme d’une variable dans la collection $_GET. Pour me simplifier, je fais un parcours de celle-ci pour garder dans la variable $getVariable et pouvoir faire ensuite un switch case.</p>
+                </div>
                 <div class="col-lg-12 col-md-12">
                   <img
                     src="@/assets/img/PPE/2eme_annee/GSB/controler_visiteur_read.png"
@@ -493,9 +497,9 @@
                 </div>
               </div>
               <div data-aos="fade-right" class="row">
-                <div
-                  class="col-lg-12 col-md-12"
-                >On voit que lorsqu’il récupère l’Id il va dans la fonction “readById“ dans la classe “tableVisiteur“. Dans cette fonction on peut voir que la requête est préparée avant d’être exécutée et retournée vers le Controller read.php.</div>
+                <div class="col-lg-12 col-md-12">
+                  <p>On voit que lorsqu’il récupère l’Id il va dans la fonction “readById“ dans la classe “tableVisiteur“. Dans cette fonction on peut voir que la requête est préparée avant d’être exécutée et retournée vers le Controller read.php.</p>
+                </div>
                 <div class="col-lg-12 col-md-12">
                   <img
                     src="@/assets/img/PPE/2eme_annee/GSB/metier_visiteur_update.png"
@@ -503,14 +507,14 @@
                     class="img-fluid"
                   />
                 </div>
-                <div
-                  class="col-lg-12 col-md-12"
-                >Pour finir, le résultat de la requête est traité pour être convertie sous le format JSON. On peut maintenant récupérer le résultat de la requête, comme nous l’avons vu plus haut avec Postman.</div>
+                <div class="col-lg-12 col-md-12">
+                  <p>Pour finir, le résultat de la requête est traité pour être convertie sous le format JSON. On peut maintenant récupérer le résultat de la requête, comme nous l’avons vu plus haut avec Postman.</p>
+                </div>
               </div>
               <div data-aos="fade-right" class="row">
-                <div
-                  class="col-lg-12 col-md-12"
-                >Pour un ajout, une modification ou une suppression, c’est à peu près la même chose sauf qu’au lieu d’utiliser GET nous prendrons : POST pour un ajout, PUT pour une modification et DELETE pour une suppression. L’envoie de donnée ne se passe pas par l’url du web service mais par l’envoie des données en JSON et le traitement de ces données dans le Controller.</div>
+                <div class="col-lg-12 col-md-12">
+                  <p>Pour un ajout, une modification ou une suppression, c’est à peu près la même chose sauf qu’au lieu d’utiliser GET nous prendrons : POST pour un ajout, PUT pour une modification et DELETE pour une suppression. L’envoie de donnée ne se passe pas par l’url du web service mais par l’envoie des données en JSON et le traitement de ces données dans le Controller.</p>
+                </div>
                 <div class="col-lg-6 col-md-6">
                   <img
                     src="@/assets/img/PPE/2eme_annee/GSB/postman_visiteur_update.png"
@@ -534,9 +538,9 @@
                 </div>
               </div>
               <div data-aos="fade-right" class="row">
-                <div
-                  class="col-lg-12 col-md-12"
-                >Revenons à notre recherche. Après avoir fait la recherche par nom nous avons une collection de visiteur que je stock dans une variable locale pour réutiliser les données. Je fais ensuite un v-for pour parcourir tous les visiteurs et faire afficher le tableau.</div>
+                <div class="col-lg-12 col-md-12">
+                  <p>Revenons à notre recherche. Après avoir fait la recherche par nom nous avons une collection de visiteur que je stock dans une variable locale pour réutiliser les données. Je fais ensuite un v-for pour parcourir tous les visiteurs et faire afficher le tableau.</p>
+                </div>
                 <div class="col-lg-12 col-md-12">
                   <img
                     src="@/assets/img/PPE/2eme_annee/GSB/code_rechercher_visiteur.png"
