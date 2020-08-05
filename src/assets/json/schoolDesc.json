@@ -1,0 +1,101 @@
+{
+    "BTS": {
+        "stage": [
+            {
+                "name": "Le maquetage des pages",
+                "description": {
+                    "presentation de l'entreprise": null,
+                    "contexte": "Etant une grande entreprise, ils ont besoin de gérer des entrants, des sortants ou des migrations vers d’autres postes ou endroits. J’étais donc chargé de faire un site web interne à l’entreprise lié à la base de données que je montrerais prochainement. Je vais vous montrer uniquement ce que j’ai pu faire dans la rubrique entrée.",
+                    "besoin": "L'entreprise nécessitait une application, simple d'utilisation et de compréhension, permettant de suivre la trace d'une entrée ou d'une sortie d'une personne. Le produit sera utilisé par les Ressources Humaines.",
+                    "environnement technologique": "J'ai utilisé le logiciel Atom, très simple d'utilisation, et prenant peu de place sur le poste à ma disposition. J’ai majoritairement utilisé du JavaScript ainsi qu’un Framework au nom de jQuery. Le Framework permet non seulement de réduire le code JS mais également d’utiliser Ajax, nous le verrons dans le second contexte.",
+                    "realisation": null,
+                    "bilan": "J'ai réalisé un site web interne à une entreprise utilisant du JavaScript, avec le Framework jQuery. Grâce à l’utilisation de ces outils, j’ai pu ajouter des animations facilitant la compréhension et l’utilisation du site. Le site n'est pas parfaitement achevé. Néanmoins, les quatre pages que j'ai mises au point sont sans bug et sont prêtes à l'utilisation. J'avais beaucoup de mal au début, j’ai dû m’adapter au Framework jQuery, inconnu pour moi avant de travailler sur ce projet. Je n’avais pas énormément d’expérience sur JavaScript non plus. Toutefois, j’ai eu la chance d’avoir un bon tuteur qui me cadrais. Ce stage était par conséquent très enrichissant pour moi."
+                },
+                "date": "2018-06"
+            },
+            {
+                "name": "Ajax, le chargement des pages",
+                "description": {
+                    "presentation de l'entreprise": null,
+                    "contexte": "Sur une page principale, un formulaire qui pour chaque bouton suivant, changera de div et passer donc à la page suivante du formulaire. Elle aura besoin des données de la base et le tout sans actualisé la page.",
+                    "besoin": "L’utilisation de la méthode Ajax va permettre de chercher des données au sein de la base de données. Pour les faire charger on appellera une div. Cette méthode est simple d’utilisation, guidée établie par étapes pour ne pas perdre l’utilisateur. C’est pour cette raison que je l’ai utilisée.",
+                    "environnement technologique": "J'ai utilisé le logiciel Atom pour ce second contexte. Comme pour le premier, j’ai majoritairement utilisé du JavaScript ainsi que le Framework jQuery pour pouvoir faire du Ajax.",
+                    "realisation": null,
+                    "bilan": "Le début était assez difficile à comprendre. En effet, pour utiliser Ajax il faut connaitre un peu jQuery. Heureusement, l’adaptation s’est rapidement réalisée et l’aspect asynchrone permet énormément de possibilités. C’était une expérience très enrichissante qui m’as appris de nouveaux outils de travaux. Je n’hésiterais pas à les réutiliser."
+                },
+                "date": "2018-06"
+            },
+            {
+                "name": "Signalement d'une erreur, popup",
+                "description": {
+                    "presentation de l'entreprise": null,
+                    "contexte": "Dans l’entreprise, des personnes sont souvent en déplacement et doivent rédiger une note pour se faire rembourser la somme dépenser pendant le déplacement.",
+                    "besoin": "Il fallait essayer d’automatiser le plus possible pour faciliter et gagner du temps a la personne en prenant simplement en photo la facture et un logiciel s’occupe de savoir si la photo n’est pas floue pour ensuite la lire et remplir les champs d’un formulaire automatiquement, et les envoyer dans une base de données.",
+                    "environnement technologique": "Visual Studio Code comme éditeur de notre code. Tesseract est un logiciel qui va lire une image et retourner le texte écris sur l’image, nodeJs va servir à lancer le logiciel Tesseract, écrire un fichier texte dans un répertoire temp et le supprimer ensuite, et j’ai essayé un logiciel qu’un collègue m’as conseillé pour faire le MLR qui est Visual paradigm.",
+                    "realisation": null,
+                    "bilan": "J’ai appris ce qu’était de la programmation orienté aspect et ce que cela pouvait impliquer et ça m’a aussi permis de mieux structurer mon code et de le documenter."
+                },
+                "date": "2019-02"
+            },
+            {
+                "name": "Lire une facture avec nodeJs et Tesseract",
+                "description": {
+                    "presentation de l'entreprise": null,
+                    "contexte": "Sur une page principale, un formulaire qui pour chaque bouton suivant, changera de div et passer donc à la page suivante du formulaire. Elle aura besoin des données de la base et le tout sans actualisé la page.",
+                    "besoin": "L’utilisation de la méthode Ajax va permettre de chercher des données au sein de la base de données. Pour les faire charger on appellera une div. Cette méthode est simple d’utilisation, guidée établie par étapes pour ne pas perdre l’utilisateur. C’est pour cette raison que je l’ai utilisée.",
+                    "environnement technologique": "J'ai utilisé le logiciel Atom pour ce second contexte. Comme pour le premier, j’ai majoritairement utilisé du JavaScript ainsi que le Framework jQuery pour pouvoir faire du Ajax.",
+                    "realisation": null,
+                    "bilan": "J’ai appris ce que pouvais faire NodeJs et étant donné que c’est une technologie utilisant du JavaScript ça a été moins dur de compréhension pour moi. J’ai pu bien comprendre l’utilité de NodeJS ce qui va me permettre de mieux comprendre VueJs mon thème de veille."
+                },
+                "date": "2019-02"
+            }
+        ],
+        "PPE": [
+            {
+                "name": "Mission n°1 : Music Gone's",
+                "description": {
+                    "contexte": "Mission n°1 : Music Gone's Contexte L’entreprise Music gones organise le festival de musique appelé Les nuits lyonnaises. Cette dernière a besoin d'un site web permettant aux clients d'obtenir des informations sur le festival.",
+                    "besoin": "Le site avait besoin d’un peu plus de d’animation et de dynamisme. J'ai à réaliser un site dit \"responsive\" en utilisant la bibliothèque Bootstrap, pour une entreprise fictive appelée \"Music gones\". J’ai aussi principalement utilisé JavaScript pour pouvoir faire des animations et que cela soit plus agréable à regarder.",
+                    "environnement technologique": "J’ai utilisé Notepad++ comme éditeur de texte pour pouvoir coder en HTML, CSS, JavaScript ainsi qu’utilisé la bibliothèque Bootstrap.",
+                    "realisation": null,
+                    "bilan": "Ce PPE m’a initié à JavaScript. Plus largement, un déclic s’est réalisé en moi sur la liberté que ce langage propose. Aujourd’hui, je m’y intéresse beaucoup plus."
+                },
+                "date": "2017-10"
+            },
+            {
+                "name": "Mission n°2 : Duch’Bagels",
+                "description": {
+                    "contexte": "Duch’bagels est une entreprise de restauration faisant principalement des bagels. L’entreprise est née dans le première arrondissement de Lyon et continue de s’accroitre",
+                    "besoin": "Cette dernière avait besoin d’une base de donnée qui sera sur MySQL, pour pouvoir faire un futur site dynamique mais aussi des classements sur ses bagels ou tout autre type de requête.",
+                    "environnement technologique": "J’ai utilisé le logiciel Xampp pour pouvoir lancer phpmyadmin qui sera hébergé en local avec apache",
+                    "realisation": null,
+                    "bilan": "Ce PPE était pour nous initier un peu plus au requête SQL en nous montrant comment marche une base de données. J’ai pu mieux comprendre ce qui se cachait derrière les associations faites avec des joints."
+                },
+                "date": "2017-10"
+            },
+            {
+                "name": "Mission n°1 : Judge Movies",
+                "description": {
+                    "contexte": "Des étudiants ambitieux veulent rivaliser avec Netflix. Pour cela, ils ont réalisé leur site bénévolement. Et ce dernier s’avère être plus attractif que celui du géant Netflix.",
+                    "besoin": "Nous avions besoin d’une base de données permettant une dynamisation plus forte du site en faisant communiquer les données de la base et le site ensemble. Il fallait aussi créer une interaction entre utilisateur.",
+                    "environnement technologique": "Pour cela nous avons utilisé HTML 5 et CSS 3. Pour mettre en forme les animations, nous avons utilisé JavaScript et son Framework jQuery. Cela nous a permis par la même occasion d’utiliser Ajax, qui chargera dynamiquement nos données, c’est-à-dire sans recharger la page. Nous avons aussi utilisé PHP avec son Framework Laravel pour avoir une architecture MVC, pour mieux structurer notre code.",
+                    "realisation": null,
+                    "bilan": "J’ai adoré travailler sur ce projet, nous étions indépendants et nous devions tout gérer. Ce travail repose sur nos expériences, chaque personne avait sa spécialité et si c’était à refaire je ne le referais pas en Laravel. Mais dans un projet plus orienté JavaScript tel que VueJs ou ReactJs."
+                },
+                "date": "2018-11"
+            },
+            {
+                "name": "Mission n°2 : GSB",
+                "description": {
+                    "contexte": "L’entreprise Galaxy Swiss Bourdin (GSB) est un laboratoire né d’une fusion entre 2 géants du secteur pharmaceutique.",
+                    "besoin": "L’entreprise avait besoin d’une recherche par nom, labo ou secteur d’un visiteur, puis de pouvoir modifier : la région où il travaille, son rôle mais aussi la date à partir de quand il a travaillé.",
+                    "environnement technologique": "JavaScript est le langage principal de ce PPE avec le Framework Vue. Celui-ci étant client nous avions besoin d’une API. Nous avons découvert un nouvelle IDE au nom de Visual Studio Code.",
+                    "realisation": null,
+                    "bilan": "Beaucoup de difficulté pour la compréhension d’un web service et de ce nouveau Framework, même si les syntaxes sont à peu près les mêmes qu’Angular (vue : v-for, Angular : ng-for), un Framework qu'on avait déjà appris."
+                },
+                "date": "2019-04"
+            }
+        ]
+    },
+    "UQAM": {}
+}
