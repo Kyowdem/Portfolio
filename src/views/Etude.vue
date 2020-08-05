@@ -76,7 +76,8 @@ export default {
       this.setActivityOrSchool();
     },
     "$route.params.etudeName": function () {
-      console.dir("test");
+      this.etude = etude[this.$route.params.etudeName]
+      this.setActivitiesName();
     },
   },
   methods: {
@@ -86,6 +87,11 @@ export default {
           schoolDesc[this.$route.params.etudeName][prop].forEach((el) =>
             this.activitiesName[prop].push(el.name)
           );
+        }
+      }
+      else {
+        for (let prop in this.activitiesName) {
+          this.activitiesName[prop] = []
         }
       }
     },
