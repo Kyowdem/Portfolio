@@ -10,7 +10,11 @@
 
       <div class="row justify-content-md-center">
         <div class="col-md-6 col-lg-4">
-          <img :src="require('@/assets/img/'+this.etude.imgName)" class="img-fluid" :alt="this.etude.imgName" />
+          <img
+            :src="require('@/assets/img/'+this.etude.imgName)"
+            class="img-fluid"
+            :alt="this.etude.imgName"
+          />
         </div>
         <div class="col-md-6 offset-lg-2 col-lg-4">
           <p>{{etude.DescBackSchool}}</p>
@@ -63,7 +67,7 @@ export default {
     };
   },
   mounted() {
-    this.checkURL();
+    this.checkActivityURL();
     this.setActivityOrSchool();
     this.setActivitiesName();
   },
@@ -71,13 +75,18 @@ export default {
     "$route.params.activity": function () {
       this.setActivityOrSchool();
     },
+    "$route.params.etudeName": function () {
+      console.dir("test");
+    },
   },
   methods: {
     setActivitiesName() {
-      for (let prop in schoolDesc["BTS"]) {
-        schoolDesc["BTS"][prop].forEach((el) =>
-          this.activitiesName[prop].push(el.name)
-        );
+      if (this.$route.params.etudeName == 'BTS') {
+        for (let prop in schoolDesc[this.$route.params.etudeName]) {
+          schoolDesc[this.$route.params.etudeName][prop].forEach((el) =>
+            this.activitiesName[prop].push(el.name)
+          );
+        }
       }
     },
     setActivityOrSchool() {
@@ -94,9 +103,9 @@ export default {
       );
     },
     // resolve reloading page if client are in an activity
-    checkURL() { 
-      if(this.$route.params.activity) 
-        this.nameOfActivityClick = this.$route.params.activity
+    checkActivityURL() {
+      if (this.$route.params.activity)
+        this.nameOfActivityClick = this.$route.params.activity;
     },
   },
 };
