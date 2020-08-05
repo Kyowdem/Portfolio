@@ -93,7 +93,8 @@ export default {
         `/etude/${this.$route.params.etudeName}/${property}/${activity}`
       );
     },
-    checkURL() {
+    // resolve reloading page if client are in an activity
+    checkURL() { 
       if(this.$route.params.activity) 
         this.nameOfActivityClick = this.$route.params.activity
     },
