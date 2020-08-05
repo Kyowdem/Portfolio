@@ -40,55 +40,7 @@
     </div>
 
     <div class="container-fluid activity" v-else>
-      <div class="row justify-content-md-center textCenter">
-        <div class="col-md-12">
-          <h1>{{actualActivities.name}}</h1>
-        </div>
-      </div>
-
-      <div v-for="(item, props) in activities" :key="props">
-        <div
-          class="row justify-content-md-center"
-          v-for="(item, index) in activities[props].name"
-          :key="activities[props].name[index]"
-        >
-          <div
-            class="col-md-12 col-lg-8 explainActivity"
-            v-if="switchCase(activities[props].name[index])"
-          >
-            <div data-aos="fade-right" v-if="props == 'stage'">
-              <h2>Présentation de l'entreprise</h2>
-              <p v-html="`${activities[props].description[index]['presentation de l\'entreprise']}`"></p>
-            </div>
-
-            <div data-aos="fade-right">
-              <h2>Contexte</h2>
-              <p v-html="`${activities[props].description[index]['contexte']}`"></p>
-            </div>
-
-            <div data-aos="fade-right">
-              <h2>Besoin</h2>
-              <p v-html="`${activities[props].description[index]['besoin']}`"></p>
-            </div>
-
-            <div data-aos="fade-right">
-              <h2>Environnement technologique</h2>
-              <p v-html="`${activities[props].description[index]['environnement technologique']}`"></p>
-            </div>
-
-            <div data-aos="fade-right">
-              <h2>Réalisation</h2>
-              <p v-html="`${activities[props].description[index]['realisation'].join('<br />')}`"></p>
-            </div>
-
-            <div data-aos="fade-right">
-              <h2>Bilan</h2>
-              <p v-html="`${activities[props].description[index]['bilan']}`"></p>
-            </div>
-          </div>
-        </div>
-      </div>
-
+      <StagePPE name="Mission n°2 : GSB" />
     </div>
   </div>
 </template>
@@ -96,48 +48,58 @@
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
 <script>
-import AOS from 'aos';
+import AOS from "aos";
 import etude from "@/assets/json/etude.json";
 import activitiesSchool from "@/assets/json/stage&PPE.json";
+import StagePPE from "@/components/stage&PPE.vue";
 
 export default {
+  name: "Etude",
+  components: {
+    StagePPE,
+  },
   data() {
     return {
       schoolType: this.$route.params.etudeName,
       etude: etude[this.$route.params.etudeName], // Can't do this.title cause title isn't defined when etude is create
       activities: {
         stage: { name: [], description: [] },
-        PPE: { name: [], description: [] }
+        PPE: { name: [], description: [] },
       },
       activitiesSchool,
       activityOrSchool: true, // Depend of url (if it activities or description of school)
-      actualActivities: { name: "", description: "" }
+      actualActivities: { name: "", description: "" },
     };
   },
   created() {
     // set Host url to href img
-    this.activitiesSchool = (JSON.parse(JSON.stringify(this.activitiesSchool).replace(/hostName/g, this.getHostName())));
+    this.activitiesSchool = JSON.parse(
+      JSON.stringify(this.activitiesSchool).replace(
+        /hostName/g,
+        this.getHostName()
+      )
+    );
     this.setActivities();
   },
   mounted() {
     this.setActivityOrSchool();
   },
   watch: {
-    "$route.params.activity": function() {
+    "$route.params.activity": function () {
       this.setActivityOrSchool();
-    }
+    },
   },
   methods: {
     getHostName() {
-      return window.location.host
+      return window.location.host;
     },
     setActivities() {
       this.activitiesSchool = this.activitiesSchool[this.schoolType];
       for (let property in this.activitiesSchool) {
         const element = this.activitiesSchool[property];
-        element.forEach(activity => {
+        element.forEach((activity) => {
           if (activity.contexts) {
-            activity.contexts.forEach(activityContext => {
+            activity.contexts.forEach((activityContext) => {
               this.activities[property].name.push(activityContext.name);
               this.activities[property].description.push(
                 activityContext.description
@@ -169,8 +131,8 @@ export default {
     },
     switchCase(params) {
       if (this.actualActivities.name == params) return true;
-    }
-  }
+    },
+  },
 };
 AOS.init();
 </script>
