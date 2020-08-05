@@ -10,7 +10,8 @@
                     "environnement technologique": "J'ai utilisé le logiciel Atom, très simple d'utilisation, et prenant peu de place sur le poste à ma disposition. J’ai majoritairement utilisé du JavaScript ainsi qu’un Framework au nom de jQuery. Le Framework permet non seulement de réduire le code JS mais également d’utiliser Ajax, nous le verrons dans le second contexte.",
                     "realisation": null,
                     "bilan": "J'ai réalisé un site web interne à une entreprise utilisant du JavaScript, avec le Framework jQuery. Grâce à l’utilisation de ces outils, j’ai pu ajouter des animations facilitant la compréhension et l’utilisation du site. Le site n'est pas parfaitement achevé. Néanmoins, les quatre pages que j'ai mises au point sont sans bug et sont prêtes à l'utilisation. J'avais beaucoup de mal au début, j’ai dû m’adapter au Framework jQuery, inconnu pour moi avant de travailler sur ce projet. Je n’avais pas énormément d’expérience sur JavaScript non plus. Toutefois, j’ai eu la chance d’avoir un bon tuteur qui me cadrais. Ce stage était par conséquent très enrichissant pour moi."
-                }
+                },
+                "date": "YYYY-MM"
             },
             {
                 "name": "Ajax, le chargement des pages",
@@ -21,7 +22,8 @@
                     "environnement technologique": "J'ai utilisé le logiciel Atom pour ce second contexte. Comme pour le premier, j’ai majoritairement utilisé du JavaScript ainsi que le Framework jQuery pour pouvoir faire du Ajax.",
                     "realisation": null,
                     "bilan": "Le début était assez difficile à comprendre. En effet, pour utiliser Ajax il faut connaitre un peu jQuery. Heureusement, l’adaptation s’est rapidement réalisée et l’aspect asynchrone permet énormément de possibilités. C’était une expérience très enrichissante qui m’as appris de nouveaux outils de travaux. Je n’hésiterais pas à les réutiliser."
-                }
+                },
+                "date": "YYYY-MM"
             },
             {
                 "name": "Signalement d'une erreur, popup",
@@ -32,7 +34,8 @@
                     "environnement technologique": "Visual Studio Code comme éditeur de notre code. Tesseract est un logiciel qui va lire une image et retourner le texte écris sur l’image, nodeJs va servir à lancer le logiciel Tesseract, écrire un fichier texte dans un répertoire temp et le supprimer ensuite, et j’ai essayé un logiciel qu’un collègue m’as conseillé pour faire le MLR qui est Visual paradigm.",
                     "realisation": null,
                     "bilan": "J’ai appris ce qu’était de la programmation orienté aspect et ce que cela pouvait impliquer et ça m’a aussi permis de mieux structurer mon code et de le documenter."
-                }
+                },
+                "date": "YYYY-MM"
             },
             {
                 "name": "Lire une facture avec nodeJs et Tesseract",
@@ -43,7 +46,8 @@
                     "environnement technologique": "J'ai utilisé le logiciel Atom pour ce second contexte. Comme pour le premier, j’ai majoritairement utilisé du JavaScript ainsi que le Framework jQuery pour pouvoir faire du Ajax.",
                     "realisation": null,
                     "bilan": "J’ai appris ce que pouvais faire NodeJs et étant donné que c’est une technologie utilisant du JavaScript ça a été moins dur de compréhension pour moi. J’ai pu bien comprendre l’utilité de NodeJS ce qui va me permettre de mieux comprendre VueJs mon thème de veille."
-                }
+                },
+                "date": "YYYY-MM"
             }
         ],
         "PPE": [
@@ -55,7 +59,8 @@
                     "environnement technologique": "J’ai utilisé Notepad++ comme éditeur de texte pour pouvoir coder en HTML, CSS, JavaScript ainsi qu’utilisé la bibliothèque Bootstrap.",
                     "realisation": null,
                     "bilan": "Ce PPE m’a initié à JavaScript. Plus largement, un déclic s’est réalisé en moi sur la liberté que ce langage propose. Aujourd’hui, je m’y intéresse beaucoup plus."
-                }
+                },
+                "date": "YYYY-MM"
             },
             {
                 "name": "Mission n°2 : Duch’Bagels",
@@ -65,7 +70,8 @@
                     "environnement technologique": "J’ai utilisé le logiciel Xampp pour pouvoir lancer phpmyadmin qui sera hébergé en local avec apache",
                     "realisation": null,
                     "bilan": "Ce PPE était pour nous initier un peu plus au requête SQL en nous montrant comment marche une base de données. J’ai pu mieux comprendre ce qui se cachait derrière les associations faites avec des joints."
-                }
+                },
+                "date": "YYYY-MM"
             },
             {
                 "name": "Mission n°1 : Judge Movies",
@@ -75,7 +81,8 @@
                     "environnement technologique": "Pour cela nous avons utilisé HTML 5 et CSS 3. Pour mettre en forme les animations, nous avons utilisé JavaScript et son Framework jQuery. Cela nous a permis par la même occasion d’utiliser Ajax, qui chargera dynamiquement nos données, c’est-à-dire sans recharger la page. Nous avons aussi utilisé PHP avec son Framework Laravel pour avoir une architecture MVC, pour mieux structurer notre code.",
                     "realisation": null,
                     "bilan": "J’ai adoré travailler sur ce projet, nous étions indépendants et nous devions tout gérer. Ce travail repose sur nos expériences, chaque personne avait sa spécialité et si c’était à refaire je ne le referais pas en Laravel. Mais dans un projet plus orienté JavaScript tel que VueJs ou ReactJs."
-                }
+                },
+                "date": "YYYY-MM"
             },
             {
                 "name": "Mission n°2 : GSB",
@@ -85,7 +92,8 @@
                     "environnement technologique": "JavaScript est le langage principal de ce PPE avec le Framework Vue. Celui-ci étant client nous avions besoin d’une API. Nous avons découvert un nouvelle IDE au nom de Visual Studio Code.",
                     "realisation": null,
                     "bilan": "Beaucoup de difficulté pour la compréhension d’un web service et de ce nouveau Framework, même si les syntaxes sont à peu près les mêmes qu’Angular (vue : v-for, Angular : ng-for), un Framework qu'on avait déjà appris."
-                }
+                },
+                "date": "YYYY-MM"
             }
         ]
     },
