@@ -59,10 +59,11 @@ export default {
       etude: etude[this.$route.params.etudeName],
       activityOrSchool: true,
       activitiesName: { PPE: [], stage: [] },
-      nameOfActivityClick: ""
+      nameOfActivityClick: "",
     };
   },
   mounted() {
+    this.checkURL();
     this.setActivityOrSchool();
     this.setActivitiesName();
   },
@@ -91,6 +92,10 @@ export default {
       this.$router.push(
         `/etude/${this.$route.params.etudeName}/${property}/${activity}`
       );
+    },
+    checkURL() {
+      if(this.$route.params.activity) 
+        this.nameOfActivityClick = this.$route.params.activity
     },
   },
 };
