@@ -7,7 +7,9 @@
       <!-- <StagePPE name="Signalement d'une erreur, popup" /> -->
       <!-- <StagePPE name="Lire une facture avec nodeJs et Tesseract" /> -->
       <!-- <StagePPE name="Mission n°1 : Music Gone's" /> -->
-      <StagePPE name="Mission n°2 : Duch’Bagels" />
+      <!-- <StagePPE name="Mission n°2 : Duch’Bagels" /> -->
+      <!-- <StagePPE name="Mission n°1 : Judge Movies" /> -->
+      <StagePPE name="Mission n°2 : GSB" />
   </div>
 </template>
 

@@ -399,7 +399,7 @@
                 >Une fois le login crée ainsi que la page d’accueil avec le carrousel des films, lors du clic il fallait afficher une page simple et semblable pour toute. Je me suis donc occupé de la page film en faisant une page qui envoyais directement le lien de la bande annonce du film, son titre, ces réalisateurs, ces acteurs et ça note sur le site</div>
                 <div class="col-lg-12 col-md-12">
                   <img
-                    src="@/assets/img/PPE/2eme_annee/Judge_movies/Film_haut.png"
+                    src="@/assets/img/PPE/2eme_annee/Judge_movies/film_haut.png"
                     alt="Film_haut.png"
                     class="img-fluid"
                   />
