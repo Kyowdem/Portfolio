@@ -11,7 +11,7 @@
                     "realisation": null,
                     "bilan": "J'ai réalisé un site web interne à une entreprise utilisant du JavaScript, avec le Framework jQuery. Grâce à l’utilisation de ces outils, j’ai pu ajouter des animations facilitant la compréhension et l’utilisation du site. Le site n'est pas parfaitement achevé. Néanmoins, les quatre pages que j'ai mises au point sont sans bug et sont prêtes à l'utilisation. J'avais beaucoup de mal au début, j’ai dû m’adapter au Framework jQuery, inconnu pour moi avant de travailler sur ce projet. Je n’avais pas énormément d’expérience sur JavaScript non plus. Toutefois, j’ai eu la chance d’avoir un bon tuteur qui me cadrais. Ce stage était par conséquent très enrichissant pour moi."
                 },
-                "date": "YYYY-MM"
+                "date": "2018-06"
             },
             {
                 "name": "Ajax, le chargement des pages",
@@ -23,7 +23,7 @@
                     "realisation": null,
                     "bilan": "Le début était assez difficile à comprendre. En effet, pour utiliser Ajax il faut connaitre un peu jQuery. Heureusement, l’adaptation s’est rapidement réalisée et l’aspect asynchrone permet énormément de possibilités. C’était une expérience très enrichissante qui m’as appris de nouveaux outils de travaux. Je n’hésiterais pas à les réutiliser."
                 },
-                "date": "YYYY-MM"
+                "date": "2018-06"
             },
             {
                 "name": "Signalement d'une erreur, popup",
@@ -35,7 +35,7 @@
                     "realisation": null,
                     "bilan": "J’ai appris ce qu’était de la programmation orienté aspect et ce que cela pouvait impliquer et ça m’a aussi permis de mieux structurer mon code et de le documenter."
                 },
-                "date": "YYYY-MM"
+                "date": "2019-02"
             },
             {
                 "name": "Lire une facture avec nodeJs et Tesseract",
@@ -47,7 +47,7 @@
                     "realisation": null,
                     "bilan": "J’ai appris ce que pouvais faire NodeJs et étant donné que c’est une technologie utilisant du JavaScript ça a été moins dur de compréhension pour moi. J’ai pu bien comprendre l’utilité de NodeJS ce qui va me permettre de mieux comprendre VueJs mon thème de veille."
                 },
-                "date": "YYYY-MM"
+                "date": "2019-02"
             }
         ],
         "PPE": [
@@ -60,7 +60,7 @@
                     "realisation": null,
                     "bilan": "Ce PPE m’a initié à JavaScript. Plus largement, un déclic s’est réalisé en moi sur la liberté que ce langage propose. Aujourd’hui, je m’y intéresse beaucoup plus."
                 },
-                "date": "YYYY-MM"
+                "date": "2017-10"
             },
             {
                 "name": "Mission n°2 : Duch’Bagels",
@@ -71,7 +71,7 @@
                     "realisation": null,
                     "bilan": "Ce PPE était pour nous initier un peu plus au requête SQL en nous montrant comment marche une base de données. J’ai pu mieux comprendre ce qui se cachait derrière les associations faites avec des joints."
                 },
-                "date": "YYYY-MM"
+                "date": "2017-10"
             },
             {
                 "name": "Mission n°1 : Judge Movies",
@@ -82,7 +82,7 @@
                     "realisation": null,
                     "bilan": "J’ai adoré travailler sur ce projet, nous étions indépendants et nous devions tout gérer. Ce travail repose sur nos expériences, chaque personne avait sa spécialité et si c’était à refaire je ne le referais pas en Laravel. Mais dans un projet plus orienté JavaScript tel que VueJs ou ReactJs."
                 },
-                "date": "YYYY-MM"
+                "date": "2018-11"
             },
             {
                 "name": "Mission n°2 : GSB",
@@ -93,7 +93,7 @@
                     "realisation": null,
                     "bilan": "Beaucoup de difficulté pour la compréhension d’un web service et de ce nouveau Framework, même si les syntaxes sont à peu près les mêmes qu’Angular (vue : v-for, Angular : ng-for), un Framework qu'on avait déjà appris."
                 },
-                "date": "YYYY-MM"
+                "date": "2019-04"
             }
         ]
     },
