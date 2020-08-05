@@ -10,7 +10,7 @@
 
       <div class="row justify-content-md-center">
         <div class="col-md-6 col-lg-4">
-          <img :src="'/assets/img/'+this.etude.imgName" class="img-fluid" :alt="this.etude.imgName" />
+          <img :src="require('@/assets/img/'+this.etude.imgName)" class="img-fluid" :alt="this.etude.imgName" />
         </div>
         <div class="col-md-6 offset-lg-2 col-lg-4">
           <p>{{etude.DescBackSchool}}</p>
