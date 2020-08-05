@@ -11,7 +11,7 @@
       <div class="row justify-content-md-center">
         <div class="col-md-6 col-lg-4">
           <img
-            :src="$parent.assetsPath+'img/'+this.etude.imgName"
+            :src="'/assets/img/'+this.etude.imgName"
             class="img-fluid"
             :alt="this.etude.imgName"
           />
@@ -22,7 +22,7 @@
       </div>
 
       <div class="row justify-content-md-around">
-        <div class="col-md-5" v-for="(activity, property) in activitiesSchool" :key="property">
+        <!-- <div class="col-md-5" v-for="(activity, property) in activitiesSchool" :key="property">
           <table class="table table-hover">
             <thead>
               <tr>
@@ -35,7 +35,7 @@
               </tr>
             </tbody>
           </table>
-        </div>
+        </div> -->
       </div>
     </div>
 
@@ -50,7 +50,6 @@
 <script>
 import AOS from "aos";
 import etude from "@/assets/json/etude.json";
-import activitiesSchool from "@/assets/json/stage&PPE.json";
 import StagePPE from "@/components/stage&PPE.vue";
 
 export default {
@@ -62,24 +61,8 @@ export default {
     return {
       schoolType: this.$route.params.etudeName,
       etude: etude[this.$route.params.etudeName], // Can't do this.title cause title isn't defined when etude is create
-      activities: {
-        stage: { name: [], description: [] },
-        PPE: { name: [], description: [] },
-      },
-      activitiesSchool,
-      activityOrSchool: true, // Depend of url (if it activities or description of school)
-      actualActivities: { name: "", description: "" },
+      activityOrSchool: true
     };
-  },
-  created() {
-    // set Host url to href img
-    this.activitiesSchool = JSON.parse(
-      JSON.stringify(this.activitiesSchool).replace(
-        /hostName/g,
-        this.getHostName()
-      )
-    );
-    this.setActivities();
   },
   mounted() {
     this.setActivityOrSchool();
@@ -90,25 +73,6 @@ export default {
     },
   },
   methods: {
-    getHostName() {
-      return window.location.host;
-    },
-    setActivities() {
-      this.activitiesSchool = this.activitiesSchool[this.schoolType];
-      for (let property in this.activitiesSchool) {
-        const element = this.activitiesSchool[property];
-        element.forEach((activity) => {
-          if (activity.contexts) {
-            activity.contexts.forEach((activityContext) => {
-              this.activities[property].name.push(activityContext.name);
-              this.activities[property].description.push(
-                activityContext.description
-              );
-            });
-          }
-        });
-      }
-    },
     setActivityOrSchool() {
       if (this.$route.params.typeOfActivity && this.$route.params.activity) {
         this.activityOrSchool = false;
@@ -121,51 +85,12 @@ export default {
     goTo(property, activity) {
       this.$router.push(`/etude/${this.schoolType}/${property}/${activity}`);
     },
-    searchDescription() {
-      let activities = this.activities[this.$route.params.typeOfActivity];
-      for (let i = 0; i < activities.name.length; i++) {
-        if (activities.name[i] == this.actualActivities.name) {
-          this.actualActivities.description = activities.description[i];
-        }
-      }
-    },
-    switchCase(params) {
-      if (this.actualActivities.name == params) return true;
-    },
   },
 };
 AOS.init();
 </script>
 
 <style>
-@media (min-width: 992px) {
-  .activity .col-lg-8 {
-    background-color: rgba(200, 200, 200, 0.1);
-  }
-}
-
-.activity a {
-  color: white;
-  text-decoration: underline dotted gold;
-  transition: 0.05s;
-}
-.activity a:hover {
-  text-decoration: underline dotted gold;
-}
-
-.explainActivity > .aos-init:first-child {
-  margin-top: 18rem;
-}
-.explainActivity > .aos-init:not(:first-child) {
-  margin-top: 30rem;
-}
-.explainActivity > .aos-init:last-child {
-  margin-bottom: 25rem;
-}
-
-.realisation .aos-init:not(:nth-child(1)):not(:nth-child(2)) {
-  margin-top: 3rem;
-}
 
 thead th {
   text-align: center;
