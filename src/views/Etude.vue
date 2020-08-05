@@ -43,8 +43,10 @@
 
 <script>
 import AOS from "aos";
+// JSON
 import etude from "@/assets/json/etude.json";
 import schoolDesc from "@/assets/json/schoolDesc.json";
+// Components
 import StagePPE from "@/components/stage&PPE.vue";
 
 export default {
@@ -54,8 +56,7 @@ export default {
   },
   data() {
     return {
-      schoolType: this.$route.params.etudeName,
-      etude: etude[this.$route.params.etudeName], // Can't do this.title cause title isn't defined when etude is create
+      etude: etude[this.$route.params.etudeName],
       activityOrSchool: true,
       activityName: { PPE: [], stage: [] },
     };
@@ -87,7 +88,7 @@ export default {
       }
     },
     goTo(property, activity) {
-      this.$router.push(`/etude/${this.schoolType}/${property}/${activity}`);
+      this.$router.push(`/etude/${this.$route.params.etudeName}/${property}/${activity}`);
     },
   },
 };
