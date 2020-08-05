@@ -609,8 +609,8 @@ export default {
   margin-bottom: 25rem;
 }
 
-.realisation > div div:not(:nth-child(1)):not(:nth-child(2)) {
-  margin-top: 3rem;
+.realisation > div > div:not(:nth-child(1)) {
+  margin-top: 4rem;
 }
 
 thead th {
