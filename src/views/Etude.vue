@@ -18,7 +18,7 @@
       </div>
 
       <div class="row justify-content-md-around">
-        <!-- <div class="col-md-5" v-for="(activity, property) in activitiesSchool" :key="property">
+        <div class="col-md-5" v-for="(activity, property) in activitiesName" :key="property">
           <table class="table table-hover">
             <thead>
               <tr>
@@ -26,16 +26,16 @@
               </tr>
             </thead>
             <tbody>
-              <tr v-for="activity in activities[property].name" :key="activity">
+              <tr v-for="activity in activitiesName[property]" :key="activity">
                 <th class="activity textClick" @click="goTo(property, activity)">{{activity}}</th>
               </tr>
             </tbody>
           </table>
-        </div>-->
+        </div>
       </div>
     </div>
 
-    <StagePPE name="Mission n°2 : GSB" v-else />
+    <StagePPE :name="nameOfActivityClick" v-else />
   </div>
 </template>
 
@@ -58,12 +58,13 @@ export default {
     return {
       etude: etude[this.$route.params.etudeName],
       activityOrSchool: true,
-      activityName: { PPE: [], stage: [] },
+      activitiesName: { PPE: [], stage: [] },
+      nameOfActivityClick: ""
     };
   },
   mounted() {
-    // this.setActivityOrSchool();
-    this.setActivityName();
+    this.setActivityOrSchool();
+    this.setActivitiesName();
   },
   watch: {
     "$route.params.activity": function () {
@@ -71,23 +72,22 @@ export default {
     },
   },
   methods: {
-    setActivityName() {
+    setActivitiesName() {
       for (let prop in schoolDesc["BTS"]) {
         schoolDesc["BTS"][prop].forEach((el) =>
-          this.activityName[prop].push(el.name)
+          this.activitiesName[prop].push(el.name)
         );
       }
     },
     setActivityOrSchool() {
       if (this.$route.params.typeOfActivity && this.$route.params.activity) {
         this.activityOrSchool = false;
-        this.actualActivities.name = this.$route.params.activity;
-        this.searchDescription();
       } else {
         this.activityOrSchool = true;
       }
     },
     goTo(property, activity) {
+      this.nameOfActivityClick = activity;
       this.$router.push(
         `/etude/${this.$route.params.etudeName}/${property}/${activity}`
       );
