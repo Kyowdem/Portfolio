@@ -216,11 +216,7 @@
                   class="col-lg-12 col-md-12"
                 >Avant de commencer à coder, j’ai modéliser un MLR grâce à une ancienne application que l’entreprise avait développée, c’est alors à partir de ça que j’ai fait toute les entités et que j’ai finis et valider par mon tuteur le MLR qui ressemblais à ça.</div>
                 <div class="col-lg-12 col-md-12">
-                  <img
-                    src="@/assets/img/stage/2eme_annee/MCD.png"
-                    alt="MCD.png"
-                    class="img-fluid"
-                  />
+                  <img src="@/assets/img/stage/2eme_annee/MCD.png" alt="MCD.png" class="img-fluid" />
                 </div>
               </div>
               <div data-aos="fade-right" class="row">
@@ -283,6 +279,92 @@
                 <div
                   class="col-lg-12 col-md-12"
                 >Une première ligne disant que le fichier est déjà droit alors pas besoin de le retourner, il m’affiche en second le prix et le reste se sont simplement des indications qui explique que le programme a été arrêter et que le fichier texte a bien été supprimer.</div>
+              </div>
+            </div>
+
+            <div v-if="name == 'Mission n°1 : Music Gone\'s'">
+              <div data-aos="fade-right" class="row">
+                <div
+                  class="col-lg-12 col-md-12"
+                >Tout au long du PPE j’ai appris les bases de JavaScript ce qu’il fallait faire et ne pas faire, j’ai aussi fait quelque recherche personnel et j’ai aussi appris grâce à ce site : http://es6-features.org. C’est un site qui répertorie les dernières normes de JavaScript.</div>
+              </div>
+              <div data-aos="fade-right" class="row">
+                <div
+                  class="col-lg-12 col-md-12"
+                >Plus le site avançait et moins le rendu était lourd visuellement. Sur la page principale on y fait afficher des infos générales pour ensuite lors d’un clic, un défilement se met en place et les informations souhaitées apparaissent dans une div en dessous.</div>
+              </div>
+            </div>
+
+            <div v-if="name == 'Mission n°2 : Duch’Bagels'">
+              <div data-aos="fade-right" class="row justify-content-lg-center">
+                <div
+                  class="col-lg-12 col-md-12"
+                >Dans le PPE, les tables et les colonnes pour le jeu d’essai étaient déjà existants dans un fichier au format SQL. Avant d’insérer les tables et les données, il fallait d’abord créer la base de données.</div>
+                <div class="col-lg-12 col-md-12">
+                  <img
+                    src="@/assets/img/PPE/1ere_annee/create_database.png"
+                    alt="create_database.png"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+              <div data-aos="fade-right" class="row justify-content-md-center">
+                <div
+                  class="col-md-12"
+                >Après avoir créé la base, j’ai ouvert le fichier .sql dans un éditeur de texte pour pouvoir copiercoller tout le script des tables et du jeux d’essai dans MYSQL.</div>
+                <div class="col-md-6">
+                  <img
+                    src="@/assets/img/PPE/1ere_annee/scriptSQL.png"
+                    alt="scriptSQL.png"
+                    class="img-fluid centerImg"
+                  />
+                </div>
+                <div class="col-md-6 divCenter">
+                  <img
+                    src="@/assets/img/PPE/1ere_annee/inserts.png"
+                    alt="inserts.png"
+                    class="img-fluid centerImg"
+                  />
+                </div>
+              </div>
+              <div data-aos="fade-right" class="row">
+                <div class="col-lg-12 col-md-12">
+                  <h4>Requête SQL</h4>
+                </div>
+                <div
+                  class="col-md-12 col-lg-12"
+                >Une suite de requête était demandée par l’entreprise, elle voulait par exemple savoir le prix moyen d’un bagel, une requête plutôt simple et courte.</div>
+                <div class="col-ld-6 col-md-6">
+                  <img
+                    src="@/assets/img/PPE/1ere_annee/req2.png"
+                    alt="req2.png"
+                    class="img-fluid centerImg"
+                  />
+                </div>
+                <div class="col-ld-6 col-md-6">
+                  <img
+                    src="@/assets/img/PPE/1ere_annee/rep_req2.png"
+                    alt="rep_req2.png"
+                    class="img-fluid centerImg"
+                  />
+                </div>
+                <div
+                  class="col-lg-12 col-md-12"
+                >La requête du dessous est un peu plus longue car on voulait les ingrédients d’un bagel spécifique, « le chèvre miel ».</div>
+                <div class="col-lg-6 col-md-6">
+                  <img
+                    src="@/assets/img/PPE/1ere_annee/req1.png"
+                    alt="req1.png"
+                    class="img-fluid centerImg"
+                  />
+                </div>
+                <div class="col-lg-6 col-md-6">
+                  <img
+                    src="@/assets/img/PPE/1ere_annee/rep_req1.png"
+                    alt="rep_req1.png"
+                    class="img-fluid centerImg"
+                  />
+                </div>
               </div>
             </div>
           </div>
