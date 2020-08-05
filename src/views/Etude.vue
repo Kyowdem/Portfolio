@@ -4,7 +4,7 @@
     <div class="container-fluid school" v-if="activityOrSchool">
       <div class="row justify-content-md-center textCenter">
         <div class="col-md-12">
-          <h1>{{schoolType}}</h1>
+          <h1>{{$route.params.etudeName}}</h1>
         </div>
       </div>
 
@@ -88,7 +88,9 @@ export default {
       }
     },
     goTo(property, activity) {
-      this.$router.push(`/etude/${this.$route.params.etudeName}/${property}/${activity}`);
+      this.$router.push(
+        `/etude/${this.$route.params.etudeName}/${property}/${activity}`
+      );
     },
   },
 };
