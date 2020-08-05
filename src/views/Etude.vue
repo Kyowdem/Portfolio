@@ -1,6 +1,5 @@
 <template>
   <div>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <div class="container-fluid school" v-if="activityOrSchool">
       <div class="row justify-content-md-center textCenter">
         <div class="col-md-12">
@@ -43,10 +42,7 @@
   </div>
 </template>
 
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
 <script>
-import AOS from "aos";
 // JSON
 import etude from "@/assets/json/etude.json";
 import schoolDesc from "@/assets/json/schoolDesc.json";
@@ -115,7 +111,6 @@ export default {
     },
   },
 };
-AOS.init();
 </script>
 
 <style>

@@ -1,5 +1,6 @@
 <template>
   <div>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <div class="container-fluid activity">
       <div class="row justify-content-lg-center textCenter">
         <div class="col-md-12">
@@ -562,7 +563,10 @@
   </div>
 </template>
 
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
 <script>
+import AOS from "aos";
 import schoolDesc from "@/assets/json/schoolDesc.json";
 
 export default {
@@ -581,6 +585,8 @@ export default {
     name: String,
   },
 };
+
+AOS.init();
 </script>
 
 <style>
