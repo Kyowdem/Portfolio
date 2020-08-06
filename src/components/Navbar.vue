@@ -58,6 +58,7 @@ export default {
         { href: "/contact", name: "Contact" },
         { href: "/aboutMe", name: "A propos" },
       ], // An object inside an array with params: href and name
+      // {href: "#", name: "name"}
       columnsList: [
         {
           name: "Etude",
@@ -67,6 +68,7 @@ export default {
           ],
         },
       ], // An object insite an array with params: name and list. Insite list set columns
+      // {name: "name", list: [ {href: "#", name: "name"}, {href: "#", name: "name"} ]}
     };
   },
 };
