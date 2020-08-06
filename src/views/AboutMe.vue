@@ -11,7 +11,7 @@
         <div class="col-md-3 col-lg-2">
           <img
             class="img-fluid"
-            src="@/assets/img/Photo-CV.jpeg"
+            src="@/assets/img/cv/Photo-CV.jpeg"
             alt="Photo de moi-même"
           />
         </div>
@@ -32,9 +32,9 @@
         >
           <transition name="fade" mode="out-in">
             <p v-if="showCV">Voir mon CV</p>
-            <a v-else :href="require('@/assets/img/CV.png')" target="_blank">
+            <a v-else :href="require('@/assets/img/cv/CV.png')" target="_blank">
               <img
-                src="@/assets/img/document_PDF.png"
+                src="@/assets/img/icon/document_PDF.png"
                 alt="document_PDF.png"
                 class="img-fluid"
               />

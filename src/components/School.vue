@@ -9,7 +9,7 @@
     <div class="row justify-content-md-center">
       <div class="col-md-6 col-lg-4">
         <img
-          :src="require('@/assets/img/'+this.etude.imgName)"
+          :src="require('@/assets/img/school/'+this.etude.imgName)"
           class="img-fluid"
           :alt="this.etude.imgName"
         />
