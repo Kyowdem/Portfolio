@@ -1,12 +1,10 @@
 {
     "BTS": {
         "imgName": "batiment-BTS.jpg",
-        "DescBackSchool": "Apres l'obtention de mon baccalauréat (français), je suis rentrer dans une école de developpement informatique. \nCes 2 annees m'ont appris beaucoup de chose. Je vous les montres avec les liens en dessous",
-        "pathOfProjects": []
+        "DescBackSchool": "Apres l'obtention de mon baccalauréat (français), je suis rentrer dans une école de developpement informatique. \nCes 2 annees m'ont appris beaucoup de chose. Je vous les montres avec les liens en dessous"
     },
     "UQAM": {
         "imgName": "batiment-UQAM.jpg",
-        "DescBackSchool": "Apres mon BTS, j'ai decider de venir etudier ici, au Quebec. (ajouter plus)",
-        "pathOfProjects": []
+        "DescBackSchool": "Apres mon BTS, j'ai decider de venir etudier ici, au Quebec. (ajouter plus)"
     }
 }
