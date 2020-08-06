@@ -47,7 +47,7 @@
                 </div>
                 <div class="col-lg-12 col-md-12">
                   <img
-                    :src="require('@/'+this.imgSchPath+'stage/1ere_annee/premiere_page.png')" 
+                    :src="require('@/'+this.imgSchPath+'stage/1ere_annee/premiere_page.png')"
                     alt="premiere_page.png"
                     class="img-fluid"
                   />
@@ -59,7 +59,7 @@
                 </div>
                 <div class="col-lg-12 col-md-12">
                   <img
-                    :src="require('@/'+this.imgSchPath+'stage/1ere_annee/accueil(menuOuvert).png')" 
+                    :src="require('@/'+this.imgSchPath+'stage/1ere_annee/accueil(menuOuvert).png')"
                     alt="accueil(menuOuvert).png"
                     class="img-fluid"
                   />
@@ -71,7 +71,7 @@
                 </div>
                 <div class="col-lg-12 col-md-12">
                   <img
-                    :src="require('@/'+this.imgSchPath+'stage/1ere_annee/Atom_code_accueil.png')" 
+                    :src="require('@/'+this.imgSchPath+'stage/1ere_annee/Atom_code_accueil.png')"
                     alt="Atom_code_accueil.png"
                     class="img-fluid"
                   />
@@ -83,7 +83,7 @@
                 </div>
                 <div class="col-lg-12 col-md-12">
                   <img
-                    :src="require('@/'+this.imgSchPath+'stage/1ere_annee/entre.png')" 
+                    :src="require('@/'+this.imgSchPath+'stage/1ere_annee/entre.png')"
                     alt="entre.png"
                     class="img-fluid"
                   />
@@ -94,7 +94,11 @@
                   <p>Enfin ça c’était le screen final, nous ne voyons pas mais grâce à jQuery j’ai pu faire quelque animation qui était aussi là pour faire camoufler le temps de chargement de la prochaine div</p>
                 </div>
                 <div class="col-lg-12 col-md-12">
-                  <img :src="require('@/'+this.imgSchPath+'stage/1ere_annee/RTT.png')"  alt="rtt.png" class="img-fluid" />
+                  <img
+                    :src="require('@/'+this.imgSchPath+'stage/1ere_annee/RTT.png')"
+                    alt="rtt.png"
+                    class="img-fluid"
+                  />
                 </div>
               </div>
               <div data-aos="fade-right" class="row">
@@ -116,7 +120,7 @@
                 </div>
                 <div class="col-lg-12 col-md-12">
                   <img
-                    :src="require('@/'+this.imgSchPath+'stage/1ere_annee/accueil(menuOuvert).png')" 
+                    :src="require('@/'+this.imgSchPath+'stage/1ere_annee/accueil(menuOuvert).png')"
                     alt="Accueil(menuOuvert).png"
                     class="img-fluid"
                   />
@@ -128,7 +132,7 @@
                 </div>
                 <div class="col-lg-12 col-md-12">
                   <img
-                    :src="require('@/'+this.imgSchPath+'stage/1ere_annee/entre.png')" 
+                    :src="require('@/'+this.imgSchPath+'stage/1ere_annee/entre.png')"
                     alt="Entre.png"
                     class="img-fluid"
                   />
@@ -140,7 +144,7 @@
                 </div>
                 <div class="col-lg-12 col-md-12">
                   <img
-                    :src="require('@/'+this.imgSchPath+'stage/1ere_annee/equipement.png')" 
+                    :src="require('@/'+this.imgSchPath+'stage/1ere_annee/equipement.png')"
                     alt="equipement.png"
                     class="img-fluid"
                   />
@@ -152,7 +156,7 @@
                 </div>
                 <div class="col-lg-12 col-md-12">
                   <img
-                    :src="require('@/'+this.imgSchPath+'stage/1ere_annee/ajax_code.png')" 
+                    :src="require('@/'+this.imgSchPath+'stage/1ere_annee/ajax_code.png')"
                     alt="ajax_code.png"
                     class="img-fluid"
                   />
@@ -167,7 +171,7 @@
                 </div>
                 <div class="col-lg-12 col-md-12">
                   <img
-                    :src="require('@/'+this.imgSchPath+'stage/2eme_annee/ouverture_dialog.png')" 
+                    :src="require('@/'+this.imgSchPath+'stage/2eme_annee/ouverture_dialog.png')"
                     alt="Ouverture_dialog.png"
                     class="img-fluid"
                   />
@@ -179,7 +183,7 @@
                 </div>
                 <div class="col-lg-12 col-md-12">
                   <img
-                    :src="require('@/'+this.imgSchPath+'stage/2eme_annee/modif_date.png')" 
+                    :src="require('@/'+this.imgSchPath+'stage/2eme_annee/modif_date.png')"
                     alt="modif_date.png"
                     class="img-fluid"
                   />
@@ -191,7 +195,7 @@
                 </div>
                 <div class="col-lg-12 col-md-12">
                   <img
-                    :src="require('@/'+this.imgSchPath+'stage/2eme_annee/ajout_donnees_enfant.png')" 
+                    :src="require('@/'+this.imgSchPath+'stage/2eme_annee/ajout_donnees_enfant.png')"
                     alt="ajout_donnees_enfant.png"
                     class="img-fluid"
                   />
@@ -203,7 +207,7 @@
                 </div>
                 <div class="col-lg-12 col-md-12">
                   <img
-                    :src="require('@/'+this.imgSchPath+'stage/2eme_annee/code_create_select.png')" 
+                    :src="require('@/'+this.imgSchPath+'stage/2eme_annee/code_create_select.png')"
                     alt="code_create_select.png"
                     class="img-fluid"
                   />
@@ -217,7 +221,11 @@
                   <p>Avant de commencer à coder, j’ai modéliser un MLR grâce à une ancienne application que l’entreprise avait développée, c’est alors à partir de ça que j’ai fait toute les entités et que j’ai finis et valider par mon tuteur le MLR qui ressemblais à ça.</p>
                 </div>
                 <div class="col-lg-12 col-md-12">
-                  <img :src="require('@/'+this.imgSchPath+'stage/2eme_annee/MCD.png')"  alt="MCD.png" class="img-fluid" />
+                  <img
+                    :src="require('@/'+this.imgSchPath+'stage/2eme_annee/MCD.png')"
+                    alt="MCD.png"
+                    class="img-fluid"
+                  />
                 </div>
               </div>
               <div data-aos="fade-right" class="row">
@@ -226,7 +234,7 @@
                 </div>
                 <div class="col-lg-12 col-md-12">
                   <img
-                    :src="require('@/'+this.imgSchPath+'stage/2eme_annee/launch_tesseract_with_cmd.png')" 
+                    :src="require('@/'+this.imgSchPath+'stage/2eme_annee/launch_tesseract_with_cmd.png')"
                     alt="launch_tesseract_with_cmd.png"
                     class="img-fluid"
                   />
@@ -241,7 +249,7 @@
                 </div>
                 <div class="col-lg-12 col-md-12">
                   <img
-                    :src="require('@/'+this.imgSchPath+'stage/2eme_annee/code_start_tesseract.png')" 
+                    :src="require('@/'+this.imgSchPath+'stage/2eme_annee/code_start_tesseract.png')"
                     alt="code_start_tesseract.png"
                     class="img-fluid"
                   />
@@ -253,7 +261,7 @@
                     <p>J’ai pris cette facture</p>
                   </div>
                   <img
-                    :src="require('@/'+this.imgSchPath+'stage/2eme_annee/ticket_caisse.png')" 
+                    :src="require('@/'+this.imgSchPath+'stage/2eme_annee/ticket_caisse.png')"
                     alt="ticket_caisse.png"
                     class="img-fluid"
                     width="350px"
@@ -262,7 +270,7 @@
                 <div class="col-lg-6 col-md-6">
                   <p>et le résultat de Tesseract donnait ça</p>
                   <img
-                    :src="require('@/'+this.imgSchPath+'stage/2eme_annee/texte_stdout.png')" 
+                    :src="require('@/'+this.imgSchPath+'stage/2eme_annee/texte_stdout.png')"
                     alt="texte_stdout.png"
                     class="img-fluid"
                   />
@@ -274,7 +282,7 @@
                 </div>
                 <div class="col-lg-12 col-md-12">
                   <img
-                    :src="require('@/'+this.imgSchPath+'stage/2eme_annee/resultat_tesseract.png')" 
+                    :src="require('@/'+this.imgSchPath+'stage/2eme_annee/resultat_tesseract.png')"
                     alt="resultat_tesseract.png"
                     class="img-fluid"
                   />
@@ -307,7 +315,7 @@
                 </div>
                 <div class="col-lg-12 col-md-12">
                   <img
-                    :src="require('@/'+this.imgSchPath+'PPE/1ere_annee/create_database.png')" 
+                    :src="require('@/'+this.imgSchPath+'PPE/1ere_annee/create_database.png')"
                     alt="create_database.png"
                     class="img-fluid"
                   />
@@ -319,14 +327,14 @@
                 </div>
                 <div class="col-md-6">
                   <img
-                    :src="require('@/'+this.imgSchPath+'PPE/1ere_annee/scriptSQL.png')" 
+                    :src="require('@/'+this.imgSchPath+'PPE/1ere_annee/scriptSQL.png')"
                     alt="scriptSQL.png"
                     class="img-fluid centerImg"
                   />
                 </div>
                 <div class="col-md-6 divCenter">
                   <img
-                    :src="require('@/'+this.imgSchPath+'PPE/1ere_annee/inserts.png')" 
+                    :src="require('@/'+this.imgSchPath+'PPE/1ere_annee/inserts.png')"
                     alt="inserts.png"
                     class="img-fluid centerImg"
                   />
@@ -341,14 +349,14 @@
                 </div>
                 <div class="col-ld-6 col-md-6">
                   <img
-                    :src="require('@/'+this.imgSchPath+'PPE/1ere_annee/req2.png')" 
+                    :src="require('@/'+this.imgSchPath+'PPE/1ere_annee/req2.png')"
                     alt="req2.png"
                     class="img-fluid centerImg"
                   />
                 </div>
                 <div class="col-ld-6 col-md-6">
                   <img
-                    :src="require('@/'+this.imgSchPath+'PPE/1ere_annee/rep_req2.png')" 
+                    :src="require('@/'+this.imgSchPath+'PPE/1ere_annee/rep_req2.png')"
                     alt="rep_req2.png"
                     class="img-fluid centerImg"
                   />
@@ -358,14 +366,14 @@
                 </div>
                 <div class="col-lg-6 col-md-6">
                   <img
-                    :src="require('@/'+this.imgSchPath+'PPE/1ere_annee/req1.png')" 
+                    :src="require('@/'+this.imgSchPath+'PPE/1ere_annee/req1.png')"
                     alt="req1.png"
                     class="img-fluid centerImg"
                   />
                 </div>
                 <div class="col-lg-6 col-md-6">
                   <img
-                    :src="require('@/'+this.imgSchPath+'PPE/1ere_annee/rep_req1.png')" 
+                    :src="require('@/'+this.imgSchPath+'PPE/1ere_annee/rep_req1.png')"
                     alt="rep_req1.png"
                     class="img-fluid centerImg"
                   />
@@ -380,7 +388,7 @@
                 </div>
                 <div class="col-lg-12 col-md-12">
                   <img
-                    :src="require('@/'+this.imgSchPath+'PPE/2eme_annee/Judge_movies/accueil.png')" 
+                    :src="require('@/'+this.imgSchPath+'PPE/2eme_annee/Judge_movies/accueil.png')"
                     alt="accueil.png"
                     class="img-fluid"
                   />
@@ -392,7 +400,7 @@
                 </div>
                 <div class="col-lg-12 col-md-12">
                   <img
-                    :src="require('@/'+this.imgSchPath+'PPE/2eme_annee/Judge_movies/login.png')" 
+                    :src="require('@/'+this.imgSchPath+'PPE/2eme_annee/Judge_movies/login.png')"
                     alt="login.png"
                     class="img-fluid"
                   />
@@ -404,7 +412,7 @@
                 </div>
                 <div class="col-lg-12 col-md-12">
                   <img
-                    :src="require('@/'+this.imgSchPath+'PPE/2eme_annee/Judge_movies/film_haut.png')" 
+                    :src="require('@/'+this.imgSchPath+'PPE/2eme_annee/Judge_movies/film_haut.png')"
                     alt="Film_haut.png"
                     class="img-fluid"
                   />
@@ -414,14 +422,14 @@
                 </div>
                 <div class="col-lg-6 col-md-6">
                   <img
-                    :src="require('@/'+this.imgSchPath+'PPE/2eme_annee/Judge_movies/film_bas.png')" 
+                    :src="require('@/'+this.imgSchPath+'PPE/2eme_annee/Judge_movies/film_bas.png')"
                     alt="film_bas.png"
                     class="img-fluid"
                   />
                 </div>
                 <div class="col-lg-6 col-md-6">
                   <img
-                    :src="require('@/'+this.imgSchPath+'PPE/2eme_annee/Judge_movies/code_etoile_film.png')" 
+                    :src="require('@/'+this.imgSchPath+'PPE/2eme_annee/Judge_movies/code_etoile_film.png')"
                     alt="code_etoile.png"
                     class="img-fluid"
                   />
@@ -433,7 +441,7 @@
                 </div>
                 <div class="col-lg-12 col-md-12">
                   <img
-                    :src="require('@/'+this.imgSchPath+'PPE/2eme_annee/Judge_movies/ajout_film.png')" 
+                    :src="require('@/'+this.imgSchPath+'PPE/2eme_annee/Judge_movies/ajout_film.png')"
                     alt="ajout_film.png"
                     class="img-fluid"
                   />
@@ -445,7 +453,7 @@
                 </div>
                 <div class="col-lg-12 col-md-12">
                   <img
-                    :src="require('@/'+this.imgSchPath+'PPE/2eme_annee/Judge_movies/ajoute_real.png')" 
+                    :src="require('@/'+this.imgSchPath+'PPE/2eme_annee/Judge_movies/ajoute_real.png')"
                     alt="ajoute_real.png"
                     class="img-fluid"
                   />
@@ -460,14 +468,14 @@
                 </div>
                 <div class="col-lg-6 col-md-6">
                   <img
-                    :src="require('@/'+this.imgSchPath+'PPE/2eme_annee/GSB/barre_recherche.png')" 
+                    :src="require('@/'+this.imgSchPath+'PPE/2eme_annee/GSB/barre_recherche.png')"
                     alt="barre_recherche.png"
                     class="img-fluid"
                   />
                 </div>
                 <div class="col-lg-6 col-md-6">
                   <img
-                    :src="require('@/'+this.imgSchPath+'PPE/2eme_annee/GSB/recherche_visiteur.png')" 
+                    :src="require('@/'+this.imgSchPath+'PPE/2eme_annee/GSB/recherche_visiteur.png')"
                     alt="recherche_visiteur.png"
                     class="img-fluid"
                   />
@@ -479,7 +487,7 @@
                 </div>
                 <div class="col-lg-12 col-md-12">
                   <img
-                    :src="require('@/'+this.imgSchPath+'PPE/2eme_annee/GSB/postman_visiteur_id.png')" 
+                    :src="require('@/'+this.imgSchPath+'PPE/2eme_annee/GSB/postman_visiteur_id.png')"
                     alt="postman_visiteur_id.png"
                     class="img-fluid centerImg"
                   />
@@ -491,7 +499,7 @@
                 </div>
                 <div class="col-lg-12 col-md-12">
                   <img
-                    :src="require('@/'+this.imgSchPath+'PPE/2eme_annee/GSB/controler_visiteur_read.png')" 
+                    :src="require('@/'+this.imgSchPath+'PPE/2eme_annee/GSB/controler_visiteur_read.png')"
                     alt="controler_visiteur_read.png"
                     class="img-fluid centerImg"
                   />
@@ -503,7 +511,7 @@
                 </div>
                 <div class="col-lg-12 col-md-12">
                   <img
-                    :src="require('@/'+this.imgSchPath+'PPE/2eme_annee/GSB/metier_visiteur_update.png')" 
+                    :src="require('@/'+this.imgSchPath+'PPE/2eme_annee/GSB/metier_visiteur_update.png')"
                     alt="metier_visiteur_update.png"
                     class="img-fluid"
                   />
@@ -518,21 +526,21 @@
                 </div>
                 <div class="col-lg-6 col-md-6">
                   <img
-                    :src="require('@/'+this.imgSchPath+'PPE/2eme_annee/GSB/postman_visiteur_update.png')" 
+                    :src="require('@/'+this.imgSchPath+'PPE/2eme_annee/GSB/postman_visiteur_update.png')"
                     alt="postman_visiteur_update.png"
                     class="img-fluid"
                   />
                 </div>
                 <div class="col-lg-6 col-md-6 divCenter">
                   <img
-                    :src="require('@/'+this.imgSchPath+'PPE/2eme_annee/GSB/metier_visiteur_update.png')" 
+                    :src="require('@/'+this.imgSchPath+'PPE/2eme_annee/GSB/metier_visiteur_update.png')"
                     alt="metier_visiteur_update.png"
                     class="img-fluid"
                   />
                 </div>
                 <div class="col-lg-12 col-md-12">
                   <img
-                    :src="require('@/'+this.imgSchPath+'PPE/2eme_annee/GSB/modif_visiteur.png')" 
+                    :src="require('@/'+this.imgSchPath+'PPE/2eme_annee/GSB/modif_visiteur.png')"
                     alt="modif_visiteur.png"
                     class="img-fluid centerImg"
                   />
@@ -544,7 +552,7 @@
                 </div>
                 <div class="col-lg-12 col-md-12">
                   <img
-                    :src="require('@/'+this.imgSchPath+'PPE/2eme_annee/GSB/code_rechercher_visiteur.png')" 
+                    :src="require('@/'+this.imgSchPath+'PPE/2eme_annee/GSB/code_rechercher_visiteur.png')"
                     alt="code_rechercher_visiteur.png"
                     class="img-fluid"
                   />
@@ -574,7 +582,7 @@ export default {
     return {
       schoolDesc,
       activity: Object,
-      imgSchPath: "assets/img/school/"
+      imgSchPath: "assets/img/school/",
     };
   },
   mounted() {
