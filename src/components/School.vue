@@ -2,7 +2,7 @@
   <div>
     <div class="row justify-content-md-center textCenter">
       <div class="col-md-12">
-        <h1>{{$route.params.etudeName}}</h1>
+        <h1>{{etudeName}}</h1>
       </div>
     </div>
 
@@ -26,14 +26,17 @@ import etude from "@/assets/json/etude.json";
 
 export default {
   name: "School",
+  props: {
+      etudeName: String
+  },
   data() {
     return {
-      etude: etude[this.$route.params.etudeName],
+      etude: etude[this.etudeName],
     };
   },
   watch: {
     "$route.params.etudeName": function () {
-      this.etude = etude[this.$route.params.etudeName]
+      this.etude = etude[this.etudeName]
       this.$parent.setActivitiesName();
     },
   },

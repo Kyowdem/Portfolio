@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="container-fluid" v-if="activityOrSchool">
-      <School />
+      <School :etudeName="$route.params.etudeName" />
 
       <div class="row justify-content-md-around activitiesList">
         <div class="col-md-5" v-for="(activity, property) in activitiesName" :key="property">
