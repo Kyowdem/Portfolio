@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div class="container-fluid school" v-if="activityOrSchool">
-      <div class="row justify-content-md-center textCenter">
+    <div class="container-fluid" v-if="activityOrSchool">
+      <div class="row justify-content-md-center">
         <div class="col-md-12">
           <h1>{{$route.params.etudeName}}</h1>
         </div>
