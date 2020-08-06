@@ -20,7 +20,7 @@
         </div>
       </div>
 
-      <div class="row justify-content-md-around">
+      <div class="row justify-content-md-around activitiesList">
         <div class="col-md-5" v-for="(activity, property) in activitiesName" :key="property">
           <table class="table table-hover">
             <thead>
@@ -119,5 +119,9 @@ thead th {
   text-transform: capitalize;
   text-decoration: underline;
   cursor: default;
+}
+
+div.activitiesList {
+  margin-top: 3em;
 }
 </style>
