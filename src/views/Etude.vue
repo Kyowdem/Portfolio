@@ -1,24 +1,7 @@
 <template>
   <div>
     <div class="container-fluid" v-if="activityOrSchool">
-      <div class="row justify-content-md-center">
-        <div class="col-md-12">
-          <h1>{{$route.params.etudeName}}</h1>
-        </div>
-      </div>
-
-      <div class="row justify-content-md-center">
-        <div class="col-md-6 col-lg-4">
-          <img
-            :src="require('@/assets/img/'+this.etude.imgName)"
-            class="img-fluid"
-            :alt="this.etude.imgName"
-          />
-        </div>
-        <div class="col-md-6 offset-lg-2 col-lg-4">
-          <p>{{etude.DescBackSchool}}</p>
-        </div>
-      </div>
+      <School />
 
       <div class="row justify-content-md-around activitiesList">
         <div class="col-md-5" v-for="(activity, property) in activitiesName" :key="property">
@@ -44,19 +27,19 @@
 
 <script>
 // JSON
-import etude from "@/assets/json/etude.json";
 import schoolDesc from "@/assets/json/schoolDesc.json";
 // Components
+import School from "@/components/School.vue"
 import StagePPE from "@/components/stage&PPE.vue";
 
 export default {
   name: "Etude",
   components: {
     StagePPE,
+    School
   },
   data() {
     return {
-      etude: etude[this.$route.params.etudeName],
       activityOrSchool: true,
       activitiesName: { PPE: [], stage: [] },
       nameOfActivityClick: "",
@@ -70,11 +53,7 @@ export default {
   watch: {
     "$route.params.activity": function () {
       this.setActivityOrSchool();
-    },
-    "$route.params.etudeName": function () {
-      this.etude = etude[this.$route.params.etudeName]
-      this.setActivitiesName();
-    },
+    }
   },
   methods: {
     setActivitiesName() {

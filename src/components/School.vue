@@ -25,12 +25,18 @@
 import etude from "@/assets/json/etude.json";
 
 export default {
-    name: "School",
-    data() {
-        return {
-            etude: etude[this.$route.params.etudeName]
-        }
-    }    
+  name: "School",
+  data() {
+    return {
+      etude: etude[this.$route.params.etudeName],
+    };
+  },
+  watch: {
+    "$route.params.etudeName": function () {
+      this.etude = etude[this.$route.params.etudeName]
+      this.$parent.setActivitiesName();
+    },
+  },
 };
 </script>
 
