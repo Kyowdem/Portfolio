@@ -43,7 +43,7 @@
         </div>
       </div>
 
-      <div class="row myProjects">
+      <div class="row justify-content-center myProjects">
         <div class="col-md-12">
           <p>Voici {{projects.length}} de mes projets dont je suis le plus fier de vous montrer :</p>
         </div>
@@ -108,5 +108,22 @@ div.description b:hover {
 
 .row.myProjects {
   margin-top: 2em;
+}
+
+/* Bootstrap new item */
+.list-group-item-transparent {
+  color: #fff !important;
+  background-color: #00000020 !important;
+}
+
+.list-group-item-transparent.list-group-item-action:hover, .list-group-item-transparent.list-group-item-action:focus {
+  color: #1b1e21 !important;
+  background-color: #ffffff90 !important;
+}
+
+.list-group-item-transparent.list-group-item-action.active {
+  color: #fff;
+  background-color: #1b1e21 !important;
+  border-color: #1b1e21 !important;
 }
 </style>

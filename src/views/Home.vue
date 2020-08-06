@@ -1,6 +1,5 @@
 <template>
   <div>
-    <navbar></navbar>
     <div class="container mainPage">
       <div class="row justify-content-center autor">
         <div class="col-md-6">
