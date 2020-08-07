@@ -12,6 +12,11 @@ export default {
   components: {
     Navbar,
   },
+  mounted() {
+    console.dir(this.$route);
+    // this.$router.go(this.$route.params.fullPath);
+    // this.$router.go('/');
+  }
 };
 </script>
 

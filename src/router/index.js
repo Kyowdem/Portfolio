@@ -16,6 +16,7 @@ const routes = [
   },
   { path: '/etude/:etudeName', component: () => import('../views/Etude.vue') },
   { path: '/etude/:etudeName/:typeOfActivity/:activity', component: () => import('../views/Etude.vue') },
+  { path: '*', component: Home }
 ]
 
 const router = new VueRouter({
