@@ -6,3 +6,4 @@ cd dist
 
 echo 'portfolio-collomb-mehdi.netlify.app' > CNAME
 
+cd -
