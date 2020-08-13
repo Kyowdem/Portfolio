@@ -45,7 +45,7 @@
 
       <div class="row">
         <div class="col-md-4">
-          
+          <Skill name=Javascript :level="20" />
         </div>
       </div>
 
@@ -70,8 +70,12 @@
 
 <script>
 import $ from 'jquery'
+import Skill from '@/components/Skill.vue'
 
 export default {
+  components: {
+    Skill
+  },
   data() {
     return {
       showCV: true,
