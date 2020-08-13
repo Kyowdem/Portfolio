@@ -12,6 +12,10 @@ export default {
   components: {
     Navbar,
   },
+  mounted() {
+    console.dir(this.$parent);
+    console.dir(this.$router);
+  }
 };
 </script>
 
