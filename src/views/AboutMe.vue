@@ -43,6 +43,12 @@
         </div>
       </div>
 
+      <div class="row">
+        <div class="col-md-4">
+          
+        </div>
+      </div>
+
       <div class="row justify-content-center myProjects">
         <div class="col-md-12">
           <p>Voici {{projects.length}} de mes projets dont je suis le plus fier de vous montrer :</p>
