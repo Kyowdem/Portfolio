@@ -1,5 +1,8 @@
 <template>
-  <div>{{ name }} | {{ level }}</div>
+  <div>
+    <div>{{ name }} | {{ level }}</div>
+    <div class="rectangle"></div>
+  </div>
 </template>
 
 <script>
@@ -12,4 +15,7 @@ export default {
 </script>
 
 <style>
+.rectangle {
+  border: gold solid 10px
+}
 </style>
