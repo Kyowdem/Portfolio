@@ -1,8 +1,10 @@
 <template>
-  <div>
-    <div>{{ name }} | {{ level }}</div>
-    <div class="progress">
-      <div class="progress-bar bg-warning" role="progressbar" style="width: 0%"></div>
+  <div class="row justify-content-start">
+    <div class="col-md-2">{{ name }} : </div>
+    <div class="col-md-2">
+      <div class="progress">
+        <div class="progress-bar bg-warning" role="progressbar" style="width: 0%"></div>
+      </div>
     </div>
   </div>
 </template>

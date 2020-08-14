@@ -9,11 +9,7 @@
 
       <div class="row justify-content-lg-around">
         <div class="col-md-3 col-lg-2">
-          <img
-            class="img-fluid"
-            src="@/assets/img/cv/Photo-CV.jpeg"
-            alt="Photo de moi-même"
-          />
+          <img class="img-fluid" src="@/assets/img/cv/Photo-CV.jpeg" alt="Photo de moi-même" />
         </div>
         <div class="col-md-7 col-lg-7 description">
           <p>
@@ -43,10 +39,9 @@
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-md-12">
-          <Skill name=Javascript :level="18" />
-        </div>
+      <div class="skills">
+        <Skill name="Javascript" :level="18" />
+        <Skill name="Javascript" :level="18" />
       </div>
 
       <div class="row justify-content-center myProjects">
@@ -69,41 +64,44 @@
 </template>
 
 <script>
-import $ from 'jquery'
-import Skill from '@/components/Skill.vue'
+import $ from "jquery";
+import Skill from "@/components/Skill.vue";
 
 export default {
   components: {
-    Skill
+    Skill,
   },
   data() {
     return {
       showCV: true,
       projects: [
         { name: "PPE : GSB", href: "etude/BTS/PPE/Mission n°2 : GSB" },
-        { name: "Stage : nodeJs et Tesseract", href: "etude/BTS/stage/Lire une facture avec nodeJs et Tesseract" }
-      ]
+        {
+          name: "Stage : nodeJs et Tesseract",
+          href: "etude/BTS/stage/Lire une facture avec nodeJs et Tesseract",
+        },
+      ],
     };
   },
   methods: {
     openNavbarSchool() {
       if ($(window).width() < 992) {
-        $.when($("button.navbar-toggler").click()).then(function() {
+        $.when($("button.navbar-toggler").click()).then(function () {
           $("a.nav-link.dropdown-toggle").click();
         });
       } else {
-        $.when().then(function() {
+        $.when().then(function () {
           $("a.nav-link.dropdown-toggle").click();
         });
       }
-    }
-  }
+    },
+  },
 };
 </script>
 
 <style>
 img[alt="document_PDF.png"],
-div.CV>p,
+div.CV > p,
 div.description b {
   cursor: pointer;
 }
@@ -126,7 +124,8 @@ div.description b:hover {
   background-color: #00000020 !important;
 }
 
-.list-group-item-transparent.list-group-item-action:hover, .list-group-item-transparent.list-group-item-action:focus {
+.list-group-item-transparent.list-group-item-action:hover,
+.list-group-item-transparent.list-group-item-action:focus {
   color: #1b1e21 !important;
   background-color: #ffffff90 !important;
 }
