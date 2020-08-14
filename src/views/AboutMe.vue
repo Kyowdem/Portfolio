@@ -39,12 +39,12 @@
         </div>
       </div>
 
-      <div class="skills">
+      <div class="spacingTop">
         <Skill name="Javascript" :level="18" />
         <Skill name="Javascript" :level="18" />
       </div>
 
-      <div class="row justify-content-center myProjects">
+      <div class="row justify-content-center myProjects spacingTop">
         <div class="col-md-12">
           <p>Voici {{projects.length}} de mes projets dont je suis le plus fier de vous montrer :</p>
         </div>
@@ -112,10 +112,6 @@ div.description > p {
 
 div.description b:hover {
   text-decoration: underline;
-}
-
-.row.myProjects {
-  margin-top: 2em;
 }
 
 /* Bootstrap new item */

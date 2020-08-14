@@ -25,6 +25,10 @@ body {
     background-color: rgb(21, 32, 43) !important;
 }
 
+div.spacingTop {
+    margin-top: 2em;
+}
+
 * {
     color: white;
 }
