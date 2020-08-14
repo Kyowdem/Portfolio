@@ -1,6 +1,6 @@
 <template>
   <div class="row justify-content-start">
-    <div class="col-md-2">{{ name }} : </div>
+    <div class="col-md-2">{{ name }} :</div>
     <div class="col-md-2">
       <div class="progress">
         <div :id="name" class="progress-bar bg-warning" role="progressbar" style="width: 0%"></div>
@@ -19,8 +19,9 @@ export default {
   },
   data() {
     return {
-      progession: this.level < 0 ? 0 : this.level
-    }
+      // 0 < progression < 20
+      progession: (0 < this.level ? this.level : 0) && (this.level < 20 ? this.level : 20),
+    };
   },
   mounted() {
     this.setLevelTo100();
@@ -31,7 +32,6 @@ export default {
       setTimeout(() => {
         $(`#${this.name}`).css("width", `${this.progession * 5}%`);
       }, 500);
-
     },
   },
 };

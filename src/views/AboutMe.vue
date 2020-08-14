@@ -43,6 +43,7 @@
         <Skill name="Javascript" :level="-2" />
         <Skill name="foo" :level="8" />
         <Skill name="bar" :level="16" />
+        <Skill name="baz" :level="25" />
       </div>
 
       <div class="row justify-content-center myProjects spacingTop">
