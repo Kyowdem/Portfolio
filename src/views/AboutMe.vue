@@ -40,8 +40,9 @@
       </div>
 
       <div class="spacingTop">
-        <Skill name="Javascript" :level="18" />
-        <Skill name="Javascript" :level="18" />
+        <Skill name="Javascript" :level="-2" />
+        <Skill name="foo" :level="8" />
+        <Skill name="bar" :level="16" />
       </div>
 
       <div class="row justify-content-center myProjects spacingTop">

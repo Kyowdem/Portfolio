@@ -3,7 +3,7 @@
     <div class="col-md-2">{{ name }} : </div>
     <div class="col-md-2">
       <div class="progress">
-        <div class="progress-bar bg-warning" role="progressbar" style="width: 0%"></div>
+        <div :id="name" class="progress-bar bg-warning" role="progressbar" style="width: 0%"></div>
       </div>
     </div>
   </div>
@@ -17,13 +17,21 @@ export default {
     name: String,
     level: Number, // 0 < level < 20
   },
+  data() {
+    return {
+      progession: this.level < 0 ? 0 : this.level
+    }
+  },
   mounted() {
     this.setLevelTo100();
   },
   methods: {
     setLevelTo100() {
-      let progressBar = this.level * 5;
-      $(".progress-bar").css("width", `${progressBar}%`);
+      $(".progress-bar").css("width", `0%`);
+      setTimeout(() => {
+        $(`#${this.name}`).css("width", `${this.progession * 5}%`);
+      }, 500);
+
     },
   },
 };
