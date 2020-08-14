@@ -45,7 +45,7 @@
 
       <div class="row">
         <div class="col-md-12">
-          <Skill name=Javascript :level="20" />
+          <Skill name=Javascript :level="18" />
         </div>
       </div>
 
