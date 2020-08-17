@@ -1,7 +1,7 @@
 <template>
   <div class="col-md-4">
-    <div class="col-md-12">{{ name }} :</div>
-    <div class="col-md-12">
+    <div>{{ name }} :</div>
+    <div>
       <div class="progress">
         <div :id="name" class="progress-bar bg-warning" role="progressbar" style="width: 0%"></div>
       </div>

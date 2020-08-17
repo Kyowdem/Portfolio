@@ -99,6 +99,8 @@ export default {
         { name: "Vue", level: 15 },
         { name: "Bootstrap", level: 15 },
         { name: "jQuery", level: 18 },
+        { name: "Git", level: 14 },
+        { name: "node.js", level: 12 },
       ],
     };
   },
