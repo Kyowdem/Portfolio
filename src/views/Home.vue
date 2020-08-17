@@ -51,7 +51,7 @@ export default {
   text-transform: uppercase;
   font-size: 7.5em;
   background-image: linear-gradient(to right, #fff, #ff0, #000);
-  -webkit-background-clip: text; /* Permet de mettre le background sur le text */
+  background-clip: text; /* Permet de mettre le background sur le text */
   animation: animate 5s linear infinite;
   background-size: 500%;
 }
