@@ -68,6 +68,7 @@
         </div>
       </div>
     </div>
+    <br> <!-- resolve reload problem, when skills loading -->
   </div>
 </template>
 
