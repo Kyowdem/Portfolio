@@ -30,7 +30,7 @@ export default {
     setLevelTo100() {
       $(".progress-bar").css("width", `0%`);
       setTimeout(() => {
-        $(`#${this.name}`).css("width", `${this.progession * 5}%`);
+        $(`div[id="${this.name}"]`).css("width", `${this.progession * 5}%`);
       }, 500);
     },
   },
