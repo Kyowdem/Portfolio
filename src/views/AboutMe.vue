@@ -38,11 +38,18 @@
           </transition>
         </div>
       </div>
+    </div>
 
-      <div class="spacingTop">
-        <Skill v-for="skill in skills" :key="skill.name" :name="skill.name" :level="skill.level" />
+    <div class="container-fluid spacingTop">
+      <div class="row">
+        <div class="col-md-3">
+          <h4>Competences</h4>
+        </div>
       </div>
+      <Skill v-for="skill in skills" :key="skill.name" :name="skill.name" :level="skill.level" />
+    </div>
 
+    <div class="container-fluid">
       <div class="row justify-content-center myProjects spacingTop">
         <div class="col-md-12">
           <p>Voici {{projects.length}} de mes projets dont je suis le plus fier de vous montrer :</p>
