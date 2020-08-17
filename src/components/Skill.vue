@@ -3,7 +3,7 @@
     <div>{{ name }} :</div>
     <div>
       <div class="progress">
-        <div :id="name" class="progress-bar bg-warning" role="progressbar" style="width: 0%"></div>
+        <div :id="name" :title="progression" class="progress-bar bg-warning" role="progressbar" style="width: 0%"></div>
       </div>
     </div>
   </div>
@@ -20,7 +20,7 @@ export default {
   data() {
     return {
       // 0 < progression < 20
-      progession: (0 < this.level ? this.level : 0) && (this.level < 20 ? this.level : 20),
+      progression: (0 < this.level ? this.level : 0) && (this.level < 20 ? this.level : 20),
     };
   },
   mounted() {
@@ -30,7 +30,7 @@ export default {
     setLevelTo100() {
       $(".progress-bar").css("width", `0%`);
       setTimeout(() => {
-        $(`div[id="${this.name}"]`).css("width", `${this.progession * 5}%`);
+        $(`div[id="${this.name}"]`).css("width", `${this.progression * 5}%`);
       }, 500);
     },
   },

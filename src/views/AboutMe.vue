@@ -91,10 +91,10 @@ export default {
       ],
       skills: [
         { name: "Javascript", level: 18 },
-        { name: "Java", level: 15 },
+        { name: "Java", level: 13 },
         { name: "SQL", level: 15 },
-        { name: "CSS", level: 14 },
-        { name: "C#", level: 14 },
+        { name: "CSS", level: 12 },
+        { name: "C#", level: 13 },
         { name: "PHP", level: 14 },
         { name: "Laravel", level: 14 },
         { name: "Vue", level: 15 },
