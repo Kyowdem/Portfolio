@@ -96,6 +96,7 @@ export default {
         { name: "CSS", level: 14 },
         { name: "C#", level: 14 },
         { name: "PHP", level: 14 },
+        { name: "Laravel", level: 14 },
         { name: "Vue", level: 15 },
         { name: "Bootstrap", level: 15 },
         { name: "jQuery", level: 18 },
