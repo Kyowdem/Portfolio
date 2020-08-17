@@ -46,7 +46,9 @@
           <h4>Competences</h4>
         </div>
       </div>
-      <Skill v-for="skill in skills" :key="skill.name" :name="skill.name" :level="skill.level" />
+      <div class="row">
+        <Skill v-for="skill in skills" :key="skill.name" :name="skill.name" :level="skill.level" />
+      </div>
     </div>
 
     <div class="container-fluid">
@@ -90,10 +92,13 @@ export default {
       skills: [
         { name: "Javascript", level: 18 },
         { name: "Java", level: 15 },
-        { name: "SQL", level: 16 },
+        { name: "SQL", level: 15 },
         { name: "CSS", level: 14 },
-        { name: "C#", level: 15 },
-        { name: "PHP", level: 16 },
+        { name: "C#", level: 14 },
+        { name: "PHP", level: 14 },
+        { name: "Vue", level: 15 },
+        { name: "Bootstrap", level: 15 },
+        { name: "jQuery", level: 18 },
       ],
     };
   },
@@ -116,7 +121,7 @@ export default {
   },
   mounted() {
     this.shuffle(this.skills);
-    this.skills = this.skills.slice(0, 3);
+    this.skills = this.skills.slice(0, 9);
   },
 };
 </script>

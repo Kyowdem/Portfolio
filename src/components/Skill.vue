@@ -1,7 +1,7 @@
 <template>
-  <div class="row justify-content-start">
-    <div class="col-md-2">{{ name }} :</div>
-    <div class="col-md-2">
+  <div class="col-md-4">
+    <div class="col-md-12">{{ name }} :</div>
+    <div class="col-md-12">
       <div class="progress">
         <div :id="name" class="progress-bar bg-warning" role="progressbar" style="width: 0%"></div>
       </div>
