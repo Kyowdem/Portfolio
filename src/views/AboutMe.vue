@@ -101,7 +101,7 @@ export default {
         { name: "Bootstrap", level: 15 },
         { name: "jQuery", level: 18 },
         { name: "Git", level: 14 },
-        { name: "node.js", level: 12 },
+        { name: "node.js", level: 13 },
       ],
     };
   },
