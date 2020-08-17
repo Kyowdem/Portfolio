@@ -102,6 +102,14 @@ export default {
         });
       }
     },
+    shuffle(array) {
+      array.sort(() => Math.random() - 0.5);
+      return array;
+    },
+  },
+  mounted() {
+    this.shuffle(this.skills);
+    this.skills = this.skills.slice(0, 3);
   },
 };
 </script>
