@@ -40,10 +40,7 @@
       </div>
 
       <div class="spacingTop">
-        <Skill name="Javascript" :level="-2" />
-        <Skill name="foo" :level="8" />
-        <Skill name="bar" :level="16" />
-        <Skill name="baz" :level="25" />
+        <Skill v-for="skill in skills" :key="skill.name" :name="skill.name" :level="skill.level" />
       </div>
 
       <div class="row justify-content-center myProjects spacingTop">
@@ -82,6 +79,14 @@ export default {
           name: "Stage : nodeJs et Tesseract",
           href: "etude/BTS/stage/Lire une facture avec nodeJs et Tesseract",
         },
+      ],
+      skills: [
+        { name: "Javascript", level: 18 },
+        { name: "Java", level: 15 },
+        { name: "SQL", level: 16 },
+        { name: "CSS", level: 14 },
+        { name: "C#", level: 15 },
+        { name: "PHP", level: 16 },
       ],
     };
   },
