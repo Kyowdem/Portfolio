@@ -19,6 +19,16 @@
           </table>
         </div>
       </div>
+
+      <div class="row justify-content-md-around imgFlip">
+        <div class="col-md">
+          <img :src="require('@/assets/img/school/batiment-BTS.jpg')" class="img-fluid" alt="BTS" />
+        </div>
+        <div class="col-md">
+          <img :src="require('@/assets/img/school/batiment-UQAM.jpg')" class="img-fluid" alt="BTS" />
+        </div>
+      </div>
+
     </div>
 
     <StagePPE :name="nameOfActivityClick" v-else />
@@ -29,14 +39,14 @@
 // JSON
 import schoolDesc from "@/assets/json/schoolDesc.json";
 // Components
-import School from "@/components/School.vue"
+import School from "@/components/School.vue";
 import StagePPE from "@/components/stage&PPE.vue";
 
 export default {
   name: "Etude",
   components: {
     StagePPE,
-    School
+    School,
   },
   data() {
     return {
@@ -53,20 +63,19 @@ export default {
   watch: {
     "$route.params.activity": function () {
       this.setActivityOrSchool();
-    }
+    },
   },
   methods: {
     setActivitiesName() {
-      if (this.$route.params.etudeName == 'BTS') {
+      if (this.$route.params.etudeName == "BTS") {
         for (let prop in schoolDesc[this.$route.params.etudeName]) {
           schoolDesc[this.$route.params.etudeName][prop].forEach((el) =>
             this.activitiesName[prop].push(el.name)
           );
         }
-      }
-      else {
+      } else {
         for (let prop in this.activitiesName) {
-          this.activitiesName[prop] = []
+          this.activitiesName[prop] = [];
         }
       }
     },
