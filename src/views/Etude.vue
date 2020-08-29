@@ -112,4 +112,13 @@ thead th {
 div.activitiesList {
   margin-top: 3em;
 }
+
+@keyframes flipImg {
+  0% {
+
+  }
+  100% {
+    
+  }
+}
 </style>
