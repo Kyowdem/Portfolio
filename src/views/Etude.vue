@@ -20,23 +20,23 @@
         </div>
       </div>
 
-      <div class="row imgFlip">
+      <div class="row justify-content-md-around imgFlip">
         <div class="col-md">
           <img
-            @mouseover="scaleImg('img1')"
-            name="img1"
+            @mouseover="scaleImg('PPE')"
+            name="PPE"
             :src="require('@/assets/img/school/batiment-BTS.jpg')"
             class="img-fluid"
-            alt="BTS"
+            alt="PPE"
           />
         </div>
         <div class="col-md">
           <img
-            @mouseover="scaleImg('img2')"
-            name="img2"
+            @mouseover="scaleImg('stage')"
+            name="stage"
             :src="require('@/assets/img/school/batiment-UQAM.jpg')"
             class="img-fluid"
-            alt="UQAM"
+            alt="stage"
           />
         </div>
       </div>
