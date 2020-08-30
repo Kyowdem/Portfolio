@@ -5,7 +5,7 @@
 
       <div class="row justify-content-md-around activitiesList">
         <div class="col-md-5" v-for="(activity, property) in activitiesName" :key="property">
-          <table class="table table-hover">
+          <table class="table table-hover" :name="property">
             <thead>
               <tr>
                 <th>{{property}}</th>
@@ -111,6 +111,7 @@ export default {
     },
     scaleImg(imgName) {
       $(`img[name=${imgName}]`).addClass("animate__animated animate__flipOutY");
+      $(`table[name=${imgName}]`).addClass("animate__animated animate__flipInY");
     },
   },
 };
