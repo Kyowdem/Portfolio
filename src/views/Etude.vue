@@ -28,7 +28,6 @@
           <img :src="require('@/assets/img/school/batiment-UQAM.jpg')" class="img-fluid" alt="BTS" />
         </div>
       </div>
-
     </div>
 
     <StagePPE :name="nameOfActivityClick" v-else />
@@ -113,12 +112,17 @@ div.activitiesList {
   margin-top: 3em;
 }
 
+.imgFlip>div:hover {
+  animation: flipImg 2s linear;
+}
+
 @keyframes flipImg {
   0% {
-
+    transform: perspective(400px) scaleX(1);
   }
+
   100% {
-    
+    transform: perspective(400px) scaleX(-1);
   }
 }
 </style>
