@@ -121,8 +121,12 @@ div.activitiesList {
     transform: perspective(400px) scaleX(1);
   }
 
-  100% {
+  50% {
     transform: perspective(400px) scaleX(-1);
+  }
+
+  100% {
+    transform: perspective(400px) scaleX(1);
   }
 }
 </style>
