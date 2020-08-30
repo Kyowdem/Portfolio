@@ -5,6 +5,7 @@ import router from './router'
 
 // window.$ = window.jQuery = require('jquery');
 require('bootstrap')
+require('animate.css')
 require('@/assets/css/globalTools.css')
 require('@/assets/css/vueTransition.css')
 
