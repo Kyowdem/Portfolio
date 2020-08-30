@@ -22,10 +22,10 @@
 
       <div class="row justify-content-md-around imgFlip">
         <div class="col-md">
-          <img :src="require('@/assets/img/school/batiment-BTS.jpg')" class="img-fluid" alt="BTS" />
+          <img @mouseover="scaleImg('img1')" name="img1" :src="require('@/assets/img/school/batiment-BTS.jpg')" class="img-fluid" alt="BTS" />
         </div>
         <div class="col-md">
-          <img :src="require('@/assets/img/school/batiment-UQAM.jpg')" class="img-fluid" alt="BTS" />
+          <img @mouseover="scaleImg('img2')" name="img2" :src="require('@/assets/img/school/batiment-UQAM.jpg')" class="img-fluid" alt="BTS" />
         </div>
       </div>
     </div>
@@ -35,11 +35,13 @@
 </template>
 
 <script>
+import $ from "jquery";
 // JSON
 import schoolDesc from "@/assets/json/schoolDesc.json";
 // Components
 import School from "@/components/School.vue";
 import StagePPE from "@/components/stage&PPE.vue";
+
 
 export default {
   name: "Etude",
@@ -96,6 +98,11 @@ export default {
       if (this.$route.params.activity)
         this.nameOfActivityClick = this.$route.params.activity;
     },
+    scaleImg(imgName) {
+      $(`img[name=${imgName}]`).animate({
+        height: "-=100"
+      });
+    }
   },
 };
 </script>
@@ -112,21 +119,25 @@ div.activitiesList {
   margin-top: 3em;
 }
 
+.imgFlip>div>img {
+  position: relative;
+}
+
 .imgFlip>div:hover {
-  animation: flipImg 2s linear;
+  /* animation: flipImg 2s linear; */
 }
 
 @keyframes flipImg {
   0% {
-    transform: perspective(400px) scaleX(1);
+    transform:scaleX(1);
   }
 
   50% {
-    transform: perspective(400px) scaleX(-1);
+    transform:scaleX(-1);
   }
 
   100% {
-    transform: perspective(400px) scaleX(1);
+    transform:scaleX(1);
   }
 }
 </style>
