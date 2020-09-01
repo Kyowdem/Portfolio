@@ -105,7 +105,9 @@ export default {
       $(args[0].element).addClass(
         `animate__animated animate__${args[0].animation}`
       );
+      
       if (args.length <= 1) return 0;
+
       $(args[0].element).bind("animationend", function () {
         $(args[1].element).addClass(
           `animate__animated animate__${args[1].animation}`
