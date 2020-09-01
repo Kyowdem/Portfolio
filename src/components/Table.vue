@@ -28,7 +28,7 @@ export default {
   mounted() {},
   methods: {
     goTo(property, activity) {
-      this.nameOfActivityClick = activity;
+      this.$parent.nameOfActivityClick = activity;
       this.$router.push(
         `/etude/${this.$route.params.etudeName}/${property}/${activity}`
       );
