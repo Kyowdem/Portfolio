@@ -6,25 +6,27 @@
       <div class="row justify-content-md-around activitiesList">
         <div class="col-md-6">
           <img
-            @mouseover="addAnimation( [{element: 'img[name=PPE]', animation: 'flipOutY'}, {element: 'table[name=PPE]', animation: 'flipInY'}])"
+            v-if="show.PPE"
+            @mouseover="addAnimation( [{element: 'img[name=PPE]', animation: 'flipOutY'}, {element: 'table[name=PPE]', animation: 'flipInY'} ]);"
             name="PPE"
             :src="require('@/assets/img/school/batiment-BTS.jpg')"
             class="img-fluid"
             alt="PPE"
           />
         </div>
-        <Table name="PPE"></Table>
+        <Table name="PPE" v-if="!show.PPE"></Table>
 
         <div class="col-md-6">
           <img
-            @mouseover="addAnimation( [{element: 'img[name=stage]', animation: 'flipOutY'}, {element: 'table[name=stage]', animation: 'flipInY'}])"
+            v-if="show.stage"
+            @mouseover="addAnimation( [{element: 'img[name=stage]', animation: 'flipOutY'}, {element: 'table[name=stage]', animation: 'flipInY'} ]);"
             name="stage"
             :src="require('@/assets/img/school/batiment-UQAM.jpg')"
             class="img-fluid"
             alt="stage"
           />
         </div>
-        <Table name="stage"></Table>
+        <Table name="stage" v-if="!show.stage"></Table>
       </div>
     </div>
 
@@ -50,7 +52,7 @@ export default {
     return {
       activityOrSchool: true,
       nameOfActivityClick: "",
-      show: {},
+      show: { stage: true, PPE: true },
     };
   },
   mounted() {
