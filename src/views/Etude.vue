@@ -23,14 +23,12 @@
       <div class="row justify-content-md-around imgFlip">
         <div class="col-md-6">
           <img
-            v-if="show.stage"
             @mouseover="addAnimation('img[name=PPE]','table[name=PPE]', 'flipOutY', 'flipInY')"
             name="PPE"
             :src="require('@/assets/img/school/batiment-BTS.jpg')"
             class="img-fluid"
             alt="PPE"
           />
-          <p v-else>Je suis du texte</p>
         </div>
       </div>
     </div>
@@ -57,8 +55,7 @@ export default {
     return {
       activityOrSchool: true,
       activitiesName: { PPE: [], stage: [] },
-      nameOfActivityClick: "",
-      show: { stage: true, PPE: true },
+      nameOfActivityClick: ""
     };
   },
   mounted() {
