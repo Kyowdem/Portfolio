@@ -37,7 +37,7 @@ import $ from "jquery";
 // Components
 import School from "@/components/School.vue";
 import StagePPE from "@/components/stage&PPE.vue";
-import Table from "@/components/table.vue";
+import Table from "@/components/Table.vue";
 
 export default {
   name: "Etude",
