@@ -101,7 +101,6 @@ export default {
         this.nameOfActivityClick = this.$route.params.activity;
     },
     addAnimation(element1, element2, animation1, animation2) {
-      console.dir($(element1));
       $(element1).addClass(`animate__animated animate__${animation1}`);
       $(element1).bind("animationend", function () {
         $(element2).addClass(`animate__animated animate__${animation2}`)
