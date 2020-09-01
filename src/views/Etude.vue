@@ -21,23 +21,16 @@
       </div>
 
       <div class="row justify-content-md-around imgFlip">
-        <div class="col-md">
+        <div class="col-md-6">
           <img
-            @mouseover="scaleImg('PPE')"
+            v-if="show.stage"
+            @mouseover="addAnimation('img[name=PPE]','table[name=PPE]', 'flipOutY', 'flipInY')"
             name="PPE"
             :src="require('@/assets/img/school/batiment-BTS.jpg')"
             class="img-fluid"
             alt="PPE"
           />
-        </div>
-        <div class="col-md">
-          <img
-            @mouseover="scaleImg('stage')"
-            name="stage"
-            :src="require('@/assets/img/school/batiment-UQAM.jpg')"
-            class="img-fluid"
-            alt="stage"
-          />
+          <p v-else>Je suis du texte</p>
         </div>
       </div>
     </div>
@@ -65,6 +58,7 @@ export default {
       activityOrSchool: true,
       activitiesName: { PPE: [], stage: [] },
       nameOfActivityClick: "",
+      show: { stage: true, PPE: true },
     };
   },
   mounted() {
@@ -109,9 +103,12 @@ export default {
       if (this.$route.params.activity)
         this.nameOfActivityClick = this.$route.params.activity;
     },
-    scaleImg(imgName) {
-      $(`img[name=${imgName}]`).addClass("animate__animated animate__flipOutY");
-      $(`table[name=${imgName}]`).addClass("animate__animated animate__flipInY");
+    addAnimation(element1, element2, animation1, animation2) {
+      console.dir($(element1));
+      $(element1).addClass(`animate__animated animate__${animation1}`);
+      $(element1).bind("animationend", function () {
+        $(element2).addClass(`animate__animated animate__${animation2}`)
+      });
     },
   },
 };
