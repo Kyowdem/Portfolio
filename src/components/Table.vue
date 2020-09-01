@@ -1,5 +1,5 @@
 <template>
-  <div class="offset-md-1 col-md-5">
+  <div class="col-md-6">
     <table class="table table-hover" :name="name">
       <thead>
         <tr>
@@ -7,8 +7,8 @@
         </tr>
       </thead>
       <tbody>
-        <tr v-for="activity in activities" :key="activity">
-          <th class="activity textClick" @click="goTo(name, activity)">{{activity}}</th>
+        <tr v-for="activity in activities" :key="activity.name">
+          <th class="activity textClick" @click="goTo(name, activity.name)">{{activity.name}}</th>
         </tr>
       </tbody>
     </table>
@@ -18,14 +18,14 @@
 <script>
 export default {
   props: {
-    name: String,
-    activities: Array
+    name: String
   },
   data() {
     return {
-      activitiesName: []
+      activities: require("@/assets/json/schoolDesc.json")[this.$route.params.etudeName][this.name]
     };
   },
+  mounted() {},
   methods: {
     goTo(property, activity) {
       this.nameOfActivityClick = activity;

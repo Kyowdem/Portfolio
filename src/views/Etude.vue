@@ -13,6 +13,8 @@
             alt="PPE"
           />
         </div>
+        <Table name="PPE"></Table>
+
         <div class="col-md-6">
           <img
             @mouseover="addAnimation( [{element: 'img[name=stage]', animation: 'flipOutY'}, {element: 'table[name=stage]', animation: 'flipInY'}])"
@@ -22,21 +24,7 @@
             alt="stage"
           />
         </div>
-
-        <div class="offset-md-1 col-md-5" v-for="(activity, property) in activitiesName" :key="property">
-          <table class="table table-hover" :name="property">
-            <thead>
-              <tr>
-                <th>{{property}}</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr v-for="activity in activitiesName[property]" :key="activity">
-                <th class="activity textClick" @click="goTo(property, activity)">{{activity}}</th>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+        <Table name="stage"></Table>
       </div>
     </div>
 
@@ -46,30 +34,28 @@
 
 <script>
 import $ from "jquery";
-// JSON
-import schoolDesc from "@/assets/json/schoolDesc.json";
 // Components
 import School from "@/components/School.vue";
 import StagePPE from "@/components/stage&PPE.vue";
+import Table from "@/components/table.vue";
 
 export default {
   name: "Etude",
   components: {
     StagePPE,
     School,
+    Table,
   },
   data() {
     return {
       activityOrSchool: true,
-      activitiesName: { PPE: [], stage: [] },
       nameOfActivityClick: "",
-      show: {}
+      show: {},
     };
   },
   mounted() {
     this.checkActivityURL();
     this.setActivityOrSchool();
-    this.setActivitiesName();
   },
   watch: {
     "$route.params.activity": function () {
@@ -77,31 +63,12 @@ export default {
     },
   },
   methods: {
-    setActivitiesName() {
-      if (this.$route.params.etudeName == "BTS") {
-        for (let prop in schoolDesc[this.$route.params.etudeName]) {
-          schoolDesc[this.$route.params.etudeName][prop].forEach((el) =>
-            this.activitiesName[prop].push(el.name)
-          );
-        }
-      } else {
-        for (let prop in this.activitiesName) {
-          this.activitiesName[prop] = [];
-        }
-      }
-    },
     setActivityOrSchool() {
       if (this.$route.params.typeOfActivity && this.$route.params.activity) {
         this.activityOrSchool = false;
       } else {
         this.activityOrSchool = true;
       }
-    },
-    goTo(property, activity) {
-      this.nameOfActivityClick = activity;
-      this.$router.push(
-        `/etude/${this.$route.params.etudeName}/${property}/${activity}`
-      );
     },
     // resolve reloading page if client are in an activity
     checkActivityURL() {
