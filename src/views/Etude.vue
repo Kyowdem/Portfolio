@@ -4,7 +4,25 @@
       <School :etudeName="$route.params.etudeName" />
 
       <div class="row justify-content-md-around activitiesList">
-        <div class="col-md-5" v-for="(activity, property) in activitiesName" :key="property">
+        <div class="col-md-6">
+          <img
+            @mouseover="addAnimation( [{element: 'img[name=PPE]', animation: 'flipOutY'}, {element: 'table[name=PPE]', animation: 'flipInY'}])"
+            name="PPE"
+            :src="require('@/assets/img/school/batiment-BTS.jpg')"
+            class="img-fluid"
+            alt="PPE"
+          />
+        </div>
+        <div class="col-md-6">
+          <img
+            @mouseover="addAnimation( [{element: 'img[name=stage]', animation: 'flipOutY'}, {element: 'table[name=stage]', animation: 'flipInY'}])"
+            name="stage"
+            :src="require('@/assets/img/school/batiment-UQAM.jpg')"
+            class="img-fluid"
+            alt="stage"
+          />
+        </div>
+        <div class="offset-md-1 col-md-5" v-for="(activity, property) in activitiesName" :key="property">
           <table class="table table-hover" :name="property">
             <thead>
               <tr>
@@ -17,17 +35,6 @@
               </tr>
             </tbody>
           </table>
-        </div>
-      </div>
-      <div class="row justify-content-md-around imgFlip">
-        <div class="col-md-6">
-          <img
-            @mouseover="addAnimation( [{element: 'img[name=PPE]', animation: 'flipOutY'}, {element: 'table[name=PPE]', animation: 'flipInY'}])"
-            name="PPE"
-            :src="require('@/assets/img/school/batiment-BTS.jpg')"
-            class="img-fluid"
-            alt="PPE"
-          />
         </div>
       </div>
     </div>
@@ -55,6 +62,7 @@ export default {
       activityOrSchool: true,
       activitiesName: { PPE: [], stage: [] },
       nameOfActivityClick: "",
+      show: {}
     };
   },
   mounted() {
@@ -105,7 +113,7 @@ export default {
       $(args[0].element).addClass(
         `animate__animated animate__${args[0].animation}`
       );
-      
+
       if (args.length <= 1) return 0;
 
       $(args[0].element).bind("animationend", function () {
