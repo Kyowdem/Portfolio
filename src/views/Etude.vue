@@ -22,6 +22,7 @@
             alt="stage"
           />
         </div>
+
         <div class="offset-md-1 col-md-5" v-for="(activity, property) in activitiesName" :key="property">
           <table class="table table-hover" :name="property">
             <thead>
