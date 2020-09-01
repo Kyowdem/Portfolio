@@ -23,7 +23,7 @@
       <div class="row justify-content-md-around imgFlip">
         <div class="col-md-6">
           <img
-            @mouseover="addAnimation('img[name=PPE]','table[name=PPE]', 'flipOutY', 'flipInY')"
+            @mouseover="addAnimation( [{element: 'img[name=PPE]', animation: 'flipOutY'}, {element: 'table[name=PPE]', animation: 'flipInY'}])"
             name="PPE"
             :src="require('@/assets/img/school/batiment-BTS.jpg')"
             class="img-fluid"
@@ -55,7 +55,7 @@ export default {
     return {
       activityOrSchool: true,
       activitiesName: { PPE: [], stage: [] },
-      nameOfActivityClick: ""
+      nameOfActivityClick: "",
     };
   },
   mounted() {
@@ -100,10 +100,16 @@ export default {
       if (this.$route.params.activity)
         this.nameOfActivityClick = this.$route.params.activity;
     },
-    addAnimation(element1, element2, animation1, animation2) {
-      $(element1).addClass(`animate__animated animate__${animation1}`);
-      $(element1).bind("animationend", function () {
-        $(element2).addClass(`animate__animated animate__${animation2}`)
+    // Function adding animation
+    // [{element: queryEl, animation: AnimateCss}, {...}] length: 2
+    addAnimation(args) {
+      $(args[0].element).addClass(
+        `animate__animated animate__${args[0].animation}`
+      );
+      $(args[0].element).bind("animationend", function () {
+        $(args[1].element).addClass(
+          `animate__animated animate__${args[1].animation}`
+        );
       });
     },
   },
