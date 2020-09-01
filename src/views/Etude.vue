@@ -4,29 +4,27 @@
       <School :etudeName="$route.params.etudeName" />
 
       <div class="row justify-content-md-around activitiesList">
-        <div class="col-md-6">
+        <div v-show="show.PPE" class="col-md-6">
           <img
-            v-if="show.PPE"
-            @mouseover="addAnimation( [{element: 'img[name=PPE]', animation: 'flipOutY'}, {element: 'table[name=PPE]', animation: 'flipInY'} ]);"
+            @mouseover="addAnimation( 'PPE', [{element: 'img[name=PPE]', animation: 'flipOutY'}, {element: 'table[name=PPE]', animation: 'flipInY'} ]);"
             name="PPE"
             :src="require('@/assets/img/school/batiment-BTS.jpg')"
             class="img-fluid"
             alt="PPE"
           />
         </div>
-        <Table name="PPE" v-if="!show.PPE"></Table>
+        <Table name="PPE" v-show="!show.PPE"></Table>
 
-        <div class="col-md-6">
+        <div v-show="show.stage" class="col-md-6">
           <img
-            v-if="show.stage"
-            @mouseover="addAnimation( [{element: 'img[name=stage]', animation: 'flipOutY'}, {element: 'table[name=stage]', animation: 'flipInY'} ]);"
+            @mouseover="addAnimation( 'stage', [{element: 'img[name=stage]', animation: 'flipOutY'}, {element: 'table[name=stage]', animation: 'flipInY'} ]);"
             name="stage"
             :src="require('@/assets/img/school/batiment-UQAM.jpg')"
             class="img-fluid"
             alt="stage"
           />
         </div>
-        <Table name="stage" v-if="!show.stage"></Table>
+        <Table name="stage" v-show="!show.stage"></Table>
       </div>
     </div>
 
@@ -79,14 +77,15 @@ export default {
     },
     // Function adding animation
     // [{element: queryEl, animation: AnimateCss}, {...}] length: 1 or 2
-    addAnimation(args) {
+    addAnimation(show, args) {
       $(args[0].element).addClass(
         `animate__animated animate__${args[0].animation}`
       );
 
       if (args.length <= 1) return 0;
 
-      $(args[0].element).bind("animationend", function () {
+      $(args[0].element).bind("animationend", () => {
+        this.show[show] = false;
         $(args[1].element).addClass(
           `animate__animated animate__${args[1].animation}`
         );
