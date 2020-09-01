@@ -6,25 +6,57 @@
       <div class="row justify-content-md-around activitiesList">
         <div v-show="show.PPE" class="col-md-6">
           <img
-            @mouseover="addAnimation( 'PPE', [{element: 'img[name=PPE]', animation: 'flipOutY'}, {element: 'table[name=PPE]', animation: 'flipInY'} ]);"
+            @mouseover="addAnimation(
+              {name:'PPE', bool: false},
+              [
+                {element: 'img[name=PPE]', animation: 'flipOutY'},
+                {element: 'table[name=PPE]', animation: 'flipInY'} 
+              ]
+            );"
             name="PPE"
             :src="require('@/assets/img/school/batiment-BTS.jpg')"
             class="img-fluid"
             alt="PPE"
           />
         </div>
-        <Table name="PPE" v-show="!show.PPE"></Table>
+        <Table
+          name="PPE"
+          v-show="!show.PPE"
+          @mouseover="addAnimation(
+            {name:'PPE', bool: true},
+            [
+              {element: 'img[name=PPE]', animation: 'flipOutY'},
+              {element: 'table[name=PPE]', animation: 'flipInY'} 
+            ]
+          );"
+        ></Table>
 
         <div v-show="show.stage" class="col-md-6">
           <img
-            @mouseover="addAnimation( 'stage', [{element: 'img[name=stage]', animation: 'flipOutY'}, {element: 'table[name=stage]', animation: 'flipInY'} ]);"
+            @mouseover="addAnimation(
+              {name: 'stage', bool: false},
+              [
+                {element: 'img[name=stage]', animation: 'flipOutY'},
+                {element: 'table[name=stage]', animation: 'flipInY'} 
+              ]
+            );"
             name="stage"
             :src="require('@/assets/img/school/batiment-UQAM.jpg')"
             class="img-fluid"
             alt="stage"
           />
         </div>
-        <Table name="stage" v-show="!show.stage"></Table>
+        <Table
+          name="stage"
+          v-show="!show.stage"
+          @mouseover="addAnimation( 
+            {name: 'stage', bool: true},
+            [
+              {element: 'img[name=stage]', animation: 'flipOutY'},
+              {element: 'table[name=stage]', animation: 'flipInY'}
+            ]
+          );"
+        ></Table>
       </div>
     </div>
 
@@ -76,7 +108,8 @@ export default {
         this.nameOfActivityClick = this.$route.params.activity;
     },
     // Function adding animation
-    // [{element: queryEl, animation: AnimateCss}, {...}] length: 1 or 2
+    // show: {name: "", bool: true}
+    // args: [{element: queryEl, animation: AnimateCss}, {...}] length: 1 or 2
     addAnimation(show, args) {
       $(args[0].element).addClass(
         `animate__animated animate__${args[0].animation}`
@@ -85,7 +118,7 @@ export default {
       if (args.length <= 1) return 0;
 
       $(args[0].element).bind("animationend", () => {
-        this.show[show] = false;
+        this.show[show.name] = show.bool;
         $(args[1].element).addClass(
           `animate__animated animate__${args[1].animation}`
         );
