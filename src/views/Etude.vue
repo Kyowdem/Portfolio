@@ -19,7 +19,6 @@
           </table>
         </div>
       </div>
-
       <div class="row justify-content-md-around imgFlip">
         <div class="col-md-6">
           <img
@@ -101,11 +100,12 @@ export default {
         this.nameOfActivityClick = this.$route.params.activity;
     },
     // Function adding animation
-    // [{element: queryEl, animation: AnimateCss}, {...}] length: 2
+    // [{element: queryEl, animation: AnimateCss}, {...}] length: 1 or 2
     addAnimation(args) {
       $(args[0].element).addClass(
         `animate__animated animate__${args[0].animation}`
       );
+      if (args.length <= 1) return 0;
       $(args[0].element).bind("animationend", function () {
         $(args[1].element).addClass(
           `animate__animated animate__${args[1].animation}`
