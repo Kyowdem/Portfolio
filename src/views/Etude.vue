@@ -7,7 +7,8 @@
         <div
           v-show="show.PPE"
           class="col-md-6"
-          @click="addAnimation(
+          @mouseleave="stopAnimation('PPE')"
+          @mouseover="addAnimation(
               {name:'PPE', bool: false},
               [
                 {element: 'img[name=PPE]', animation: 'flipOutY'},
@@ -25,7 +26,7 @@
         <div
           class="col-md-6"
           v-show="!show.PPE"
-          @click="addAnimation(
+          @mouseleave="addAnimation(
             {name:'PPE', bool: true},
             [
               {element: 'table[name=PPE]', animation: 'flipOutY'}, 
@@ -39,7 +40,8 @@
         <div
           v-show="show.stage"
           class="col-md-6"
-          @click="addAnimation(
+          @mouseleave="stopAnimation('stage')"
+          @mouseover="addAnimation(
               {name: 'stage', bool: false},
               [
                 {element: 'img[name=stage]', animation: 'flipOutY'},
@@ -57,7 +59,7 @@
         <div
           class="col-md-6"
           v-show="!show.stage"
-          @click="addAnimation( 
+          @mouseleave="addAnimation( 
             {name: 'stage', bool: true},
             [
               {element: 'table[name=stage]', animation: 'flipOutY'},
@@ -154,6 +156,11 @@ export default {
 
         $(args[1].element).unbind("animationend");
       });
+    },
+    stopAnimation(element, animation = "flipOutY") {
+      if(!this.show[element]) return 0;
+      this.show[element] = true;
+      $(`img[name=${element}]`).removeClass(["animate__animated", `animate__${animation}`]);
     },
   },
 };
