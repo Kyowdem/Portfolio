@@ -4,15 +4,18 @@
       <School :etudeName="$route.params.etudeName" />
 
       <div class="row justify-content-md-around activitiesList">
-        <div v-show="show.PPE" class="col-md-6">
-          <img
-            @mouseover="addAnimation(
+        <div
+          v-show="show.PPE"
+          class="col-md-6"
+          @mouseover="addAnimation(
               {name:'PPE', bool: false},
               [
                 {element: 'img[name=PPE]', animation: 'flipOutY'},
                 {element: 'table[name=PPE]', animation: 'flipInY'} 
               ]
             );"
+        >
+          <img
             name="PPE"
             :src="require('@/assets/img/school/batiment-BTS.jpg')"
             class="img-fluid"
@@ -33,15 +36,18 @@
           <Table name="PPE"></Table>
         </div>
 
-        <div v-show="show.stage" class="col-md-6">
-          <img
-            @mouseover="addAnimation(
+        <div
+          v-show="show.stage"
+          class="col-md-6"
+          @mouseover="addAnimation(
               {name: 'stage', bool: false},
               [
                 {element: 'img[name=stage]', animation: 'flipOutY'},
                 {element: 'table[name=stage]', animation: 'flipInY'} 
               ]
             );"
+        >
+          <img
             name="stage"
             :src="require('@/assets/img/school/batiment-UQAM.jpg')"
             class="img-fluid"
@@ -119,18 +125,22 @@ export default {
         `animate__animated animate__${args[0].animation}`
       );
 
-      if (args.length <= 1) return 0;
-
       $(args[0].element).bind("animationend", () => {
-        this.show[show.name] = show.bool;
-        $(args[1].element).addClass(
-          `animate__animated animate__${args[1].animation}`
-        );
+        // stop function when they have only one animation (args)
+        if (args.length <= 1) return 0;
 
+        this.show[show.name] = show.bool;
         // remove class if exist
         $(args[0].element).removeClass(
           `animate__animated animate__${args[0].animation}`
         );
+        $(args[1].element).addClass(
+          `animate__animated animate__${args[1].animation}`
+        );
+      });
+
+      $(args[1].element).bind("animationend", () => {
+        // remove class if exist
         $(args[1].element).removeClass(
           `animate__animated animate__${args[1].animation}`
         );
