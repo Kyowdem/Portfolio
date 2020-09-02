@@ -7,7 +7,7 @@
         <div
           v-show="show.PPE"
           class="col-md-6"
-          @mouseover="addAnimation(
+          @click="addAnimation(
               {name:'PPE', bool: false},
               [
                 {element: 'img[name=PPE]', animation: 'flipOutY'},
@@ -39,7 +39,7 @@
         <div
           v-show="show.stage"
           class="col-md-6"
-          @mouseover="addAnimation(
+          @click="addAnimation(
               {name: 'stage', bool: false},
               [
                 {element: 'img[name=stage]', animation: 'flipOutY'},
@@ -121,30 +121,40 @@ export default {
     // show: {name: "", bool: true}
     // args: [{element: queryEl, animation: AnimateCss}, {...}] length: 1 or 2
     addAnimation(show, args) {
-      $(args[0].element).addClass(
-        `animate__animated animate__${args[0].animation}`
-      );
+      $(args[0].element).addClass([
+        "animate__animated",
+        `animate__${args[0].animation}`,
+      ]);
 
       $(args[0].element).bind("animationend", () => {
         // stop function when they have only one animation (args)
         if (args.length <= 1) return 0;
 
+        console.dir(args[1].animation);
+        console.dir("1: " + $(args[0].element).prop("className"));
+
         // remove class if exist
-        $(args[0].element).removeClass(
-          `animate__animated animate__${args[0].animation}`
-        );
+        $(args[0].element).removeClass([
+          "animate__animated",
+          `animate__${args[0].animation}`,
+          `animate__${args[1].animation}`,
+        ]);
         this.show[show.name] = show.bool;
 
-        $(args[1].element).addClass(
-          `animate__animated animate__${args[1].animation}`
-        );
+        console.dir("1: " + $(args[0].element).prop("className"));
+
+        $(args[1].element).addClass([
+          "animate__animated",
+          `animate__${args[1].animation}`,
+        ]);
       });
 
       $(args[1].element).bind("animationend", () => {
         // remove class if exist
-        $(args[1].element).removeClass(
-          `animate__animated animate__${args[1].animation}`
-        );
+        $(args[1].element).removeClass([
+          "animate__animated",
+          `animate__${args[1].animation}`,
+        ]);
       });
     },
   },
