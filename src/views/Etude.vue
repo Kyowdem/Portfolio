@@ -129,11 +129,12 @@ export default {
         // stop function when they have only one animation (args)
         if (args.length <= 1) return 0;
 
-        this.show[show.name] = show.bool;
         // remove class if exist
         $(args[0].element).removeClass(
           `animate__animated animate__${args[0].animation}`
         );
+        this.show[show.name] = show.bool;
+
         $(args[1].element).addClass(
           `animate__animated animate__${args[1].animation}`
         );
