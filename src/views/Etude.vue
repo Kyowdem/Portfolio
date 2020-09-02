@@ -19,17 +19,19 @@
             alt="PPE"
           />
         </div>
-        <Table
-          name="PPE"
+        <div
+          class="col-md-6"
           v-show="!show.PPE"
-          @mouseover="addAnimation(
+          @click="addAnimation(
             {name:'PPE', bool: true},
             [
-              {element: 'img[name=PPE]', animation: 'flipOutY'},
-              {element: 'table[name=PPE]', animation: 'flipInY'} 
+              {element: 'table[name=PPE]', animation: 'flipOutY'}, 
+              {element: 'img[name=PPE]', animation: 'flipInY'}
             ]
           );"
-        ></Table>
+        >
+          <Table name="PPE"></Table>
+        </div>
 
         <div v-show="show.stage" class="col-md-6">
           <img
@@ -46,17 +48,19 @@
             alt="stage"
           />
         </div>
-        <Table
-          name="stage"
+        <div
+          class="col-md-6"
           v-show="!show.stage"
-          @mouseover="addAnimation( 
+          @click="addAnimation( 
             {name: 'stage', bool: true},
             [
-              {element: 'img[name=stage]', animation: 'flipOutY'},
-              {element: 'table[name=stage]', animation: 'flipInY'}
+              {element: 'table[name=stage]', animation: 'flipOutY'},
+              {element: 'img[name=stage]', animation: 'flipInY'}
             ]
           );"
-        ></Table>
+        >
+          <Table name="stage"></Table>
+        </div>
       </div>
     </div>
 
@@ -111,6 +115,15 @@ export default {
     // show: {name: "", bool: true}
     // args: [{element: queryEl, animation: AnimateCss}, {...}] length: 1 or 2
     addAnimation(show, args) {
+      console.dir("foo");
+      // remove class if exist
+      $(args[0].element).removeClass(
+        `animate__animated animate__${args[0].animation}`
+      );
+      $(args[1].element).removeClass(
+        `animate__animated animate__${args[1].animation}`
+      );
+
       $(args[0].element).addClass(
         `animate__animated animate__${args[0].animation}`
       );

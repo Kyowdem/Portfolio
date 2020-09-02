@@ -1,5 +1,5 @@
 <template>
-  <div class="col-md-6">
+  <div>
     <table class="table table-hover" :name="name">
       <thead>
         <tr>
