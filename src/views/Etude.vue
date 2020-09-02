@@ -7,7 +7,7 @@
         <div
           v-show="show.PPE"
           class="col-md-6 col-lg-4"
-          @mouseleave="stopAnimation('PPE')"
+          @mouseleave="stopAnimation('PPE', ['img[name=PPE]', 'table[name=PPE]'])"
           @mouseover="addAnimation(
               {name:'PPE', bool: false},
               [
@@ -35,7 +35,7 @@
         <div
           v-show="show.stage"
           class="col-md-6 col-lg-4"
-          @mouseleave="stopAnimation('stage')"
+          @mouseleave="stopAnimation('stage', ['img[name=stage]', 'table[name=stage]'])"
           @mouseover="addAnimation(
               {name: 'stage', bool: false},
               [
@@ -152,14 +152,16 @@ export default {
         $(args[1].element).unbind("animationend");
       });
     },
-    stopAnimation(element, animation = ["flipOutY", "flipInY"]) {
+    stopAnimation(element, query, animation = ["flipOutY", "flipInY"]) {
       if (!this.show[element]) return 0;
       this.show[element] = true;
-      $(`img[name=${element}]`).removeClass([
-        "animate__animated",
-        `animate__${animation[0]}`,
-        `animate__${animation[1]}`,
-      ]);
+
+      for (let i = 0; i < query.length; i++) {
+        $(query[i]).removeClass("animate__animated")
+        for (let j = 0; j < animation.length; j++) {
+          $(query[i]).removeClass(`animate__${animation[j]}`)
+        }
+      }
     },
   },
 };
