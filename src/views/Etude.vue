@@ -152,12 +152,13 @@ export default {
         $(args[1].element).unbind("animationend");
       });
     },
-    stopAnimation(element, animation = "flipOutY") {
+    stopAnimation(element, animation = ["flipOutY", "flipInY"]) {
       if (!this.show[element]) return 0;
       this.show[element] = true;
       $(`img[name=${element}]`).removeClass([
         "animate__animated",
-        `animate__${animation}`,
+        `animate__${animation[0]}`,
+        `animate__${animation[1]}`,
       ]);
     },
   },
