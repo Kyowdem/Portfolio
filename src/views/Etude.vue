@@ -6,7 +6,7 @@
       <div class="row justify-content-md-around activitiesList">
         <div
           v-show="show.PPE"
-          class="col-md-6"
+          class="col-md-6 col-lg-4"
           @mouseleave="stopAnimation('PPE')"
           @mouseover="addAnimation(
               {name:'PPE', bool: false},
@@ -24,7 +24,7 @@
           />
         </div>
         <div
-          class="col-md-6"
+          class="col-md-6 col-lg-4"
           v-show="!show.PPE"
           @mouseleave="addAnimation(
             {name:'PPE', bool: true},
@@ -39,7 +39,7 @@
 
         <div
           v-show="show.stage"
-          class="col-md-6"
+          class="col-md-6 col-lg-4"
           @mouseleave="stopAnimation('stage')"
           @mouseover="addAnimation(
               {name: 'stage', bool: false},
@@ -57,7 +57,7 @@
           />
         </div>
         <div
-          class="col-md-6"
+          class="col-md-6 col-lg-4"
           v-show="!show.stage"
           @mouseleave="addAnimation( 
             {name: 'stage', bool: true},
