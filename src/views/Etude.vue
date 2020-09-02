@@ -16,12 +16,7 @@
               ]
             );"
         >
-          <img
-            name="PPE"
-            :src="require('@/assets/img/school/PPE.jpg')"
-            class="img-fluid"
-            alt="PPE"
-          />
+          <img name="PPE" :src="require('@/assets/img/school/PPE.jpg')" class="img-fluid" alt="PPE" />
         </div>
         <div
           class="col-md-6 col-lg-4"
@@ -158,9 +153,12 @@ export default {
       });
     },
     stopAnimation(element, animation = "flipOutY") {
-      if(!this.show[element]) return 0;
+      if (!this.show[element]) return 0;
       this.show[element] = true;
-      $(`img[name=${element}]`).removeClass(["animate__animated", `animate__${animation}`]);
+      $(`img[name=${element}]`).removeClass([
+        "animate__animated",
+        `animate__${animation}`,
+      ]);
     },
   },
 };
