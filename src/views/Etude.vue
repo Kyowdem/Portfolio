@@ -18,7 +18,7 @@
         >
           <img
             name="PPE"
-            :src="require('@/assets/img/school/batiment-BTS.jpg')"
+            :src="require('@/assets/img/school/PPE.jpg')"
             class="img-fluid"
             alt="PPE"
           />
@@ -51,7 +51,7 @@
         >
           <img
             name="stage"
-            :src="require('@/assets/img/school/batiment-UQAM.jpg')"
+            :src="require('@/assets/img/school/stage.jpg')"
             class="img-fluid"
             alt="stage"
           />
