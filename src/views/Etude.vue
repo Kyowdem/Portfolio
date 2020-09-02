@@ -130,23 +130,19 @@ export default {
         // stop function when they have only one animation (args)
         if (args.length <= 1) return 0;
 
-        console.dir(args[1].animation);
-        console.dir("1: " + $(args[0].element).prop("className"));
-
         // remove class if exist
         $(args[0].element).removeClass([
           "animate__animated",
           `animate__${args[0].animation}`,
-          `animate__${args[1].animation}`,
         ]);
         this.show[show.name] = show.bool;
-
-        console.dir("1: " + $(args[0].element).prop("className"));
 
         $(args[1].element).addClass([
           "animate__animated",
           `animate__${args[1].animation}`,
         ]);
+
+        $(args[0].element).unbind("animationend");
       });
 
       $(args[1].element).bind("animationend", () => {
@@ -155,6 +151,8 @@ export default {
           "animate__animated",
           `animate__${args[1].animation}`,
         ]);
+
+        $(args[1].element).unbind("animationend");
       });
     },
   },
