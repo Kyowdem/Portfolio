@@ -3,7 +3,7 @@
     <div class="container-fluid" v-if="activityOrSchool">
       <School :etudeName="$route.params.etudeName" />
 
-      <div class="row justify-content-md-around activitiesList">
+      <div v-if="$route.params.etudeName == 'BTS'" class="row justify-content-md-around activitiesList">
         <div
           v-show="show.PPE"
           class="col-md-6 col-lg-4"
