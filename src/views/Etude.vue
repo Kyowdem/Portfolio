@@ -115,15 +115,6 @@ export default {
     // show: {name: "", bool: true}
     // args: [{element: queryEl, animation: AnimateCss}, {...}] length: 1 or 2
     addAnimation(show, args) {
-      console.dir("foo");
-      // remove class if exist
-      $(args[0].element).removeClass(
-        `animate__animated animate__${args[0].animation}`
-      );
-      $(args[1].element).removeClass(
-        `animate__animated animate__${args[1].animation}`
-      );
-
       $(args[0].element).addClass(
         `animate__animated animate__${args[0].animation}`
       );
@@ -133,6 +124,14 @@ export default {
       $(args[0].element).bind("animationend", () => {
         this.show[show.name] = show.bool;
         $(args[1].element).addClass(
+          `animate__animated animate__${args[1].animation}`
+        );
+
+        // remove class if exist
+        $(args[0].element).removeClass(
+          `animate__animated animate__${args[0].animation}`
+        );
+        $(args[1].element).removeClass(
           `animate__animated animate__${args[1].animation}`
         );
       });
