@@ -9,7 +9,7 @@
           <h1>Collomb Mehdi</h1>
         </div>
         <div class="description">
-          <p>Developpeur Front-end, Back-end, application mobile et Windows.</p>
+          <p>Developpeur Full-stack, application mobile et Windows.</p>
         </div>
       </div>
       <div class="row justify-content-center aboutMe">
@@ -34,11 +34,11 @@
 export default {
   data() {
     return {
-      showAboutMe: false
+      showAboutMe: false,
     };
   },
   mounted() {},
-  methods: {}
+  methods: {},
 };
 </script>
 
@@ -46,6 +46,7 @@ export default {
 .autor h1 {
   text-align: center;
 }
+
 .autor .name h1 {
   color: transparent;
   text-transform: uppercase;
@@ -82,12 +83,6 @@ p.bigText {
   font-size: 340%;
 }
 
-@media (min-width: 992px) {
-  p.normalText {
-   font-size: 94%;
-  }
-}
-
 div.borderRectangle p {
   margin: auto;
   text-align: center;
@@ -95,4 +90,34 @@ div.borderRectangle p {
   user-select: none;
 }
 
+/* phone screen */
+@media (max-width: 576px) {
+  .name h1 {
+    font-size: 3em !important;
+  }
+
+  .borderRectangle {
+    /* margin: auto 8em !important; */
+    margin: auto 35% !important;
+  }
+}
+
+/* medium screen */
+@media (max-width: 768px) and (min-width: 576px) {
+  .name h1 {
+    font-size: 5em !important;
+  }
+
+  .borderRectangle {
+    /* margin: auto 10em !important; */
+    margin: auto 40% !important;
+  }
+}
+
+/* large screen */
+@media (min-width: 992px) {
+  p.normalText {
+    font-size: 94%;
+  }
+}
 </style>
