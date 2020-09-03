@@ -8,7 +8,7 @@
         <div class="col-md-12 col-lg-10 name">
           <h1>Collomb Mehdi</h1>
         </div>
-        <div class="description">
+        <div class="col-md-12 col-lg-10 col-sm-11">
           <p>Developpeur Full-stack, application mobile et Windows.</p>
         </div>
       </div>
