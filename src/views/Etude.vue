@@ -138,7 +138,7 @@ export default {
     },
     // elementShow: {name: "", bool: true}
     // items: [{query: queryElement, animation: Animate.css}, {...}].length: 2.
-    animateTwoItem(items, elementShow) {
+    animateTwoItems(items, elementShow) {
       this.addAnimations(items[0].query, items[0].animation);
       this.show[elementShow.name] = elementShow.bool;
 
