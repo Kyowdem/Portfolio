@@ -131,7 +131,8 @@ export default {
     },
     // animation: String or Array of string
     getAnimation(animations) {
-      if(typeof animations == "string") animations = [animations];
+      if (typeof animations == "string") animations = [animations];
+
       let animation = "";
       animations.forEach((element) => {
         animation += `animate__${element} `;
