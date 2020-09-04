@@ -9,8 +9,8 @@
           class="col-md-6 col-lg-4"
           @mouseover="animateTwoItems(
               [
-                {element: 'img[name=PPE]', animation: 'flipOutY'},
-                {element: 'table[name=PPE]', animation: 'flipInY'} 
+                {query: 'img[name=PPE]', animation: 'flipOutY'},
+                {query: 'table[name=PPE]', animation: 'flipInY'} 
               ],
               {name:'PPE', bool: false}
             );"
@@ -22,8 +22,8 @@
           v-show="!show.PPE"
           @mouseleave="animateTwoItems(
             [
-              {element: 'table[name=PPE]', animation: 'flipOutY'}, 
-              {element: 'img[name=PPE]', animation: 'flipInY'}
+              {query: 'table[name=PPE]', animation: 'flipOutY'}, 
+              {query: 'img[name=PPE]', animation: 'flipInY'}
             ],
             {name:'PPE', bool: true}
           );"
@@ -36,8 +36,8 @@
           class="col-md-6 col-lg-4"
           @mouseover="animateTwoItems(
               [
-                {element: 'img[name=stage]', animation: 'flipOutY'},
-                {element: 'table[name=stage]', animation: 'flipInY'} 
+                {query: 'img[name=stage]', animation: 'flipOutY'},
+                {query: 'table[name=stage]', animation: 'flipInY'} 
               ],
               {name: 'stage', bool: false}
             );"
@@ -54,8 +54,8 @@
           v-show="!show.stage"
           @mouseleave="animateTwoItems( 
             [
-              {element: 'table[name=stage]', animation: 'flipOutY'},
-              {element: 'img[name=stage]', animation: 'flipInY'}
+              {query: 'table[name=stage]', animation: 'flipOutY'},
+              {query: 'img[name=stage]', animation: 'flipInY'}
             ],
             {name: 'stage', bool: true}
           );"
