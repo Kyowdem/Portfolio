@@ -161,7 +161,7 @@ export default {
     createPopper(queryElement, queryText, placement = "top", time = 2000) {
       createPopper($(queryElement)[0], $(queryText)[0], { placement });
       setTimeout(() => {
-        $(queryText).hide();
+        $(queryText).fadeOut();
       }, time);
     },
   },
