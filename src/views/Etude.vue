@@ -16,7 +16,7 @@
             );"
         >
           <img name="PPE" :src="require('@/assets/img/school/PPE.jpg')" class="img-fluid" alt="PPE" />
-          <div id="tooltip" role="tooltip">I'm a tooltip</div>
+          <div id="mouseoverPPE" role="tooltip">Passez la souris sur la photo :D</div>
         </div>
         <div
           class="col-md-6 col-lg-4"
@@ -49,6 +49,7 @@
             class="img-fluid"
             alt="stage"
           />
+          <div id="mouseoverStage" role="tooltip">Passez la souris sur la photo :D</div>
         </div>
         <div
           class="col-md-6 col-lg-4"
@@ -95,8 +96,11 @@ export default {
   mounted() {
     this.checkActivityURL();
     this.setActivityOrSchool();
+
     this.addAnimations("img[name=PPE]", "shakeY");
     this.addAnimations("img[name=stage]", "shakeY");
+    this.createPopper("img[name=PPE]", "#mouseoverPPE");
+    this.createPopper("img[name=stage]", "#mouseoverStage");
   },
   watch: {
     "$route.params.activity": function () {
@@ -157,7 +161,7 @@ export default {
     createPopper(queryElement, queryText, placement = "top", time = 2000) {
       createPopper($(queryElement)[0], $(queryText)[0], { placement });
       setTimeout(() => {
-        $(queryText).hide();
+        // $(queryText).hide();
       }, time);
     },
   },
@@ -176,11 +180,13 @@ div.activitiesList {
   margin-top: 3em;
 }
 
-#tooltip {
-  background-color: #333;
-  color: white;
+div[role="tooltip"] {
+  background-color: #F0F8FF;
+  color: #213243;
   padding: 5px 10px;
   border-radius: 4px;
   font-size: 13px;
+  font-weight: bold;
+  margin: 1em;
 }
 </style>
