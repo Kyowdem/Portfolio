@@ -135,7 +135,7 @@ export default {
       animations.forEach((element) => {
         animation += `animate__${element} `;
       });
-      return animation;
+      return animation.trim();
     },
     // Function adding animation
     // show: {name: "", bool: true}
