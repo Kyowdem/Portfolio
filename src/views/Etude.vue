@@ -94,6 +94,7 @@ export default {
     this.checkActivityURL();
     this.setActivityOrSchool();
     this.addAnimations("img[name=PPE]", ["shakeY"]);
+    this.addAnimations("img[name=stage]", ["shakeY"]);
   },
   watch: {
     "$route.params.activity": function () {
@@ -134,6 +135,17 @@ export default {
         animation += `animate__${element} `;
       });
       return animation.trim();
+    },
+    // elementShow: {name: "", bool: true}
+    // items: [{query: queryElement, animation: Animate.css}, {...}].length: 2.
+    animateTwoItem(items, elementShow) {
+      this.addAnimations(items[0].query, items[0].animation);
+      this.show[elementShow.name] = elementShow.bool;
+
+      $(items[0].query).bind("animationend", () => {
+        this.addAnimations(items[1].query, items[1].animation);
+        $(items[0].query).unbind("animationend");
+      });
     },
     // Function adding animation
     // show: {name: "", bool: true}
