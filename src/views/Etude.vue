@@ -114,13 +114,13 @@ export default {
       if (this.$route.params.activity)
         this.nameOfActivityClick = this.$route.params.activity;
     },
-    // query: String, animation: Array, deleteAnimation: Boolean
-    addAnimations(query, animations, deleteAnimation = true) {
+    // query: String, animation: Array
+    addAnimations(query, animations) {
       $(query).addClass(
         "animate__animated" + " " + this.getAnimation(animations)
       );
 
-      if (deleteAnimation) this.deleteAnimations(query, animations);
+      this.deleteAnimations(query, animations);
     },
     deleteAnimations(query, animations) {
       $(query).bind("animationend", () => {
