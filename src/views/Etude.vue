@@ -118,7 +118,7 @@ export default {
       $(query).addClass(() => {
         let animation = "";
         animations.forEach((element) => {
-          animation += `animate__${element}`;
+          animation += `animate__${element} `;
         });
         this.deleteAnimation(query, animations);
         return "animate__animated" + " " + animation;
