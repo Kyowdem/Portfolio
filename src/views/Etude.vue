@@ -7,25 +7,26 @@
         <div
           v-show="show.PPE"
           class="col-md-6 col-lg-4"
-          @mouseover="addAnimation(
-              {name:'PPE', bool: false},
+          @mouseover="animateTwoItems(
               [
-                {element: 'img[name=PPE]', animation: 'flipOutY'},
-                {element: 'table[name=PPE]', animation: 'flipInY'} 
-              ]
+                {query: 'img[name=PPE]', animation: 'flipOutY'},
+                {query: 'table[name=PPE]', animation: 'flipInY'} 
+              ],
+              {name:'PPE', bool: false}
             );"
         >
           <img name="PPE" :src="require('@/assets/img/school/PPE.jpg')" class="img-fluid" alt="PPE" />
+          <div id="mouseoverPPE" role="tooltip">Passez la souris sur la photo :D</div>
         </div>
         <div
           class="col-md-6 col-lg-4"
           v-show="!show.PPE"
-          @mouseleave="addAnimation(
-            {name:'PPE', bool: true},
+          @mouseleave="animateTwoItems(
             [
-              {element: 'table[name=PPE]', animation: 'flipOutY'}, 
-              {element: 'img[name=PPE]', animation: 'flipInY'}
-            ]
+              {query: 'table[name=PPE]', animation: 'flipOutY'}, 
+              {query: 'img[name=PPE]', animation: 'flipInY'}
+            ],
+            {name:'PPE', bool: true}
           );"
         >
           <Table name="PPE"></Table>
@@ -34,12 +35,12 @@
         <div
           v-show="show.stage"
           class="col-md-6 col-lg-4"
-          @mouseover="addAnimation(
-              {name: 'stage', bool: false},
+          @mouseover="animateTwoItems(
               [
-                {element: 'img[name=stage]', animation: 'flipOutY'},
-                {element: 'table[name=stage]', animation: 'flipInY'} 
-              ]
+                {query: 'img[name=stage]', animation: 'flipOutY'},
+                {query: 'table[name=stage]', animation: 'flipInY'} 
+              ],
+              {name: 'stage', bool: false}
             );"
         >
           <img
@@ -48,16 +49,17 @@
             class="img-fluid"
             alt="stage"
           />
+          <div id="mouseoverStage" role="tooltip">Passez la souris sur la photo :D</div>
         </div>
         <div
           class="col-md-6 col-lg-4"
           v-show="!show.stage"
-          @mouseleave="addAnimation( 
-            {name: 'stage', bool: true},
+          @mouseleave="animateTwoItems( 
             [
-              {element: 'table[name=stage]', animation: 'flipOutY'},
-              {element: 'img[name=stage]', animation: 'flipInY'}
-            ]
+              {query: 'table[name=stage]', animation: 'flipOutY'},
+              {query: 'img[name=stage]', animation: 'flipInY'}
+            ],
+            {name: 'stage', bool: true}
           );"
         >
           <Table name="stage"></Table>
@@ -71,6 +73,7 @@
 
 <script>
 import $ from "jquery";
+import { createPopper } from "@popperjs/core";
 // Components
 import School from "@/components/School.vue";
 import StagePPE from "@/components/stage&PPE.vue";
@@ -93,6 +96,11 @@ export default {
   mounted() {
     this.checkActivityURL();
     this.setActivityOrSchool();
+
+    this.addAnimations("img[name=PPE]", "shakeY");
+    this.addAnimations("img[name=stage]", "shakeY");
+    this.createPopper("img[name=PPE]", "#mouseoverPPE");
+    this.createPopper("img[name=stage]", "#mouseoverStage");
   },
   watch: {
     "$route.params.activity": function () {
@@ -112,43 +120,49 @@ export default {
       if (this.$route.params.activity)
         this.nameOfActivityClick = this.$route.params.activity;
     },
-    // Function adding animation
-    // show: {name: "", bool: true}
-    // args: [{element: queryEl, animation: AnimateCss}, {...}] length: 1 or 2
-    addAnimation(show, args) {
-      $(args[0].element).addClass([
-        "animate__animated",
-        `animate__${args[0].animation}`,
-      ]);
+    // query: String, animation: Array
+    addAnimations(query, animations) {
+      $(query).addClass(
+        "animate__animated" + " " + this.getAnimation(animations)
+      );
 
-      $(args[0].element).bind("animationend", () => {
-        // stop function when they have only one animation (args)
-        if (args.length <= 1) return 0;
-
-        // remove class if exist
-        $(args[0].element).removeClass([
-          "animate__animated",
-          `animate__${args[0].animation}`,
-        ]);
-        this.show[show.name] = show.bool;
-
-        $(args[1].element).addClass([
-          "animate__animated",
-          `animate__${args[1].animation}`,
-        ]);
-
-        $(args[0].element).unbind("animationend");
+      this.deleteAnimations(query, animations);
+    },
+    // query: String, animation: Array
+    deleteAnimations(query, animations) {
+      $(query).bind("animationend", () => {
+        $(query).removeClass(
+          "animate__animated" + " " + this.getAnimation(animations)
+        );
+        $(query).unbind("animationend");
       });
+    },
+    // animation: String or Array of string
+    getAnimation(animations) {
+      if (typeof animations == "string") animations = [animations];
 
-      $(args[1].element).bind("animationend", () => {
-        // remove class if exist
-        $(args[1].element).removeClass([
-          "animate__animated",
-          `animate__${args[1].animation}`,
-        ]);
-
-        $(args[1].element).unbind("animationend");
+      let animation = "";
+      animations.forEach((element) => {
+        animation += `animate__${element} `;
       });
+      return animation.trim();
+    },
+    // elementShow: {name: "", bool: true}
+    // items: [{query: queryElement, animation: Animate.css}, {...}].length: 2.
+    animateTwoItems(items, elementShow) {
+      this.addAnimations(items[0].query, items[0].animation);
+
+      $(items[0].query).bind("animationend", () => {
+        this.show[elementShow.name] = elementShow.bool;
+        this.addAnimations(items[1].query, items[1].animation);
+        $(items[0].query).unbind("animationend");
+      });
+    },
+    createPopper(queryElement, queryText, placement = "top", time = 2000) {
+      createPopper($(queryElement)[0], $(queryText)[0], { placement });
+      setTimeout(() => {
+        $(queryText).fadeOut();
+      }, time);
     },
   },
 };
@@ -164,5 +178,14 @@ thead th {
 
 div.activitiesList {
   margin-top: 3em;
+}
+
+div[role="tooltip"] {
+  background-color: #F0F8FF;
+  color: #213243;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: bold;
 }
 </style>
