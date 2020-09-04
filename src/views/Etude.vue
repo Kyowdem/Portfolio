@@ -114,12 +114,13 @@ export default {
       if (this.$route.params.activity)
         this.nameOfActivityClick = this.$route.params.activity;
     },
-    // query: String, animation: Array
-    addAnimations(query, animations) {
+    // query: String, animation: Array, deleteAnimation: Boolean
+    addAnimations(query, animations, deleteAnimation = true) {
       $(query).addClass(
         "animate__animated" + " " + this.getAnimation(animations)
       );
-      this.deleteAnimations(query, animations);
+
+      if (deleteAnimation) this.deleteAnimations(query, animations);
     },
     deleteAnimations(query, animations) {
       $(query).bind("animationend", () => {
@@ -143,9 +144,9 @@ export default {
     // items: [{query: queryElement, animation: Animate.css}, {...}].length: 2.
     animateTwoItems(items, elementShow) {
       this.addAnimations(items[0].query, items[0].animation);
-      this.show[elementShow.name] = elementShow.bool;
 
       $(items[0].query).bind("animationend", () => {
+        this.show[elementShow.name] = elementShow.bool;
         this.addAnimations(items[1].query, items[1].animation);
         $(items[0].query).unbind("animationend");
       });
