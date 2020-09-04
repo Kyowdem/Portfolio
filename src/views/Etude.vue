@@ -181,7 +181,7 @@ div.activitiesList {
 }
 
 div[role="tooltip"] {
-  background-color: #F0F8FF;
+  background-color: #f0f8ff;
   color: #213243;
   padding: 5px 10px;
   border-radius: 4px;
