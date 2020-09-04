@@ -93,8 +93,8 @@ export default {
   mounted() {
     this.checkActivityURL();
     this.setActivityOrSchool();
-    this.addAnimations("img[name=PPE]", ["shakeY"]);
-    this.addAnimations("img[name=stage]", ["shakeY"]);
+    this.addAnimations("img[name=PPE]", "shakeY");
+    this.addAnimations("img[name=stage]", "shakeY");
   },
   watch: {
     "$route.params.activity": function () {
