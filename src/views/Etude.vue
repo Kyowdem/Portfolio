@@ -8,11 +8,11 @@
           v-show="show.PPE"
           class="col-md-6 col-lg-4"
           @mouseover="addAnimation(
-              {name:'PPE', bool: false},
               [
                 {element: 'img[name=PPE]', animation: 'flipOutY'},
                 {element: 'table[name=PPE]', animation: 'flipInY'} 
-              ]
+              ],
+              {name:'PPE', bool: false}
             );"
         >
           <img name="PPE" :src="require('@/assets/img/school/PPE.jpg')" class="img-fluid" alt="PPE" />
@@ -21,11 +21,11 @@
           class="col-md-6 col-lg-4"
           v-show="!show.PPE"
           @mouseleave="addAnimation(
-            {name:'PPE', bool: true},
             [
               {element: 'table[name=PPE]', animation: 'flipOutY'}, 
               {element: 'img[name=PPE]', animation: 'flipInY'}
-            ]
+            ],
+            {name:'PPE', bool: true}
           );"
         >
           <Table name="PPE"></Table>
@@ -35,11 +35,11 @@
           v-show="show.stage"
           class="col-md-6 col-lg-4"
           @mouseover="addAnimation(
-              {name: 'stage', bool: false},
               [
                 {element: 'img[name=stage]', animation: 'flipOutY'},
                 {element: 'table[name=stage]', animation: 'flipInY'} 
-              ]
+              ],
+              {name: 'stage', bool: false}
             );"
         >
           <img
@@ -53,11 +53,11 @@
           class="col-md-6 col-lg-4"
           v-show="!show.stage"
           @mouseleave="addAnimation( 
-            {name: 'stage', bool: true},
             [
               {element: 'table[name=stage]', animation: 'flipOutY'},
               {element: 'img[name=stage]', animation: 'flipInY'}
-            ]
+            ],
+            {name: 'stage', bool: true}
           );"
         >
           <Table name="stage"></Table>
@@ -150,7 +150,7 @@ export default {
     // Function adding animation
     // show: {name: "", bool: true}
     // args: [{element: queryEl, animation: AnimateCss}, {...}] length: 1 or 2
-    addAnimation(show, args) {
+    addAnimation(args, show) {
       $(args[0].element).addClass([
         "animate__animated",
         `animate__${args[0].animation}`,
