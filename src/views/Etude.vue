@@ -93,6 +93,7 @@ export default {
   mounted() {
     this.checkActivityURL();
     this.setActivityOrSchool();
+    this.addAnimations("img[name=PPE]", ["shakeY"]);
   },
   watch: {
     "$route.params.activity": function () {
@@ -111,6 +112,23 @@ export default {
     checkActivityURL() {
       if (this.$route.params.activity)
         this.nameOfActivityClick = this.$route.params.activity;
+    },
+    // query: String, animation: Array
+    addAnimations(query, animations) {
+      $(query).addClass(() => {
+        let animation = "";
+        animations.forEach((element) => {
+          animation += `animate__${element}`;
+        });
+        this.deleteAnimation(query, animations);
+        return "animate__animated" + " " + animation;
+      });
+    },
+    deleteAnimation(query, animations) {
+      $(query).bind("animationend", () => {
+        console.dir("stop");
+        animations
+      })
     },
     // Function adding animation
     // show: {name: "", bool: true}
