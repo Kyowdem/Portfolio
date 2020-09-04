@@ -122,6 +122,7 @@ export default {
 
       this.deleteAnimations(query, animations);
     },
+    // query: String, animation: Array
     deleteAnimations(query, animations) {
       $(query).bind("animationend", () => {
         $(query).removeClass(
