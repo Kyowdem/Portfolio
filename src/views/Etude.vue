@@ -115,19 +115,17 @@ export default {
     },
     // query: String, animation: Array
     addAnimations(query, animations) {
-      $(query).addClass(() => {
-        let animation = "";
-        animations.forEach((element) => {
-          animation += `animate__${element} `;
-        });
-        this.deleteAnimations(query, animations);
-        return "animate__animated" + " " + animation;
-      });
+      $(query).addClass(
+        "animate__animated" + " " + this.getAnimation(animations)
+      );
+      this.deleteAnimations(query, animations);
     },
     deleteAnimations(query, animations) {
       $(query).bind("animationend", () => {
-        console.dir("stop");
-        animations;
+        $(query).removeClass(
+          "animate__animated" + " " + this.getAnimation(animations)
+        );
+        $(query).unbind("animationend");
       });
     },
     getAnimation(animations) {
