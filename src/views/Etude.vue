@@ -120,15 +120,22 @@ export default {
         animations.forEach((element) => {
           animation += `animate__${element} `;
         });
-        this.deleteAnimation(query, animations);
+        this.deleteAnimations(query, animations);
         return "animate__animated" + " " + animation;
       });
     },
-    deleteAnimation(query, animations) {
+    deleteAnimations(query, animations) {
       $(query).bind("animationend", () => {
         console.dir("stop");
-        animations
-      })
+        animations;
+      });
+    },
+    getAnimation(animations) {
+      let animation = "";
+      animations.forEach((element) => {
+        animation += `animate__${element} `;
+      });
+      return animation;
     },
     // Function adding animation
     // show: {name: "", bool: true}
