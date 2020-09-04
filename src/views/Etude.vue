@@ -151,44 +151,6 @@ export default {
         $(items[0].query).unbind("animationend");
       });
     },
-    // Function adding animation
-    // show: {name: "", bool: true}
-    // args: [{element: queryEl, animation: AnimateCss}, {...}] length: 1 or 2
-    addAnimation(args, show) {
-      $(args[0].element).addClass([
-        "animate__animated",
-        `animate__${args[0].animation}`,
-      ]);
-
-      $(args[0].element).bind("animationend", () => {
-        // stop function when they have only one animation (args)
-        if (args.length <= 1) return 0;
-
-        // remove class if exist
-        $(args[0].element).removeClass([
-          "animate__animated",
-          `animate__${args[0].animation}`,
-        ]);
-        this.show[show.name] = show.bool;
-
-        $(args[1].element).addClass([
-          "animate__animated",
-          `animate__${args[1].animation}`,
-        ]);
-
-        $(args[0].element).unbind("animationend");
-      });
-
-      $(args[1].element).bind("animationend", () => {
-        // remove class if exist
-        $(args[1].element).removeClass([
-          "animate__animated",
-          `animate__${args[1].animation}`,
-        ]);
-
-        $(args[1].element).unbind("animationend");
-      });
-    },
   },
 };
 </script>
