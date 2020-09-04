@@ -187,6 +187,5 @@ div[role="tooltip"] {
   border-radius: 4px;
   font-size: 13px;
   font-weight: bold;
-  margin: 1em;
 }
 </style>
