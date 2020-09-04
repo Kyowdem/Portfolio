@@ -7,7 +7,7 @@
         <div
           v-show="show.PPE"
           class="col-md-6 col-lg-4"
-          @mouseover="addAnimation(
+          @mouseover="animateTwoItems(
               [
                 {element: 'img[name=PPE]', animation: 'flipOutY'},
                 {element: 'table[name=PPE]', animation: 'flipInY'} 
@@ -20,7 +20,7 @@
         <div
           class="col-md-6 col-lg-4"
           v-show="!show.PPE"
-          @mouseleave="addAnimation(
+          @mouseleave="animateTwoItems(
             [
               {element: 'table[name=PPE]', animation: 'flipOutY'}, 
               {element: 'img[name=PPE]', animation: 'flipInY'}
@@ -34,7 +34,7 @@
         <div
           v-show="show.stage"
           class="col-md-6 col-lg-4"
-          @mouseover="addAnimation(
+          @mouseover="animateTwoItems(
               [
                 {element: 'img[name=stage]', animation: 'flipOutY'},
                 {element: 'table[name=stage]', animation: 'flipInY'} 
@@ -52,7 +52,7 @@
         <div
           class="col-md-6 col-lg-4"
           v-show="!show.stage"
-          @mouseleave="addAnimation( 
+          @mouseleave="animateTwoItems( 
             [
               {element: 'table[name=stage]', animation: 'flipOutY'},
               {element: 'img[name=stage]', animation: 'flipInY'}
@@ -129,7 +129,9 @@ export default {
         $(query).unbind("animationend");
       });
     },
+    // animation: String or Array of string
     getAnimation(animations) {
+      if(typeof animations == "string") animations = [animations];
       let animation = "";
       animations.forEach((element) => {
         animation += `animate__${element} `;
