@@ -16,6 +16,7 @@
             );"
         >
           <img name="PPE" :src="require('@/assets/img/school/PPE.jpg')" class="img-fluid" alt="PPE" />
+          <div id="tooltip" role="tooltip">I'm a tooltip</div>
         </div>
         <div
           class="col-md-6 col-lg-4"
@@ -71,6 +72,7 @@
 
 <script>
 import $ from "jquery";
+import { createPopper } from "@popperjs/core";
 // Components
 import School from "@/components/School.vue";
 import StagePPE from "@/components/stage&PPE.vue";
@@ -152,6 +154,12 @@ export default {
         $(items[0].query).unbind("animationend");
       });
     },
+    createPopper(queryElement, queryText, placement = "top", time = 2000) {
+      createPopper($(queryElement)[0], $(queryText)[0], { placement });
+      setTimeout(() => {
+        $(queryText).hide();
+      }, time);
+    },
   },
 };
 </script>
@@ -166,5 +174,13 @@ thead th {
 
 div.activitiesList {
   margin-top: 3em;
+}
+
+#tooltip {
+  background-color: #333;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 13px;
 }
 </style>
