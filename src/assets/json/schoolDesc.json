@@ -2,7 +2,7 @@
     "BTS": {
         "stage": [
             {
-                "name": "Le maquetage des pages",
+                "name": "Le maquettage des pages",
                 "description": {
                     "presentation de l'entreprise": null,
                     "contexte": "Etant une grande entreprise, ils ont besoin de gérer des entrants, des sortants ou des migrations vers d’autres postes ou endroits. J’étais donc chargé de faire un site web interne à l’entreprise lié à la base de données que je montrerais prochainement. Je vais vous montrer uniquement ce que j’ai pu faire dans la rubrique entrée.",
@@ -14,7 +14,7 @@
                 "date": "2018-06"
             },
             {
-                "name": "Ajax, le chargement des pages",
+                "name": "jQuery.ajax, le chargement des pages",
                 "description": {
                     "presentation de l'entreprise": null,
                     "contexte": "Sur une page principale, un formulaire qui pour chaque bouton suivant, changera de div et passer donc à la page suivante du formulaire. Elle aura besoin des données de la base et le tout sans actualisé la page.",
@@ -26,7 +26,7 @@
                 "date": "2018-06"
             },
             {
-                "name": "Signalement d'une erreur, popup",
+                "name": "Partie visuel, signalement d’une erreur. jQuery-ui",
                 "description": {
                     "presentation de l'entreprise": null,
                     "contexte": "Dans l’entreprise, des personnes sont souvent en déplacement et doivent rédiger une note pour se faire rembourser la somme dépenser pendant le déplacement.",
@@ -52,7 +52,7 @@
         ],
         "PPE": [
             {
-                "name": "Mission n°1 : Music Gone's",
+                "name": "Music Gone’s, découverte de JavaScript",
                 "description": {
                     "contexte": "Mission n°1 : Music Gone's Contexte L’entreprise Music gones organise le festival de musique appelé Les nuits lyonnaises. Cette dernière a besoin d'un site web permettant aux clients d'obtenir des informations sur le festival.",
                     "besoin": "Le site avait besoin d’un peu plus de d’animation et de dynamisme. J'ai à réaliser un site dit \"responsive\" en utilisant la bibliothèque Bootstrap, pour une entreprise fictive appelée \"Music gones\". J’ai aussi principalement utilisé JavaScript pour pouvoir faire des animations et que cela soit plus agréable à regarder.",
@@ -63,7 +63,7 @@
                 "date": "2017-10"
             },
             {
-                "name": "Mission n°2 : Duch’Bagels",
+                "name": "Duch’Bagels, Base de données et SQL",
                 "description": {
                     "contexte": "Duch’bagels est une entreprise de restauration faisant principalement des bagels. L’entreprise est née dans le première arrondissement de Lyon et continue de s’accroitre",
                     "besoin": "Cette dernière avait besoin d’une base de donnée qui sera sur MySQL, pour pouvoir faire un futur site dynamique mais aussi des classements sur ses bagels ou tout autre type de requête.",
@@ -74,7 +74,7 @@
                 "date": "2017-10"
             },
             {
-                "name": "Mission n°1 : Judge Movies",
+                "name": "Judge Movies : Laravel. Projet de groupe",
                 "description": {
                     "contexte": "Des étudiants ambitieux veulent rivaliser avec Netflix. Pour cela, ils ont réalisé leur site bénévolement. Et ce dernier s’avère être plus attractif que celui du géant Netflix.",
                     "besoin": "Nous avions besoin d’une base de données permettant une dynamisation plus forte du site en faisant communiquer les données de la base et le site ensemble. Il fallait aussi créer une interaction entre utilisateur.",
@@ -85,7 +85,7 @@
                 "date": "2018-11"
             },
             {
-                "name": "Mission n°2 : GSB",
+                "name": "GSB, Vuejs et création d’API ",
                 "description": {
                     "contexte": "L’entreprise Galaxy Swiss Bourdin (GSB) est un laboratoire né d’une fusion entre 2 géants du secteur pharmaceutique.",
                     "besoin": "L’entreprise avait besoin d’une recherche par nom, labo ou secteur d’un visiteur, puis de pouvoir modifier : la région où il travaille, son rôle mais aussi la date à partir de quand il a travaillé.",
