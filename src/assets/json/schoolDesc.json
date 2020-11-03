@@ -97,5 +97,19 @@
             }
         ]
     },
-    "UQAM": {}
+    "UQAM": {
+        "ecole": [
+            {
+                "name": "C++: Les arbres et les Template",
+                "descriptio": {
+                    "contexte": "",
+                    "besoin": "",
+                    "environnement technologique": "",
+                    "realisation": null,
+                    "bilan": ""
+                },
+                "date": "2020-11"
+            }
+        ]
+    }
 }
