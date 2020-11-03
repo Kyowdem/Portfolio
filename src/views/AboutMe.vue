@@ -75,6 +75,7 @@
 <script>
 import $ from "jquery";
 import Skill from "@/components/Skill.vue";
+import skills from "@/assets/json/skills.vue";
 
 export default {
   components: {
@@ -90,23 +91,7 @@ export default {
           href: "etude/BTS/stage/Lire une facture avec nodeJs et Tesseract",
         },
       ],
-      skills: [
-        { name: "Javascript", level: 18 },
-        { name: "Java", level: 13 },
-        { name: "SQL", level: 15 },
-        { name: "CSS", level: 12 },
-        { name: "C#", level: 14 },
-        { name: "PHP", level: 15 },
-        { name: "Laravel", level: 14 },
-        { name: "Vue", level: 17 },
-        { name: "Bootstrap", level: 15 },
-        { name: "jQuery", level: 18 },
-        { name: "Git", level: 16 },
-        { name: "node.js", level: 16 },
-        { name: "C++", level:  14 },
-        { name: "C", level:  14 },
-        { name: "Makefile", level:  16 },
-      ],
+      skills,
     };
   },
   methods: {
