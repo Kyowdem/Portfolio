@@ -75,7 +75,7 @@
 <script>
 import $ from "jquery";
 import Skill from "@/components/Skill.vue";
-import skills from "@/assets/json/skills.vue";
+import skills from "@/assets/json/skills.json";
 
 export default {
   components: {
