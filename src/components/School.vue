@@ -37,7 +37,6 @@ export default {
   watch: {
     "$route.params.etudeName": function () {
       this.etude = etude[this.etudeName]
-      this.$parent.setActivitiesName();
     },
   },
 };
