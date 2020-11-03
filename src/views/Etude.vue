@@ -65,6 +65,11 @@
           <Table name="stage"></Table>
         </div>
       </div>
+
+      <div v-if="$route.params.etudeName == 'UQAM'" class="row justify-content-md-around activitiesList">
+        En production
+      </div>
+      
     </div>
 
     <StagePPE :name="nameOfActivityClick" v-else />
