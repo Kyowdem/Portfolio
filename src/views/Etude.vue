@@ -90,7 +90,7 @@
         v-if="$route.params.etudeName == 'UQAM'"
         class="row justify-content-md-around activitiesList"
       >
-        <div class="col-md-6 col-ld-4">
+        <div class="col-md-6 col-lg-4">
           <Table name="ecole"></Table>
         </div>
       </div>
