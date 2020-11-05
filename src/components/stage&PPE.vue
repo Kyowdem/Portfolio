@@ -960,7 +960,7 @@
             </div>
 
             <div v-if="name == 'C++: Les arbres et les Template'">
-              <Realisation p="On m’a donné ce modèle UML." imgPath="PPE/2eme_annee/GSB/controler_visiteur_read.png"></Realisation>
+              <Realisation p="On m’a donné ce modèle UML." imgPath="ecole/INF3105/INF3105-Pile.png"></Realisation>
             </div>
           </div>
 
