@@ -153,38 +153,7 @@
 
               <Realisation p="Une fois le login crée ainsi que la page d’accueil avec le carrousel des films, lors du clic il fallait afficher une page simple et semblable pour toute. Je me suis donc occupé de la page film en faisant une page qui envoyais directement le lien de la bande annonce du film, son titre, ces réalisateurs, ces acteurs et ça note sur le site." :imgPath="['PPE/2eme_annee/Judge_movies/film_haut.png']" pAfterImg="Sur la photo la balise iframe a juste un petit problème"></Realisation>
 
-              <div data-aos="fade-right" class="row">
-                <div class="col-lg-12 col-md-12">
-                  <p>
-                    La page faisait juste charger les données depuis la base mais
-                    j’ai quand même voulu garder l’aspect dynamique alors j’ai
-                    juste rajouté des étoiles pour que l’utilisateur note sur 5
-                    le film.
-                  </p>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                  <img
-                    :src="
-                      require('@/' +
-                        this.imgSchPath +
-                        'PPE/2eme_annee/Judge_movies/film_bas.png')
-                    "
-                    alt="film_bas.png"
-                    class="img-fluid"
-                  />
-                </div>
-                <div class="col-lg-6 col-md-6">
-                  <img
-                    :src="
-                      require('@/' +
-                        this.imgSchPath +
-                        'PPE/2eme_annee/Judge_movies/code_etoile_film.png')
-                    "
-                    alt="code_etoile.png"
-                    class="img-fluid"
-                  />
-                </div>
-              </div>
+              <Realisation p="La page faisait juste charger les données depuis la base mais j’ai quand même voulu garder l’aspect dynamique alors j’ai juste rajouté des étoiles pour que l’utilisateur note sur 5 le film." :imgPath="['PPE/2eme_annee/Judge_movies/film_bas.png', 'PPE/2eme_annee/Judge_movies/code_etoile_film.png']"></Realisation>
 
               <Realisation p="En tant qu’admin nous pouvons rajouter des films et même cela est animé." :imgPath="['PPE/2eme_annee/Judge_movies/ajout_film.png']"></Realisation>
 
