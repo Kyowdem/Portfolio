@@ -49,7 +49,7 @@
             <div data-aos="fade-right">
               <h2>Réalisation</h2>
             </div>
-            <div v-if="name == 'Le maquetage des pages'">
+            <div v-if="name == 'Le maquettage des pages'">
               <div data-aos="fade-right" class="row">
                 <div class="col-lg-12 col-md-12">
                   <p>
