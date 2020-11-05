@@ -960,7 +960,7 @@
             </div>
 
             <div v-if="name == 'C++: Les arbres et les Template'">
-              
+              <Realisation p="On m’a donné ce modèle UML." imgPath="PPE/2eme_annee/GSB/controler_visiteur_read.png"></Realisation>
             </div>
           </div>
 
@@ -979,8 +979,12 @@
 <script>
 import AOS from "aos";
 import schoolDesc from "@/assets/json/schoolDesc.json";
+import Realisation from "@/components/Realisation.vue";
 
 export default {
+  components: {
+    Realisation
+  },
   data() {
     return {
       schoolDesc,
