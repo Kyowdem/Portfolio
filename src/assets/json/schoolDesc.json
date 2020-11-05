@@ -85,7 +85,7 @@
                 "date": "2018-11"
             },
             {
-                "name": "GSB, Vuejs et création d’API ",
+                "name": "GSB, Vuejs et création d’API",
                 "description": {
                     "contexte": "L’entreprise Galaxy Swiss Bourdin (GSB) est un laboratoire né d’une fusion entre 2 géants du secteur pharmaceutique.",
                     "besoin": "L’entreprise avait besoin d’une recherche par nom, labo ou secteur d’un visiteur, puis de pouvoir modifier : la région où il travaille, son rôle mais aussi la date à partir de quand il a travaillé.",

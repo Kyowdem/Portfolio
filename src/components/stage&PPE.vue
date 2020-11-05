@@ -108,7 +108,7 @@
               </div>
             </div>
 
-            <div v-if="name == 'Ajax, le chargement des pages'">
+            <div v-if="name == 'jQuery.ajax, le chargement des pages'">
               <div data-aos="fade-right" class="row">
                 <div class="col-lg-12 col-md-12">
                   <p>J’ai beaucoup utilisé la documentation de jQuery et d’Ajax, qui sont très bien faites. La présence de mon tuteur m’a aussi permis de mieux m’initier là-dedans.</p>
@@ -164,7 +164,7 @@
               </div>
             </div>
 
-            <div v-if="name == 'Signalement d\'une erreur, popup'">
+            <div v-if="name == 'Partie visuel, signalement d’une erreur. jQuery-ui'">
               <div data-aos="fade-right" class="row">
                 <div class="col-lg-12 col-md-12">
                   <p>Au début je n’étais pas partie sur un pop-up mais sur une page entière, mais j’ai trouvé ça trop lourd et moins intuitif pour l’utilisateur alors j’ai changé en utilisant le pop-up appeler aussi dialog, de jQuery-ui.</p>
@@ -295,7 +295,7 @@
               </div>
             </div>
 
-            <div v-if="name == 'Mission n°1 : Music Gone\'s'">
+            <div v-if="name == 'Music Gone’s, découverte de JavaScript'">
               <div data-aos="fade-right" class="row">
                 <div class="col-lg-12 col-md-12">
                   <p>Tout au long du PPE j’ai appris les bases de JavaScript ce qu’il fallait faire et ne pas faire, j’ai aussi fait quelque recherche personnel et j’ai aussi appris grâce à ce site : http://es6-features.org. C’est un site qui répertorie les dernières normes de JavaScript.</p>
@@ -308,7 +308,7 @@
               </div>
             </div>
 
-            <div v-if="name == 'Mission n°2 : Duch’Bagels'">
+            <div v-if="name == 'Duch’Bagels, Base de données et SQL'">
               <div data-aos="fade-right" class="row justify-content-lg-center">
                 <div class="col-lg-12 col-md-12">
                   <p>Dans le PPE, les tables et les colonnes pour le jeu d’essai étaient déjà existants dans un fichier au format SQL. Avant d’insérer les tables et les données, il fallait d’abord créer la base de données.</p>
@@ -381,7 +381,7 @@
               </div>
             </div>
 
-            <div v-if="name == 'Mission n°1 : Judge Movies'">
+            <div v-if="name == 'Judge Movies : Laravel. Projet de groupe'">
               <div data-aos="fade-right" class="row">
                 <div class="col-lg-12 col-md-12">
                   <p>Dans notre groupe, je me suis occupé de la partie design et dynamique du site. Pour cela, j’ai utilisé jQuery et Ajax. J’ai également utilisé la librairie slick, afin de produire un carrousel qui répondais à mes attentes et qui était très facile d’utilisation.</p>
@@ -461,7 +461,7 @@
               </div>
             </div>
 
-            <div v-if="name == 'Mission n°2 : GSB'">
+            <div v-if="name == 'GSB, Vuejs et création d’API'">
               <div data-aos="fade-right" class="row">
                 <div class="col-lg-12 col-md-12">
                   <p>J’ai commencé par faire la partie graphique du site avant de commencer tout le back-end. Je voulais que la page de recherche soit éducative, simple d’utilisation. J’ai alors mis une barre de recherche au milieu de l’écran et qui montera lorsqu’on saisit une information.</p>
@@ -559,6 +559,11 @@
                 </div>
               </div>
             </div>
+
+            <div v-if="name == 'C++: Les arbres et les Template'">
+
+            </div>
+            
           </div>
 
           <div data-aos="fade-right">
