@@ -161,40 +161,7 @@
             </div>
 
             <div v-if="name == 'GSB, Vuejs et création d’API'">
-
-              <div data-aos="fade-right" class="row">
-                <div class="col-lg-12 col-md-12">
-                  <p>
-                    J’ai commencé par faire la partie graphique du site avant de
-                    commencer tout le back-end. Je voulais que la page de
-                    recherche soit éducative, simple d’utilisation. J’ai alors
-                    mis une barre de recherche au milieu de l’écran et qui
-                    montera lorsqu’on saisit une information.
-                  </p>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                  <img
-                    :src="
-                      require('@/' +
-                        this.imgSchPath +
-                        'PPE/2eme_annee/GSB/barre_recherche.png')
-                    "
-                    alt="barre_recherche.png"
-                    class="img-fluid"
-                  />
-                </div>
-                <div class="col-lg-6 col-md-6">
-                  <img
-                    :src="
-                      require('@/' +
-                        this.imgSchPath +
-                        'PPE/2eme_annee/GSB/recherche_visiteur.png')
-                    "
-                    alt="recherche_visiteur.png"
-                    class="img-fluid"
-                  />
-                </div>
-              </div>
+              <Realisation p="J’ai commencé par faire la partie graphique du site avant de commencer tout le back-end. Je voulais que la page de recherche soit éducative, simple d’utilisation. J’ai alors mis une barre de recherche au milieu de l’écran et qui montera lorsqu’on saisit une information." :imgPath="['PPE/2eme_annee/GSB/barre_recherche.png', 'PPE/2eme_annee/GSB/recherche_visiteur.png']"></Realisation>
 
               <Realisation p="La recherche d’un visiteur se fait grâce à un web service où la méthode GET est utilisé. On envoie les données GET dans l’url en tapant simplement le nom de la page suivis d’un point d’interrogation, le nom de la variable et la donnée à envoyer. On peut aussi tester notre Api avec Postman qui est un environnement de développement pour les API." :imgPath="['PPE/2eme_annee/GSB/postman_visiteur_id.png']"></Realisation>
 
