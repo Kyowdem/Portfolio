@@ -136,33 +136,12 @@
             </div>
 
             <div v-if="name == 'Duch’Bagels, Base de données et SQL'">
-              <div data-aos="fade-right" class="row justify-content-lg-center">
-                <div class="col-lg-12 col-md-12">
-                  <p>
-                    Dans le PPE, les tables et les colonnes pour le jeu d’essai
-                    étaient déjà existants dans un fichier au format SQL. Avant
-                    d’insérer les tables et les données, il fallait d’abord
-                    créer la base de données.
-                  </p>
-                </div>
-                <div class="col-lg-12 col-md-12">
-                  <img
-                    :src="
-                      require('@/' +
-                        this.imgSchPath +
-                        'PPE/1ere_annee/create_database.png')
-                    "
-                    alt="create_database.png"
-                    class="img-fluid"
-                  />
-                </div>
-              </div>
+              <Realisation p="Dans le PPE, les tables et les colonnes pour le jeu d’essai étaient déjà existants dans un fichier au format SQL. Avant d’insérer les tables et les données, il fallait d’abord créer la base de données." imgPath="PPE/1ere_annee/create_database.png"></Realisation>
+
               <div data-aos="fade-right" class="row justify-content-md-center">
                 <div class="col-md-12">
                   <p>
-                    Après avoir créé la base, j’ai ouvert le fichier .sql dans
-                    un éditeur de texte pour pouvoir copiercoller tout le script
-                    des tables et du jeux d’essai dans MYSQL.
+                    Après avoir créé la base, j’ai ouvert le fichier .sql dans un éditeur de texte pour pouvoir copiercoller tout le script des tables et du jeux d’essai dans MYSQL.
                   </p>
                 </div>
                 <div class="col-md-6">
@@ -188,6 +167,7 @@
                   />
                 </div>
               </div>
+
               <div data-aos="fade-right" class="row">
                 <div class="col-lg-12 col-md-12">
                   <h4>Requête SQL</h4>
