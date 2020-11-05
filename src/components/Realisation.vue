@@ -3,15 +3,17 @@
     <div class="col-lg-12 col-md-12">
       <p>{{p}}</p>
     </div>
-    <div v-if="imgPath" class="col-lg-12 col-md-12">
+
+    <div v-for="img in imgPath" :key="img" :class="classImg">
       <img
         :src="
-          require('@/' + this.StartImgPath + this.imgPath)
+          require('@/' + startImgPath + img)
         "
         alt="controler_visiteur_read.png"
         class="img-fluid centerImg"
       />
     </div>
+
     <div v-if="pAfterImg" class="col-lg-12 col-md-12">
       <p>{{pAfterImg}}</p>
     </div>
@@ -22,15 +24,25 @@
 export default {
     props: {
         p: String,
-        imgPath: String,
+        imgPath: Array,
         pAfterImg: String
     },
     data() {
         return {
-            StartImgPath: "assets/img/school/"
+            startImgPath: "assets/img/school/",
+            classImg: "col-lg-12 col-md-12"
         }
-    }
-    
+    },
+    methods: {
+      howManyImg() {
+        if(this.imgPath.length == 2)
+          this.classImg = "col-lg-6 col-md-6"
+      }
+    },
+    mounted() {
+      this.howManyImg();
+    },
+
 };
 </script>
 
