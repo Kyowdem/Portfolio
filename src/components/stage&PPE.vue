@@ -76,93 +76,13 @@
             </div>
 
             <div v-if="name == 'Partie visuel, signalement d’une erreur. jQuery-ui'">
-              <div data-aos="fade-right" class="row">
-                <div class="col-lg-12 col-md-12">
-                  <p>
-                    Au début je n’étais pas partie sur un pop-up mais sur une
-                    page entière, mais j’ai trouvé ça trop lourd et moins
-                    intuitif pour l’utilisateur alors j’ai changé en utilisant
-                    le pop-up appeler aussi dialog, de jQuery-ui.
-                  </p>
-                </div>
-                <div class="col-lg-12 col-md-12">
-                  <img
-                    :src="
-                      require('@/' +
-                        this.imgSchPath +
-                        'stage/2eme_annee/ouverture_dialog.png')
-                    "
-                    alt="Ouverture_dialog.png"
-                    class="img-fluid"
-                  />
-                </div>
-              </div>
-              <div data-aos="fade-right" class="row">
-                <div class="col-lg-12 col-md-12">
-                  <p>
-                    Il fallait ensuite bien organiser tout ça, j’ai donc utilisé
-                    les mêmes titres que les Tabs qu’on peut voir au-dessus du
-                    dialog et il y avait même déjà toute l’architecture alors
-                    j’ai utilisé ça pour produire la suite.
-                  </p>
-                </div>
-                <div class="col-lg-12 col-md-12">
-                  <img
-                    :src="
-                      require('@/' +
-                        this.imgSchPath +
-                        'stage/2eme_annee/modif_date.png')
-                    "
-                    alt="modif_date.png"
-                    class="img-fluid"
-                  />
-                </div>
-              </div>
-              <div data-aos="fade-right" class="row">
-                <div class="col-lg-12 col-md-12">
-                  <p>
-                    On peut aussi voir le datapicker de jQuery-ui que j’ai
-                    utilisé à chaque fois que le mot date apparaissant dans la
-                    sous-catégorie (Contexte = Situation de famille,
-                    Sous-catégorie = Date[…]changement, on ne voit pas la
-                    catégorie sur ce screen) J’ai donc ensuite pris toute ces
-                    informations et je les ai ajoutés à la base de données qu’on
-                    avait créée.
-                  </p>
-                </div>
-                <div class="col-lg-12 col-md-12">
-                  <img
-                    :src="
-                      require('@/' +
-                        this.imgSchPath +
-                        'stage/2eme_annee/ajout_donnees_enfant.png')
-                    "
-                    alt="ajout_donnees_enfant.png"
-                    class="img-fluid"
-                  />
-                </div>
-              </div>
-              <div data-aos="fade-right" class="row">
-                <div class="col-lg-12 col-md-12">
-                  <p>
-                    Le code que j’ai fait a principalement été fait en orienté
-                    objet mais aussi aspect pour permettre de gérer chaque objet
-                    qui sera créé, cela permet d’éviter le mot clé new mais
-                    surtout de centralisé tous les objets dans un objet mère.
-                  </p>
-                </div>
-                <div class="col-lg-12 col-md-12">
-                  <img
-                    :src="
-                      require('@/' +
-                        this.imgSchPath +
-                        'stage/2eme_annee/code_create_select.png')
-                    "
-                    alt="code_create_select.png"
-                    class="img-fluid"
-                  />
-                </div>
-              </div>
+              <Realisation p="Au début je n’étais pas partie sur un pop-up mais sur une page entière, mais j’ai trouvé ça trop lourd et moins intuitif pour l’utilisateur alors j’ai changé en utilisant le pop-up appeler aussi dialog, de jQuery-ui." imgPath="stage/2eme_annee/ouverture_dialog.png"></Realisation>
+
+              <Realisation p="Il fallait ensuite bien organiser tout ça, j’ai donc utilisé les mêmes titres que les Tabs qu’on peut voir au-dessus du dialog et il y avait même déjà toute l’architecture alors j’ai utilisé ça pour produire la suite." imgPath="stage/2eme_annee/modif_date.png"></Realisation>
+
+              <Realisation p="On peut aussi voir le datapicker de jQuery-ui que j’ai utilisé à chaque fois que le mot date apparaissant dans la sous-catégorie (Contexte = Situation de famille, Sous-catégorie = Date[…]changement, on ne voit pas la catégorie sur ce screen) J’ai donc ensuite pris toute ces informations et je les ai ajoutés à la base de données qu’on avait créée." imgPath="stage/2eme_annee/ajout_donnees_enfant.png"></Realisation>
+
+              <Realisation p="Le code que j’ai fait a principalement été fait en orienté objet mais aussi aspect pour permettre de gérer chaque objet qui sera créé, cela permet d’éviter le mot clé new mais surtout de centralisé tous les objets dans un objet mère." imgPath="stage/2eme_annee/code_create_select.png"></Realisation>
             </div>
 
             <div v-if="name == 'Lire une facture avec nodeJs et Tesseract'">
