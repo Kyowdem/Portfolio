@@ -238,7 +238,7 @@
 
               <Realisation p="Mais pour voir un film et l’acheter il faut d’abord se connecter. Pour donner un rendu tout aussi simple que dynamique et en mettant surtout une petite touche de jaune aux pages login et inscription, j’ai paramétré un fond avec des particules animées dans un fond noir grâce à l’outil « particules.js »." imgPath="PPE/2eme_annee/Judge_movies/login.png"></Realisation>
 
-              <Realisation p="Une fois le login crée ainsi que la page d’accueil avec le carrousel des films, lors du clic il fallait afficher une page simple et semblable pour toute. Je me suis donc occupé de la page film en faisant une page qui envoyais directement le lien de la bande annonce du film, son titre, ces réalisateurs, ces acteurs et ça note sur le site. Sur la photo la balise iframe a juste un petit problème." imgPath="PPE/2eme_annee/Judge_movies/film_haut.png"></Realisation>
+              <Realisation p="Une fois le login crée ainsi que la page d’accueil avec le carrousel des films, lors du clic il fallait afficher une page simple et semblable pour toute. Je me suis donc occupé de la page film en faisant une page qui envoyais directement le lien de la bande annonce du film, son titre, ces réalisateurs, ces acteurs et ça note sur le site." imgPath="PPE/2eme_annee/Judge_movies/film_haut.png" pAfterImg="Sur la photo la balise iframe a juste un petit problème"></Realisation>
 
               <div data-aos="fade-right" class="row">
                 <div class="col-lg-12 col-md-12">
@@ -279,6 +279,7 @@
             </div>
 
             <div v-if="name == 'GSB, Vuejs et création d’API'">
+
               <div data-aos="fade-right" class="row">
                 <div class="col-lg-12 col-md-12">
                   <p>
@@ -312,80 +313,13 @@
                   />
                 </div>
               </div>
-              <div data-aos="fade-right" class="row">
-                <div class="col-lg-12 col-md-12">
-                  <p>
-                    La recherche d’un visiteur se fait grâce à un web service où
-                    la méthode GET est utilisé. On envoie les données GET dans
-                    l’url en tapant simplement le nom de la page suivis d’un
-                    point d’interrogation, le nom de la variable et la donnée à
-                    envoyer. On peut aussi tester notre Api avec Postman qui est
-                    un environnement de développement pour les API.
-                  </p>
-                </div>
-                <div class="col-lg-12 col-md-12">
-                  <img
-                    :src="
-                      require('@/' +
-                        this.imgSchPath +
-                        'PPE/2eme_annee/GSB/postman_visiteur_id.png')
-                    "
-                    alt="postman_visiteur_id.png"
-                    class="img-fluid centerImg"
-                  />
-                </div>
-              </div>
-              <div data-aos="fade-right" class="row">
-                <div class="col-lg-12 col-md-12">
-                  <p>
-                    On récupère donc la variable “id“ dans le script read.php
-                    sous la forme d’une variable dans la collection $_GET. Pour
-                    me simplifier, je fais un parcours de celle-ci pour garder
-                    dans la variable $getVariable et pouvoir faire ensuite un
-                    switch case.
-                  </p>
-                </div>
-                <div class="col-lg-12 col-md-12">
-                  <img
-                    :src="
-                      require('@/' +
-                        this.imgSchPath +
-                        'PPE/2eme_annee/GSB/controler_visiteur_read.png')
-                    "
-                    alt="controler_visiteur_read.png"
-                    class="img-fluid centerImg"
-                  />
-                </div>
-              </div>
-              <div data-aos="fade-right" class="row">
-                <div class="col-lg-12 col-md-12">
-                  <p>
-                    On voit que lorsqu’il récupère l’Id il va dans la fonction
-                    “readById“ dans la classe “tableVisiteur“. Dans cette
-                    fonction on peut voir que la requête est préparée avant
-                    d’être exécutée et retournée vers le Controller read.php.
-                  </p>
-                </div>
-                <div class="col-lg-12 col-md-12">
-                  <img
-                    :src="
-                      require('@/' +
-                        this.imgSchPath +
-                        'PPE/2eme_annee/GSB/metier_visiteur_update.png')
-                    "
-                    alt="metier_visiteur_update.png"
-                    class="img-fluid"
-                  />
-                </div>
-                <div class="col-lg-12 col-md-12">
-                  <p>
-                    Pour finir, le résultat de la requête est traité pour être
-                    convertie sous le format JSON. On peut maintenant récupérer
-                    le résultat de la requête, comme nous l’avons vu plus haut
-                    avec Postman.
-                  </p>
-                </div>
-              </div>
+              
+              <Realisation p="La recherche d’un visiteur se fait grâce à un web service où la méthode GET est utilisé. On envoie les données GET dans l’url en tapant simplement le nom de la page suivis d’un point d’interrogation, le nom de la variable et la donnée à envoyer. On peut aussi tester notre Api avec Postman qui est un environnement de développement pour les API." imgPath="PPE/2eme_annee/GSB/postman_visiteur_id.png"></Realisation>
+
+              <Realisation p="On récupère donc la variable “id“ dans le script read.php sous la forme d’une variable dans la collection $_GET. Pour me simplifier, je fais un parcours de celle-ci pour garder dans la variable $getVariable et pouvoir faire ensuite un switch case." imgPath="PPE/2eme_annee/GSB/controler_visiteur_read.png"></Realisation>
+
+              <Realisation p="On voit que lorsqu’il récupère l’Id il va dans la fonction “readById“ dans la classe “tableVisiteur“. Dans cette fonction on peut voir que la requête est préparée avant d’être exécutée et retournée vers le Controller read.php." imgPath="PPE/2eme_annee/GSB/metier_visiteur_update.png" pAfterImg="Pour finir, le résultat de la requête est traité pour être convertie sous le format JSON. On peut maintenant récupérer le résultat de la requête, comme nous l’avons vu plus haut avec Postman."></Realisation>
+
               <div data-aos="fade-right" class="row">
                 <div class="col-lg-12 col-md-12">
                   <p>
@@ -431,28 +365,8 @@
                   />
                 </div>
               </div>
-              <div data-aos="fade-right" class="row">
-                <div class="col-lg-12 col-md-12">
-                  <p>
-                    Revenons à notre recherche. Après avoir fait la recherche
-                    par nom nous avons une collection de visiteur que je stock
-                    dans une variable locale pour réutiliser les données. Je
-                    fais ensuite un v-for pour parcourir tous les visiteurs et
-                    faire afficher le tableau.
-                  </p>
-                </div>
-                <div class="col-lg-12 col-md-12">
-                  <img
-                    :src="
-                      require('@/' +
-                        this.imgSchPath +
-                        'PPE/2eme_annee/GSB/code_rechercher_visiteur.png')
-                    "
-                    alt="code_rechercher_visiteur.png"
-                    class="img-fluid"
-                  />
-                </div>
-              </div>
+
+              <Realisation p="Revenons à notre recherche. Après avoir fait la recherche par nom nous avons une collection de visiteur que je stock dans une variable locale pour réutiliser les données. Je fais ensuite un v-for pour parcourir tous les visiteurs et faire afficher le tableau." imgPath="PPE/2eme_annee/GSB/code_rechercher_visiteur.png"></Realisation>
             </div>
 
             <div v-if="name == 'C++: Les arbres et les Template'">

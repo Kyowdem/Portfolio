@@ -12,6 +12,9 @@
         class="img-fluid centerImg"
       />
     </div>
+    <div v-if="pAfterImg" class="col-lg-12 col-md-12">
+      <p>{{pAfterImg}}</p>
+    </div>
   </div>
 </template>
 
@@ -19,7 +22,8 @@
 export default {
     props: {
         p: String,
-        imgPath: String
+        imgPath: String,
+        pAfterImg: String
     },
     data() {
         return {
