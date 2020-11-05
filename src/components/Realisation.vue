@@ -40,6 +40,7 @@ export default {
       }
     },
     mounted() {
+      if(!this.imgPath) return;
       this.howManyImg();
     },
 
