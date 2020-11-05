@@ -9,7 +9,7 @@
         :src="
           require('@/' + startImgPath + img)
         "
-        alt="controler_visiteur_read.png"
+        :alt="img.match(/\w*\.png/)[0]"
         class="img-fluid centerImg"
       />
     </div>
