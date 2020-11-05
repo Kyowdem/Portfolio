@@ -169,51 +169,7 @@
 
               <Realisation p="On voit que lorsqu’il récupère l’Id il va dans la fonction “readById“ dans la classe “tableVisiteur“. Dans cette fonction on peut voir que la requête est préparée avant d’être exécutée et retournée vers le Controller read.php." :imgPath="['PPE/2eme_annee/GSB/metier_visiteur_update.png']" pAfterImg="Pour finir, le résultat de la requête est traité pour être convertie sous le format JSON. On peut maintenant récupérer le résultat de la requête, comme nous l’avons vu plus haut avec Postman."></Realisation>
 
-              <div data-aos="fade-right" class="row">
-                <div class="col-lg-12 col-md-12">
-                  <p>
-                    Pour un ajout, une modification ou une suppression, c’est à
-                    peu près la même chose sauf qu’au lieu d’utiliser GET nous
-                    prendrons : POST pour un ajout, PUT pour une modification et
-                    DELETE pour une suppression. L’envoie de donnée ne se passe
-                    pas par l’url du web service mais par l’envoie des données
-                    en JSON et le traitement de ces données dans le Controller.
-                  </p>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                  <img
-                    :src="
-                      require('@/' +
-                        this.imgSchPath +
-                        'PPE/2eme_annee/GSB/postman_visiteur_update.png')
-                    "
-                    alt="postman_visiteur_update.png"
-                    class="img-fluid"
-                  />
-                </div>
-                <div class="col-lg-6 col-md-6 divCenter">
-                  <img
-                    :src="
-                      require('@/' +
-                        this.imgSchPath +
-                        'PPE/2eme_annee/GSB/metier_visiteur_update.png')
-                    "
-                    alt="metier_visiteur_update.png"
-                    class="img-fluid"
-                  />
-                </div>
-                <div class="col-lg-12 col-md-12">
-                  <img
-                    :src="
-                      require('@/' +
-                        this.imgSchPath +
-                        'PPE/2eme_annee/GSB/modif_visiteur.png')
-                    "
-                    alt="modif_visiteur.png"
-                    class="img-fluid centerImg"
-                  />
-                </div>
-              </div>
+              <Realisation p="Pour un ajout, une modification ou une suppression, c’est à peu près la même chose sauf qu’au lieu d’utiliser GET nous prendrons : POST pour un ajout, PUT pour une modification et DELETE pour une suppression. L’envoie de donnée ne se passe pas par l’url du web service mais par l’envoie des données en JSON et le traitement de ces données dans le Controller." :imgPath="['PPE/2eme_annee/GSB/postman_visiteur_update.png', 'PPE/2eme_annee/GSB/metier_visiteur_update.png', 'PPE/2eme_annee/GSB/modif_visiteur.png']"></Realisation>
 
               <Realisation p="Revenons à notre recherche. Après avoir fait la recherche par nom nous avons une collection de visiteur que je stock dans une variable locale pour réutiliser les données. Je fais ensuite un v-for pour parcourir tous les visiteurs et faire afficher le tableau." :imgPath="['PPE/2eme_annee/GSB/code_rechercher_visiteur.png']"></Realisation>
             </div>

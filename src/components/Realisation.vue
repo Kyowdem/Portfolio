@@ -1,5 +1,5 @@
 <template>
-  <div data-aos="fade-right" class="row">
+  <div data-aos="fade-right" class="row justify-content-center">
     <div class="col-lg-12 col-md-12">
       <p>{{p}}</p>
     </div>
@@ -35,7 +35,7 @@ export default {
     },
     methods: {
       howManyImg() {
-        if(this.imgPath.length == 2)
+        if(this.imgPath.length >= 2)
           this.classImg = "col-lg-6 col-md-6"
       }
     },
