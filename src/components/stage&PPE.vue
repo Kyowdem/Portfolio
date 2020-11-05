@@ -130,28 +130,9 @@
             </div>
 
             <div v-if="name == 'Music Gone’s, découverte de JavaScript'">
-              <div data-aos="fade-right" class="row">
-                <div class="col-lg-12 col-md-12">
-                  <p>
-                    Tout au long du PPE j’ai appris les bases de JavaScript ce
-                    qu’il fallait faire et ne pas faire, j’ai aussi fait quelque
-                    recherche personnel et j’ai aussi appris grâce à ce site :
-                    http://es6-features.org. C’est un site qui répertorie les
-                    dernières normes de JavaScript.
-                  </p>
-                </div>
-              </div>
-              <div data-aos="fade-right" class="row">
-                <div class="col-lg-12 col-md-12">
-                  <p>
-                    Plus le site avançait et moins le rendu était lourd
-                    visuellement. Sur la page principale on y fait afficher des
-                    infos générales pour ensuite lors d’un clic, un défilement
-                    se met en place et les informations souhaitées apparaissent
-                    dans une div en dessous.
-                  </p>
-                </div>
-              </div>
+              <Realisation p="Tout au long du PPE j’ai appris les bases de JavaScript ce qu’il fallait faire et ne pas faire, j’ai aussi fait quelque recherche personnel et j’ai aussi appris grâce à ce site : http://es6-features.org. C’est un site qui répertorie les dernières normes de JavaScript."></Realisation>
+
+              <Realisation p="Plus le site avançait et moins le rendu était lourd visuellement. Sur la page principale on y fait afficher des infos générales pour ensuite lors d’un clic, un défilement se met en place et les informations souhaitées apparaissent dans une div en dessous."></Realisation>
             </div>
 
             <div v-if="name == 'Duch’Bagels, Base de données et SQL'">
