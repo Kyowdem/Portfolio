@@ -3,7 +3,7 @@
     <div class="col-lg-12 col-md-12">
       <p>{{p}}</p>
     </div>
-    <div class="col-lg-12 col-md-12">
+    <div v-if="imgPath" class="col-lg-12 col-md-12">
       <img
         :src="
           require('@/' + this.StartImgPath + this.imgPath)
