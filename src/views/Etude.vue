@@ -3,31 +3,45 @@
     <div class="container-fluid" v-if="activityOrSchool">
       <School :etudeName="$route.params.etudeName" />
 
-      <div v-if="$route.params.etudeName == 'BTS'" class="row justify-content-md-around activitiesList">
+      <div
+        v-if="$route.params.etudeName == 'BTS'"
+        class="row justify-content-md-around activitiesList"
+      >
         <div
           v-show="show.PPE"
           class="col-md-6 col-lg-4"
-          @mouseover="animateTwoItems(
+          @mouseover="
+            animateTwoItems(
               [
-                {query: 'img[name=PPE]', animation: 'flipOutY'},
-                {query: 'table[name=PPE]', animation: 'flipInY'} 
+                { query: 'img[name=PPE]', animation: 'flipOutY' },
+                { query: 'table[name=PPE]', animation: 'flipInY' },
               ],
-              {name:'PPE', bool: false}
-            );"
+              { name: 'PPE', bool: false }
+            )
+          "
         >
-          <img name="PPE" :src="require('@/assets/img/school/PPE.jpg')" class="img-fluid" alt="PPE" />
-          <div id="mouseoverPPE" role="tooltip">Passez la souris sur la photo :D</div>
+          <img
+            name="PPE"
+            :src="require('@/assets/img/school/PPE.jpg')"
+            class="img-fluid"
+            alt="PPE"
+          />
+          <div id="mouseoverPPE" role="tooltip">
+            Passez la souris sur la photo :D
+          </div>
         </div>
         <div
           class="col-md-6 col-lg-4"
           v-show="!show.PPE"
-          @mouseleave="animateTwoItems(
-            [
-              {query: 'table[name=PPE]', animation: 'flipOutY'}, 
-              {query: 'img[name=PPE]', animation: 'flipInY'}
-            ],
-            {name:'PPE', bool: true}
-          );"
+          @mouseleave="
+            animateTwoItems(
+              [
+                { query: 'table[name=PPE]', animation: 'flipOutY' },
+                { query: 'img[name=PPE]', animation: 'flipInY' },
+              ],
+              { name: 'PPE', bool: true }
+            )
+          "
         >
           <Table name="PPE"></Table>
         </div>
@@ -35,13 +49,15 @@
         <div
           v-show="show.stage"
           class="col-md-6 col-lg-4"
-          @mouseover="animateTwoItems(
+          @mouseover="
+            animateTwoItems(
               [
-                {query: 'img[name=stage]', animation: 'flipOutY'},
-                {query: 'table[name=stage]', animation: 'flipInY'} 
+                { query: 'img[name=stage]', animation: 'flipOutY' },
+                { query: 'table[name=stage]', animation: 'flipInY' },
               ],
-              {name: 'stage', bool: false}
-            );"
+              { name: 'stage', bool: false }
+            )
+          "
         >
           <img
             name="stage"
@@ -49,29 +65,35 @@
             class="img-fluid"
             alt="stage"
           />
-          <div id="mouseoverStage" role="tooltip">Passez la souris sur la photo :D</div>
+          <div id="mouseoverStage" role="tooltip">
+            Passez la souris sur la photo :D
+          </div>
         </div>
         <div
           class="col-md-6 col-lg-4"
           v-show="!show.stage"
-          @mouseleave="animateTwoItems( 
-            [
-              {query: 'table[name=stage]', animation: 'flipOutY'},
-              {query: 'img[name=stage]', animation: 'flipInY'}
-            ],
-            {name: 'stage', bool: true}
-          );"
+          @mouseleave="
+            animateTwoItems(
+              [
+                { query: 'table[name=stage]', animation: 'flipOutY' },
+                { query: 'img[name=stage]', animation: 'flipInY' },
+              ],
+              { name: 'stage', bool: true }
+            )
+          "
         >
           <Table name="stage"></Table>
         </div>
       </div>
 
-      <div v-if="$route.params.etudeName == 'UQAM'" class="row justify-content-md-around activitiesList">
+      <div
+        v-if="$route.params.etudeName == 'UQAM'"
+        class="row justify-content-md-around activitiesList"
+      >
         <div class="col-md-6 col-ld-4">
           <Table name="ecole"></Table>
         </div>
       </div>
-      
     </div>
 
     <StagePPE :name="nameOfActivityClick" v-else />
@@ -104,10 +126,12 @@ export default {
     this.checkActivityURL();
     this.setActivityOrSchool();
 
-    this.addAnimations("img[name=PPE]", "shakeY");
-    this.addAnimations("img[name=stage]", "shakeY");
-    this.createPopper("img[name=PPE]", "#mouseoverPPE");
-    this.createPopper("img[name=stage]", "#mouseoverStage");
+    if (this.$route.params.etudeName == "BTS") {
+      this.addAnimations("img[name=PPE]", "shakeY");
+      this.addAnimations("img[name=stage]", "shakeY");
+      this.createPopper("img[name=PPE]", "#mouseoverPPE");
+      this.createPopper("img[name=stage]", "#mouseoverStage");
+    }
   },
   watch: {
     "$route.params.activity": function () {
