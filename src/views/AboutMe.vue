@@ -113,7 +113,7 @@ export default {
   },
   mounted() {
     this.shuffle(this.skills);
-    this.skills = this.skills.slice(0, 9);
+    this.skills = this.skills.slice(0, 12);
   },
 };
 </script>
