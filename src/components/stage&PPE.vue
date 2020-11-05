@@ -138,100 +138,11 @@
             <div v-if="name == 'Duch’Bagels, Base de données et SQL'">
               <Realisation p="Dans le PPE, les tables et les colonnes pour le jeu d’essai étaient déjà existants dans un fichier au format SQL. Avant d’insérer les tables et les données, il fallait d’abord créer la base de données." :imgPath="['PPE/1ere_annee/create_database.png']"></Realisation>
 
-              <div data-aos="fade-right" class="row justify-content-md-center">
-                <div class="col-md-12">
-                  <p>
-                    Après avoir créé la base, j’ai ouvert le fichier .sql dans un éditeur de texte pour pouvoir copiercoller tout le script des tables et du jeux d’essai dans MYSQL.
-                  </p>
-                </div>
-                <div class="col-md-6">
-                  <img
-                    :src="
-                      require('@/' +
-                        this.imgSchPath +
-                        'PPE/1ere_annee/scriptSQL.png')
-                    "
-                    alt="scriptSQL.png"
-                    class="img-fluid centerImg"
-                  />
-                </div>
-                <div class="col-md-6">
-                  <img
-                    :src="
-                      require('@/' +
-                        this.imgSchPath +
-                        'PPE/1ere_annee/inserts.png')
-                    "
-                    alt="inserts.png"
-                    class="img-fluid centerImg"
-                  />
-                </div>
-              </div>
+              <Realisation p="Après avoir créé la base, j’ai ouvert le fichier .sql dans un éditeur de texte pour pouvoir copier coller tout le script des tables et du jeux d’essai dans MYSQL." :imgPath="['PPE/1ere_annee/scriptSQL.png','PPE/1ere_annee/inserts.png']"></Realisation>
 
-              <div data-aos="fade-right" class="row">
-                <div class="col-lg-12 col-md-12">
-                  <h4>Requête SQL</h4>
-                </div>
-                <div class="col-md-12 col-lg-12">
-                  <p>
-                    Une suite de requête était demandée par l’entreprise, elle
-                    voulait par exemple savoir le prix moyen d’un bagel, une
-                    requête plutôt simple et courte.
-                  </p>
-                </div>
-                <div class="col-ld-6 col-md-6">
-                  <img
-                    :src="
-                      require('@/' +
-                        this.imgSchPath +
-                        'PPE/1ere_annee/req2.png')
-                    "
-                    alt="req2.png"
-                    class="img-fluid centerImg"
-                  />
-                </div>
-                <div class="col-ld-6 col-md-6">
-                  <img
-                    :src="
-                      require('@/' +
-                        this.imgSchPath +
-                        'PPE/1ere_annee/rep_req2.png')
-                    "
-                    alt="rep_req2.png"
-                    class="img-fluid centerImg"
-                  />
-                </div>
-                <div class="col-lg-12 col-md-12">
-                  <p>
-                    La requête du dessous est un peu plus longue car on voulait
-                    les ingrédients d’un bagel spécifique, « le chèvre miel ».
-                  </p>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                  <img
-                    :src="
-                      require('@/' +
-                        this.imgSchPath +
-                        'PPE/1ere_annee/req1.png')
-                    "
-                    alt="req1.png"
-                    class="img-fluid centerImg"
-                  />
-                </div>
-                <div class="col-lg-6 col-md-6">
-                  <img
-                    :src="
-                      require('@/' +
-                        this.imgSchPath +
-                        'PPE/1ere_annee/rep_req1.png')
-                    "
-                    alt="rep_req1.png"
-                    class="img-fluid centerImg"
-                  />
-                </div>
-              </div>
+              <Realisation p="Une suite de requête était demandée par l’entreprise, elle voulait par exemple savoir le prix moyen d’un bagel, une requête plutôt simple et courte." :imgPath="['PPE/1ere_annee/req2.png', 'PPE/1ere_annee/rep_req2.png']"></Realisation>
 
-              
+              <Realisation p="La requête du dessous est un peu plus longue car on voulait les ingrédients d’un bagel spécifique, « le chèvre miel »." :imgPath="['PPE/1ere_annee/req1.png', 'PPE/1ere_annee/rep_req1.png']"></Realisation>
             </div>
 
             <div v-if="name == 'Judge Movies : Laravel. Projet de groupe'">
@@ -315,7 +226,7 @@
                   />
                 </div>
               </div>
-              
+
               <Realisation p="La recherche d’un visiteur se fait grâce à un web service où la méthode GET est utilisé. On envoie les données GET dans l’url en tapant simplement le nom de la page suivis d’un point d’interrogation, le nom de la variable et la donnée à envoyer. On peut aussi tester notre Api avec Postman qui est un environnement de développement pour les API." :imgPath="['PPE/2eme_annee/GSB/postman_visiteur_id.png']"></Realisation>
 
               <Realisation p="On récupère donc la variable “id“ dans le script read.php sous la forme d’une variable dans la collection $_GET. Pour me simplifier, je fais un parcours de celle-ci pour garder dans la variable $getVariable et pouvoir faire ensuite un switch case." :imgPath="['PPE/2eme_annee/GSB/controler_visiteur_read.png']"></Realisation>
