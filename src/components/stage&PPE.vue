@@ -86,80 +86,14 @@
             </div>
 
             <div v-if="name == 'Lire une facture avec nodeJs et Tesseract'">
-              <div data-aos="fade-right" class="row">
-                <div class="col-lg-12 col-md-12">
-                  <p>
-                    Avant de commencer à coder, j’ai modéliser un MLR grâce à
-                    une ancienne application que l’entreprise avait développée,
-                    c’est alors à partir de ça que j’ai fait toute les entités
-                    et que j’ai finis et valider par mon tuteur le MLR qui
-                    ressemblais à ça.
-                  </p>
-                </div>
-                <div class="col-lg-12 col-md-12">
-                  <img
-                    :src="
-                      require('@/' +
-                        this.imgSchPath +
-                        'stage/2eme_annee/MCD.png')
-                    "
-                    alt="MCD.png"
-                    class="img-fluid"
-                  />
-                </div>
-              </div>
-              <div data-aos="fade-right" class="row">
-                <div class="col-lg-12 col-md-12">
-                  <p>
-                    J’ai ensuite bien pris le temps de me renseigner sur NodeJs
-                    car pour lancer un exe je n’avais pas le choix de
-                    l’utiliser, et c’est sur YouTube avec les tutoriels de
-                    grafikart, qui sont d’une clarté extrême. Après 2 jours, je
-                    me suis enfin lancé et j’ai commencé par essayer de lancer
-                    Tesseract avec l’invite de commande
-                  </p>
-                </div>
-                <div class="col-lg-12 col-md-12">
-                  <img
-                    :src="
-                      require('@/' +
-                        this.imgSchPath +
-                        'stage/2eme_annee/launch_tesseract_with_cmd.png')
-                    "
-                    alt="launch_tesseract_with_cmd.png"
-                    class="img-fluid"
-                  />
-                </div>
-              </div>
-              <div data-aos="fade-right" class="row">
-                <div class="col-lg-12 col-md-12">
-                  <p>
-                    On lance le logiciel, on lui dit l’image à prendre et enfin
-                    le chemin de sortie du fichier texte. Maintenant que je sais
-                    comment l’utiliser, je vais faire mon programme JavaScript
-                    pour qu’il soit lancé par NodeJS. J’ai utilisé la fonction
-                    'spawn' qui permet de lancer programme.
-                    <br />J’ai alors pris des tickets de caisse sur internet
-                    pour faire des tests et après que c’est dernier étaient
-                    concluant, j’ai pris mes photos sur le téléphone et je me
-                    suis aperçu qu’elles étaient automatiquement penchées, alors
-                    j’ai cherché un programme déjà fais par la communauté pour
-                    retourner automatiquement ma photo. Mon code donnait à la
-                    fin ça :
-                  </p>
-                </div>
-                <div class="col-lg-12 col-md-12">
-                  <img
-                    :src="
-                      require('@/' +
-                        this.imgSchPath +
-                        'stage/2eme_annee/code_start_tesseract.png')
-                    "
-                    alt="code_start_tesseract.png"
-                    class="img-fluid"
-                  />
-                </div>
-              </div>
+              <Realisation p="Avant de commencer à coder, j’ai modéliser un MLR grâce à une ancienne application que l’entreprise avait développée, c’est alors à partir de ça que j’ai fait toute les entités et que j’ai finis et valider par mon tuteur le MLR qui ressemblais à ça." imgPath="stage/2eme_annee/MCD.png"></Realisation>
+
+              <Realisation p="J’ai ensuite bien pris le temps de me renseigner sur NodeJs car pour lancer un exe je n’avais pas le choix de l’utiliser, et c’est sur YouTube avec les tutoriels de grafikart, qui sont d’une clarté extrême. Après 2 jours, je me suis enfin lancé et j’ai commencé par essayer de lancer Tesseract avec l’invite de commande" imgPath="stage/2eme_annee/launch_tesseract_with_cmd.png"></Realisation>
+
+              <Realisation p="On lance le logiciel, on lui dit l’image à prendre et enfin le chemin de sortie du fichier texte. Maintenant que je sais comment l’utiliser, je vais faire mon programme JavaScript pour qu’il soit lancé par NodeJS. J’ai utilisé la fonction 'spawn' qui permet de lancer programme."></Realisation>
+
+              <Realisation p="J’ai alors pris des tickets de caisse sur internet pour faire des tests et après que c’est dernier étaient concluant, j’ai pris mes photos sur le téléphone et je me suis aperçu qu’elles étaient automatiquement penchées, alors j’ai cherché un programme déjà fais par la communauté pour retourner automatiquement ma photo. Mon code donnait à la fin ça :" imgPath="stage/2eme_annee/code_start_tesseract.png"></Realisation>
+
               <div data-aos="fade-right" class="row">
                 <div class="col-lg-6 col-md-6">
                   <div>
@@ -189,40 +123,10 @@
                   />
                 </div>
               </div>
-              <div data-aos="fade-right" class="row">
-                <div class="col-lg-12 col-md-12">
-                  <p>
-                    Avec mon tuteur on s’est aperçu que souvent le prix était
-                    affiché plusieurs fois sur une facture alors ma fonction
-                    avait pour but de prendre tous les chiffres du fichier
-                    texte, pour prendre ensuite le chiffre qui apparaissait le
-                    plus de fois j’ai alors écrit ma fonction, lancer mon script
-                    et il retournait ça
-                  </p>
-                </div>
-                <div class="col-lg-12 col-md-12">
-                  <img
-                    :src="
-                      require('@/' +
-                        this.imgSchPath +
-                        'stage/2eme_annee/resultat_tesseract.png')
-                    "
-                    alt="resultat_tesseract.png"
-                    class="img-fluid"
-                  />
-                </div>
-              </div>
-              <div data-aos="fade-right" class="row">
-                <div class="col-lg-12 col-md-12">
-                  <p>
-                    Une première ligne disant que le fichier est déjà droit
-                    alors pas besoin de le retourner, il m’affiche en second le
-                    prix et le reste se sont simplement des indications qui
-                    explique que le programme a été arrêter et que le fichier
-                    texte a bien été supprimer.
-                  </p>
-                </div>
-              </div>
+
+              <Realisation p="Avec mon tuteur on s’est aperçu que souvent le prix était affiché plusieurs fois sur une facture alors ma fonction avait pour but de prendre tous les chiffres du fichier texte, pour prendre ensuite le chiffre qui apparaissait le plus de fois j’ai alors écrit ma fonction, lancer mon script et il retournait ça" imgPath="stage/2eme_annee/resultat_tesseract.png"></Realisation>
+
+              <Realisation p="Une première ligne disant que le fichier est déjà droit alors pas besoin de le retourner, il m’affiche en second le prix et le reste se sont simplement des indications qui explique que le programme a été arrêter et que le fichier texte a bien été supprimer."></Realisation>
             </div>
 
             <div v-if="name == 'Music Gone’s, découverte de JavaScript'">
