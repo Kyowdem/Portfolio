@@ -101,12 +101,12 @@
         "ecole": [
             {
                 "name": "C++: Les arbres et les Template",
-                "descriptio": {
-                    "contexte": "",
-                    "besoin": "",
-                    "environnement technologique": "",
+                "description": {
+                    "contexte": "Pour des futurs Travaux Pratique nous apprenons les différentes structures de stockage, Nous y apprenons les avantages et inconvénients de ses arbres, qui sont : les arbres AVL, rouge-noir et les arbre map.",
+                    "besoin": "Pour ces arbres nous devons apprendre le système et l’implémentation d’une pile et d’un itérateur.",
+                    "environnement technologique": "J’ai utilisé l’IDE VS code avec l’extension ssh pour se connecter sur les serveurs de l’université.",
                     "realisation": null,
-                    "bilan": ""
+                    "bilan": "J’ai appris beaucoup sur ce langage mais je sais que je suis loin de la maitrise parfaite. Mais maintenant je peux faire un choix de conception sur un problème où joue la temporalité ou espace du programme."
                 },
                 "date": "2020-11"
             }
