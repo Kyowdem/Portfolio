@@ -233,77 +233,17 @@
             </div>
 
             <div v-if="name == 'Judge Movies : Laravel. Projet de groupe'">
+
+              <Realisation p="Dans notre groupe, je me suis occupé de la partie design et dynamique du site. Pour cela, j’ai utilisé jQuery et Ajax. J’ai également utilisé la librairie slick, afin de produire un carrousel qui répondais à mes attentes et qui était très facile d’utilisation." imgPath="PPE/2eme_annee/Judge_movies/accueil.png"></Realisation>
+
+              <Realisation p="Mais pour voir un film et l’acheter il faut d’abord se connecter. Pour donner un rendu tout aussi simple que dynamique et en mettant surtout une petite touche de jaune aux pages login et inscription, j’ai paramétré un fond avec des particules animées dans un fond noir grâce à l’outil « particules.js »." imgPath="PPE/2eme_annee/Judge_movies/login.png"></Realisation>
+
+              <Realisation p="Une fois le login crée ainsi que la page d’accueil avec le carrousel des films, lors du clic il fallait afficher une page simple et semblable pour toute. Je me suis donc occupé de la page film en faisant une page qui envoyais directement le lien de la bande annonce du film, son titre, ces réalisateurs, ces acteurs et ça note sur le site. Sur la photo la balise iframe a juste un petit problème." imgPath="PPE/2eme_annee/Judge_movies/film_haut.png"></Realisation>
+
               <div data-aos="fade-right" class="row">
                 <div class="col-lg-12 col-md-12">
                   <p>
-                    Dans notre groupe, je me suis occupé de la partie design et
-                    dynamique du site. Pour cela, j’ai utilisé jQuery et Ajax.
-                    J’ai également utilisé la librairie slick, afin de produire
-                    un carrousel qui répondais à mes attentes et qui était très
-                    facile d’utilisation.
-                  </p>
-                </div>
-                <div class="col-lg-12 col-md-12">
-                  <img
-                    :src="
-                      require('@/' +
-                        this.imgSchPath +
-                        'PPE/2eme_annee/Judge_movies/accueil.png')
-                    "
-                    alt="accueil.png"
-                    class="img-fluid"
-                  />
-                </div>
-              </div>
-              <div data-aos="fade-right" class="row">
-                <div class="col-lg-12 col-md-12">
-                  <p>
-                    Mais pour voir un film et l’acheter il faut d’abord se
-                    connecter. Pour donner un rendu tout aussi simple que
-                    dynamique et en mettant surtout une petite touche de jaune
-                    aux pages login et inscription, j’ai paramétré un fond avec
-                    des particules animées dans un fond noir grâce à l’outil «
-                    particules.js ».
-                  </p>
-                </div>
-                <div class="col-lg-12 col-md-12">
-                  <img
-                    :src="
-                      require('@/' +
-                        this.imgSchPath +
-                        'PPE/2eme_annee/Judge_movies/login.png')
-                    "
-                    alt="login.png"
-                    class="img-fluid"
-                  />
-                </div>
-              </div>
-              <div data-aos="fade-right" class="row">
-                <div class="col-lg-12 col-md-12">
-                  <p>
-                    Une fois le login crée ainsi que la page d’accueil avec le
-                    carrousel des films, lors du clic il fallait afficher une
-                    page simple et semblable pour toute. Je me suis donc occupé
-                    de la page film en faisant une page qui envoyais directement
-                    le lien de la bande annonce du film, son titre, ces
-                    réalisateurs, ces acteurs et ça note sur le site
-                  </p>
-                </div>
-                <div class="col-lg-12 col-md-12">
-                  <img
-                    :src="
-                      require('@/' +
-                        this.imgSchPath +
-                        'PPE/2eme_annee/Judge_movies/film_haut.png')
-                    "
-                    alt="Film_haut.png"
-                    class="img-fluid"
-                  />
-                </div>
-                <div class="col-lg-12 col-md-12">
-                  <p>
-                    sur la photo la balise iframe a juste un petit problème. La
-                    page faisait juste charger les données depuis la base mais
+                    La page faisait juste charger les données depuis la base mais
                     j’ai quand même voulu garder l’aspect dynamique alors j’ai
                     juste rajouté des étoiles pour que l’utilisateur note sur 5
                     le film.
@@ -332,47 +272,10 @@
                   />
                 </div>
               </div>
-              <div data-aos="fade-right" class="row">
-                <div class="col-lg-12 col-md-12">
-                  <p>
-                    En tant qu’admin nous pouvons rajouter des films et même
-                    cela est animé.
-                  </p>
-                </div>
-                <div class="col-lg-12 col-md-12">
-                  <img
-                    :src="
-                      require('@/' +
-                        this.imgSchPath +
-                        'PPE/2eme_annee/Judge_movies/ajout_film.png')
-                    "
-                    alt="ajout_film.png"
-                    class="img-fluid"
-                  />
-                </div>
-              </div>
-              <div data-aos="fade-right" class="row">
-                <div class="col-lg-12 col-md-12">
-                  <p>
-                    Si un Acteur n’est pas dans la liste, nous avons juste à
-                    cliquer sur le bouton à droite pour faire apparaitre un
-                    formulaire de saisie. Ce dernier ajoute l’acteur au select
-                    sans avoir à rafraichir la page, elle se charge
-                    automatiquement grâce à Ajax.
-                  </p>
-                </div>
-                <div class="col-lg-12 col-md-12">
-                  <img
-                    :src="
-                      require('@/' +
-                        this.imgSchPath +
-                        'PPE/2eme_annee/Judge_movies/ajoute_real.png')
-                    "
-                    alt="ajoute_real.png"
-                    class="img-fluid"
-                  />
-                </div>
-              </div>
+
+              <Realisation p="En tant qu’admin nous pouvons rajouter des films et même cela est animé." imgPath="PPE/2eme_annee/Judge_movies/ajout_film.png"></Realisation>
+
+              <Realisation p="Si un Acteur n’est pas dans la liste, nous avons juste à cliquer sur le bouton à droite pour faire apparaitre un formulaire de saisie. Ce dernier ajoute l’acteur au select sans avoir à rafraichir la page, elle se charge automatiquement grâce à Ajax." imgPath="PPE/2eme_annee/Judge_movies/ajoute_real.png"></Realisation>
             </div>
 
             <div v-if="name == 'GSB, Vuejs et création d’API'">
