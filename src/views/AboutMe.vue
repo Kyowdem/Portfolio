@@ -96,7 +96,7 @@ export default {
         },
       ],
       skills,
-      sliceArray: 0,
+      sliceArray: 9,
       showMoreTxt: 0
     };
   },
@@ -118,13 +118,16 @@ export default {
     },
     showMore() {
       this.sliceArray = 0;
-      setTimeout(() => { this.sliceArray = this.skills.length; }, 0);
+      if(!this.showMoreTxt)
+        setTimeout(() => { this.sliceArray = this.skills.length; }, 0);
+      else
+        setTimeout(() => { this.sliceArray = 9; }, 0);
+
       this.showMoreTxt = !this.showMoreTxt;
     }
   },
   mounted() {
     this.shuffle(this.skills);
-    this.sliceArray = 9;
   },
 };
 </script>
