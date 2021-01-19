@@ -48,6 +48,10 @@
       </div>
       <div class="row">
         <Skill v-for="skill in skills.slice(0, this.sliceArray)" :key="skill.name" :name="skill.name" :level="skill.level" />
+        <div @click="showMore">
+          <a v-if="!showMoreTxt">Afficher plus</a>
+          <a v-else>Afficher moins</a>
+        </div>
       </div>
     </div>
 
@@ -92,7 +96,8 @@ export default {
         },
       ],
       skills,
-      sliceArray: 0
+      sliceArray: 0,
+      showMoreTxt: 0
     };
   },
   methods: {
@@ -111,6 +116,11 @@ export default {
       array.sort(() => Math.random() - 0.5);
       return array;
     },
+    showMore() {
+      this.sliceArray = 0;
+      setTimeout(() => { this.sliceArray = this.skills.length; }, 0);
+      this.showMoreTxt = !this.showMoreTxt;
+    }
   },
   mounted() {
     this.shuffle(this.skills);
