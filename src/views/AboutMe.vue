@@ -47,7 +47,7 @@
         </div>
       </div>
       <div class="row">
-        <Skill v-for="skill in skills" :key="skill.name" :name="skill.name" :level="skill.level" />
+        <Skill v-for="skill in skills.slice(0, this.sliceArray)" :key="skill.name" :name="skill.name" :level="skill.level" />
       </div>
     </div>
 
@@ -92,6 +92,7 @@ export default {
         },
       ],
       skills,
+      sliceArray: 0
     };
   },
   methods: {
@@ -113,7 +114,7 @@ export default {
   },
   mounted() {
     this.shuffle(this.skills);
-    this.skills = this.skills.slice(0, 12);
+    this.sliceArray = 9;
   },
 };
 </script>
