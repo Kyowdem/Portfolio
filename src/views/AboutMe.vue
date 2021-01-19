@@ -9,13 +9,22 @@
 
       <div class="row justify-content-lg-around">
         <div class="col-md-3 col-lg-2">
-          <img class="img-fluid" src="@/assets/img/cv/Photo-CV.jpeg" alt="Photo de moi-même" />
+          <img
+            class="img-fluid"
+            src="@/assets/img/cv/Photo-CV.jpeg"
+            alt="Photo de moi-même"
+          />
         </div>
         <div class="col-md-7 col-lg-7 description">
           <p>
-            Je m'appelle Mehdi Collomb, j'ai 21 ans et je suis un développeur en apprentissage. J'ai commencé mes études de développeur en France dans un
-            <router-link to="/etude/BTS">BTS</router-link>, pendant 2 années où j'ai pu aussi faire des stages en entreprise. Je suis venue m'installer au Québec pour pouvoir finir mes études de développeur. Je fais actuellement un baccalauréat Génie logiciel dans l'université de l'
-            <router-link to="/etude/UQAM">UQAM</router-link>.
+            Je m'appelle Mehdi Collomb, j'ai 21 ans et je suis un développeur en
+            apprentissage. J'ai commencé mes études de développeur en France
+            dans un
+            <router-link to="/etude/BTS">BTS</router-link>, pendant 2 années où
+            j'ai pu aussi faire des stages en entreprise. Je suis venue
+            m'installer au Québec pour pouvoir finir mes études de développeur.
+            Je fais actuellement un baccalauréat Génie logiciel dans
+            l'université de l' <router-link to="/etude/UQAM">UQAM</router-link>.
             <br />Pour voir mes expériences en développement
             <b @click="openNavbarSchool()">cliquez ici</b>
             et choisissez le parcours
@@ -47,7 +56,12 @@
         </div>
       </div>
       <div class="row justify-content-center">
-        <Skill v-for="skill in skills.slice(0, this.sliceArray)" :key="skill.name" :name="skill.name" :level="skill.level" />
+        <Skill
+          v-for="skill in skills.slice(0, this.sliceArray)"
+          :key="skill.name"
+          :name="skill.name"
+          :level="skill.level"
+        />
         <div class="showMore" @click="showMore">
           <a v-if="!showMoreTxt">Afficher plus</a>
           <a v-else>Afficher moins</a>
@@ -58,7 +72,10 @@
     <div class="container-fluid">
       <div class="row justify-content-center myProjects spacingTop">
         <div class="col-md-12">
-          <p>Voici {{projects.length}} de mes projets dont je suis le plus fier de vous montrer :</p>
+          <p>
+            Voici {{ projects.length }} de mes projets dont je suis le plus fier
+            de vous montrer :
+          </p>
         </div>
         <div class="col-md-7 col-lg-6">
           <div class="list-group">
@@ -67,12 +84,14 @@
               :key="project.name"
               :to="project.href"
               class="list-group-item list-group-item-action list-group-item-transparent"
-            >{{project.name}}</router-link>
+              >{{ project.name }}</router-link
+            >
           </div>
         </div>
       </div>
     </div>
-    <br> <!-- resolve reload problem, when skills loading -->
+    <br />
+    <!-- resolve reload problem, when skills loading -->
   </div>
 </template>
 
@@ -97,7 +116,7 @@ export default {
       ],
       skills,
       sliceArray: 9,
-      showMoreTxt: 0
+      showMoreTxt: 0,
     };
   },
   methods: {
@@ -118,13 +137,17 @@ export default {
     },
     showMore() {
       this.sliceArray = 0;
-      if(!this.showMoreTxt)
-        setTimeout(() => { this.sliceArray = this.skills.length; }, 0);
+      if (!this.showMoreTxt)
+        setTimeout(() => {
+          this.sliceArray = this.skills.length;
+        }, 0);
       else
-        setTimeout(() => { this.sliceArray = 9; }, 0);
+        setTimeout(() => {
+          this.sliceArray = 9;
+        }, 0);
 
       this.showMoreTxt = !this.showMoreTxt;
-    }
+    },
   },
   mounted() {
     this.shuffle(this.skills);
@@ -148,7 +171,7 @@ div.description b:hover {
 }
 
 .showMore {
-  margin-top: .5em;
+  margin-top: 0.5em;
   cursor: pointer;
 }
 
