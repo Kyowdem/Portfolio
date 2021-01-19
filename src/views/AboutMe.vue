@@ -46,9 +46,9 @@
           <h4>Competences</h4>
         </div>
       </div>
-      <div class="row">
+      <div class="row justify-content-center">
         <Skill v-for="skill in skills.slice(0, this.sliceArray)" :key="skill.name" :name="skill.name" :level="skill.level" />
-        <div @click="showMore">
+        <div class="showMore" @click="showMore">
           <a v-if="!showMoreTxt">Afficher plus</a>
           <a v-else>Afficher moins</a>
         </div>
@@ -145,6 +145,10 @@ div.description > p {
 
 div.description b:hover {
   text-decoration: underline;
+}
+
+.showMore a {
+  
 }
 
 /* Bootstrap new item */
