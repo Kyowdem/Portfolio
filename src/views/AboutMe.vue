@@ -147,8 +147,8 @@ div.description b:hover {
   text-decoration: underline;
 }
 
-.showMore a {
-  
+.showMore {
+  margin-top: .5em;
 }
 
 /* Bootstrap new item */
