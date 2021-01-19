@@ -149,6 +149,7 @@ div.description b:hover {
 
 .showMore {
   margin-top: .5em;
+  cursor: pointer;
 }
 
 /* Bootstrap new item */
