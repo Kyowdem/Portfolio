@@ -99,6 +99,7 @@
 import $ from "jquery";
 import Skill from "@/components/Skill.vue";
 import skills from "@/assets/json/skills.json";
+import schoolDesc from "@/assets/json/schoolDesc.json";
 
 export default {
   components: {
@@ -108,10 +109,10 @@ export default {
     return {
       showCV: true,
       projects: [
-        { name: "PPE : GSB", href: "etude/BTS/PPE/Mission n°2 : GSB" },
+        { name: schoolDesc.BTS.PPE[2].name, href: "/etude/BTS/PPE/Vue.js: 'GSB' et création d’API" },
         {
-          name: "Stage : nodeJs et Tesseract",
-          href: "etude/BTS/stage/Lire une facture avec nodeJs et Tesseract",
+          name: schoolDesc.BTS.stage[3].name,
+          href: "/etude/BTS/stage/node.js et Tesseract: Lire une facture",
         },
       ],
       skills,
@@ -151,6 +152,7 @@ export default {
   },
   mounted() {
     this.shuffle(this.skills);
+    console.dir(schoolDesc.BTS.PPE[2].name);
   },
 };
 </script>
