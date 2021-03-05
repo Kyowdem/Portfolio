@@ -21,7 +21,7 @@
         class="row justify-content-md-around activitiesList"
       >
         <div class="col-md-6 col-lg-4">
-          <Table name="ecole"></Table>
+          <Table name="ecole" title="Projet d'école"></Table>
         </div>
       </div>
     </div>
