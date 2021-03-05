@@ -49,7 +49,6 @@ export default {
     return {
       activityOrSchool: true,
       nameOfActivityClick: "",
-      show: { stage: true, PPE: true },
     };
   },
   mounted() {
