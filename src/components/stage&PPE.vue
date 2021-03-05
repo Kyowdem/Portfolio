@@ -130,12 +130,6 @@
             </div>
 
             <div v-if="name == schoolDesc.BTS.PPE[0].name">
-              <Realisation p="Tout au long du PPE j’ai appris les bases de JavaScript ce qu’il fallait faire et ne pas faire, j’ai aussi fait quelque recherche personnel et j’ai aussi appris grâce à ce site : http://es6-features.org. C’est un site qui répertorie les dernières normes de JavaScript."></Realisation>
-
-              <Realisation p="Plus le site avançait et moins le rendu était lourd visuellement. Sur la page principale on y fait afficher des infos générales pour ensuite lors d’un clic, un défilement se met en place et les informations souhaitées apparaissent dans une div en dessous."></Realisation>
-            </div>
-
-            <div v-if="name == schoolDesc.BTS.PPE[1].name">
               <Realisation p="Dans le PPE, les tables et les colonnes pour le jeu d’essai étaient déjà existants dans un fichier au format SQL. Avant d’insérer les tables et les données, il fallait d’abord créer la base de données." :imgPath="['PPE/1ere_annee/create_database.png']"></Realisation>
 
               <Realisation p="Après avoir créé la base, j’ai ouvert le fichier .sql dans un éditeur de texte pour pouvoir copier coller tout le script des tables et du jeux d’essai dans MYSQL." :imgPath="['PPE/1ere_annee/scriptSQL.png','PPE/1ere_annee/inserts.png']"></Realisation>
@@ -145,7 +139,7 @@
               <Realisation p="La requête du dessous est un peu plus longue car on voulait les ingrédients d’un bagel spécifique, « le chèvre miel »." :imgPath="['PPE/1ere_annee/req1.png', 'PPE/1ere_annee/rep_req1.png']"></Realisation>
             </div>
 
-            <div v-if="name == schoolDesc.BTS.PPE[2].name">
+            <div v-if="name == schoolDesc.BTS.PPE[1].name">
 
               <Realisation p="Dans notre groupe, je me suis occupé de la partie design et dynamique du site. Pour cela, j’ai utilisé jQuery et Ajax. J’ai également utilisé la librairie slick, afin de produire un carrousel qui répondais à mes attentes et qui était très facile d’utilisation." :imgPath="['PPE/2eme_annee/Judge_movies/accueil.png']"></Realisation>
 
@@ -160,7 +154,7 @@
               <Realisation p="Si un Acteur n’est pas dans la liste, nous avons juste à cliquer sur le bouton à droite pour faire apparaitre un formulaire de saisie. Ce dernier ajoute l’acteur au select sans avoir à rafraichir la page, elle se charge automatiquement grâce à Ajax." :imgPath="['PPE/2eme_annee/Judge_movies/ajoute_real.png']"></Realisation>
             </div>
 
-            <div v-if="name == schoolDesc.BTS.PPE[3].name">
+            <div v-if="name == schoolDesc.BTS.PPE[2].name">
               <Realisation p="J’ai commencé par faire la partie graphique du site avant de commencer tout le back-end. Je voulais que la page de recherche soit éducative, simple d’utilisation. J’ai alors mis une barre de recherche au milieu de l’écran et qui montera lorsqu’on saisit une information." :imgPath="['PPE/2eme_annee/GSB/barre_recherche.png', 'PPE/2eme_annee/GSB/recherche_visiteur.png']"></Realisation>
 
               <Realisation p="La recherche d’un visiteur se fait grâce à un web service où la méthode GET est utilisé. On envoie les données GET dans l’url en tapant simplement le nom de la page suivis d’un point d’interrogation, le nom de la variable et la donnée à envoyer. On peut aussi tester notre Api avec Postman qui est un environnement de développement pour les API." :imgPath="['PPE/2eme_annee/GSB/postman_visiteur_id.png']"></Realisation>
