@@ -3,7 +3,7 @@
     <table class="table table-hover" :name="name">
       <thead>
         <tr>
-          <th>{{name}}</th>
+          <th class="table-school">{{title || name}}</th>
         </tr>
       </thead>
       <tbody>
@@ -18,7 +18,8 @@
 <script>
 export default {
   props: {
-    name: String
+    name: String,
+    title: String
   },
   data() {
     return {
@@ -38,4 +39,10 @@ export default {
 </script>
 
 <style>
+thead th.table-school {
+  text-align: center;
+  text-decoration: underline;
+  cursor: default;
+  user-select: none
+}
 </style>

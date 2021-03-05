@@ -8,11 +8,11 @@
         class="row justify-content-md-around activitiesList"
       >
         <div class="col-md-6 col-lg-4">
-          <Table name="PPE"></Table>
+          <Table name="PPE" title="Projet d'école"></Table>
         </div>
 
         <div class="col-md-6 col-lg-4">
-          <Table name="stage"></Table>
+          <Table name="stage" title="Stage en entreprise"></Table>
         </div>
       </div>
 
@@ -77,13 +77,6 @@ export default {
 </script>
 
 <style>
-thead th {
-  text-align: center;
-  text-transform: capitalize;
-  text-decoration: underline;
-  cursor: default;
-}
-
 div.activitiesList {
   margin-top: 3em;
 }

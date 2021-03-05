@@ -253,10 +253,4 @@ AOS.init();
   margin-top: 4rem;
 }
 
-thead th {
-  text-align: center;
-  text-transform: capitalize;
-  text-decoration: underline;
-  cursor: default;
-}
 </style>
