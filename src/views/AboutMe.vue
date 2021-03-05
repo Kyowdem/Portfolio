@@ -37,7 +37,7 @@
         >
           <transition name="fade" mode="out-in">
             <p v-if="showCV">Voir mon CV</p>
-            <a v-else :href="require('@/assets/img/cv/CV.png')" target="_blank">
+            <a v-else :href="require('@/assets/img/cv/CV.jpg')" target="_blank">
               <img
                 src="@/assets/img/icon/document_PDF.png"
                 alt="document_PDF.png"
