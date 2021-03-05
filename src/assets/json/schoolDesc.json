@@ -2,7 +2,7 @@
     "BTS": {
         "stage": [
             {
-                "name": "Le maquettage des pages",
+                "name": "Premier pas avec JavaScript",
                 "description": {
                     "presentation de l'entreprise": null,
                     "contexte": "Etant une grande entreprise, ils ont besoin de gérer des entrants, des sortants ou des migrations vers d’autres postes ou endroits. J’étais donc chargé de faire un site web interne à l’entreprise lié à la base de données que je montrerais prochainement. Je vais vous montrer uniquement ce que j’ai pu faire dans la rubrique entrée.",

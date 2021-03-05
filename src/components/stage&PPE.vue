@@ -49,7 +49,7 @@
             <div data-aos="fade-right">
               <h2>Réalisation</h2>
             </div>
-            <div v-if="name == 'Le maquettage des pages'">
+            <div v-if="name == schoolDesc.BTS.stage[0].name">
               <Realisation p="J’ai fait une première page avec le peu de donnée que l’on m’avait dit avec de simple carré et du texte dedans." :imgPath="['stage/1ere_annee/premiere_page.png']"></Realisation>
 
               <Realisation p="Une première page peut être trop simple pour les personnes venant des Ressources Humaine j’ai donc dû la refaire et j’ai finis par faire ça" :imgPath="['stage/1ere_annee/accueil(menuOuvert).png']"></Realisation>
@@ -63,7 +63,7 @@
               <Realisation p="Je n’ai plus le code mais cette page était elle aussi complètement en objet. On pouvait dans le code sélectionner les jours et ou les demi-journée qu’on voulait griser simplement en tapant le nom de la journée."></Realisation>
             </div>
 
-            <div v-if="name == 'jQuery.ajax, le chargement des pages'">
+            <div v-if="name == schoolDesc.BTS.stage[1].name">
               <Realisation p="J’ai beaucoup utilisé la documentation de jQuery et d’Ajax, qui sont très bien faites. La présence de mon tuteur m’a aussi permis de mieux m’initier là-dedans."></Realisation>
 
               <Realisation p="Après plusieurs modifications, cette page était utilisée comme principale pour le site. Cette dernière complètement orienté objet permet la facilité au futur modification qu’ils voudront apporter." :imgPath="['stage/1ere_annee/accueil(menuOuvert).png']"></Realisation>
@@ -75,7 +75,7 @@
               <Realisation p="On peut voir sur un bout de code ci-dessous où lors d’un clic, Ajax allais faire charger la page souhaité." :imgPath="['stage/1ere_annee/ajax_code.png']"></Realisation>
             </div>
 
-            <div v-if="name == 'Partie visuel, signalement d’une erreur. jQuery-ui'">
+            <div v-if="name == schoolDesc.BTS.stage[2].name">
               <Realisation p="Au début je n’étais pas partie sur un pop-up mais sur une page entière, mais j’ai trouvé ça trop lourd et moins intuitif pour l’utilisateur alors j’ai changé en utilisant le pop-up appeler aussi dialog, de jQuery-ui." :imgPath="['stage/2eme_annee/ouverture_dialog.png']"></Realisation>
 
               <Realisation p="Il fallait ensuite bien organiser tout ça, j’ai donc utilisé les mêmes titres que les Tabs qu’on peut voir au-dessus du dialog et il y avait même déjà toute l’architecture alors j’ai utilisé ça pour produire la suite." :imgPath="['stage/2eme_annee/modif_date.png']"></Realisation>
@@ -85,7 +85,7 @@
               <Realisation p="Le code que j’ai fait a principalement été fait en orienté objet mais aussi aspect pour permettre de gérer chaque objet qui sera créé, cela permet d’éviter le mot clé new mais surtout de centralisé tous les objets dans un objet mère." :imgPath="['stage/2eme_annee/code_create_select.png']"></Realisation>
             </div>
 
-            <div v-if="name == 'Lire une facture avec nodeJs et Tesseract'">
+            <div v-if="name == schoolDesc.BTS.stage[3].name">
               <Realisation p="Avant de commencer à coder, j’ai modéliser un MLR grâce à une ancienne application que l’entreprise avait développée, c’est alors à partir de ça que j’ai fait toute les entités et que j’ai finis et valider par mon tuteur le MLR qui ressemblais à ça." :imgPath="['stage/2eme_annee/MCD.png']"></Realisation>
 
               <Realisation p="J’ai ensuite bien pris le temps de me renseigner sur NodeJs car pour lancer un exe je n’avais pas le choix de l’utiliser, et c’est sur YouTube avec les tutoriels de grafikart, qui sont d’une clarté extrême. Après 2 jours, je me suis enfin lancé et j’ai commencé par essayer de lancer Tesseract avec l’invite de commande" :imgPath="['stage/2eme_annee/launch_tesseract_with_cmd.png']"></Realisation>
@@ -129,13 +129,13 @@
               <Realisation p="Une première ligne disant que le fichier est déjà droit alors pas besoin de le retourner, il m’affiche en second le prix et le reste se sont simplement des indications qui explique que le programme a été arrêter et que le fichier texte a bien été supprimer."></Realisation>
             </div>
 
-            <div v-if="name == 'Music Gone’s, découverte de JavaScript'">
+            <div v-if="name == schoolDesc.BTS.PPE[0].name">
               <Realisation p="Tout au long du PPE j’ai appris les bases de JavaScript ce qu’il fallait faire et ne pas faire, j’ai aussi fait quelque recherche personnel et j’ai aussi appris grâce à ce site : http://es6-features.org. C’est un site qui répertorie les dernières normes de JavaScript."></Realisation>
 
               <Realisation p="Plus le site avançait et moins le rendu était lourd visuellement. Sur la page principale on y fait afficher des infos générales pour ensuite lors d’un clic, un défilement se met en place et les informations souhaitées apparaissent dans une div en dessous."></Realisation>
             </div>
 
-            <div v-if="name == 'Duch’Bagels, Base de données et SQL'">
+            <div v-if="name == schoolDesc.BTS.PPE[1].name">
               <Realisation p="Dans le PPE, les tables et les colonnes pour le jeu d’essai étaient déjà existants dans un fichier au format SQL. Avant d’insérer les tables et les données, il fallait d’abord créer la base de données." :imgPath="['PPE/1ere_annee/create_database.png']"></Realisation>
 
               <Realisation p="Après avoir créé la base, j’ai ouvert le fichier .sql dans un éditeur de texte pour pouvoir copier coller tout le script des tables et du jeux d’essai dans MYSQL." :imgPath="['PPE/1ere_annee/scriptSQL.png','PPE/1ere_annee/inserts.png']"></Realisation>
@@ -145,7 +145,7 @@
               <Realisation p="La requête du dessous est un peu plus longue car on voulait les ingrédients d’un bagel spécifique, « le chèvre miel »." :imgPath="['PPE/1ere_annee/req1.png', 'PPE/1ere_annee/rep_req1.png']"></Realisation>
             </div>
 
-            <div v-if="name == 'Judge Movies : Laravel. Projet de groupe'">
+            <div v-if="name == schoolDesc.BTS.PPE[2].name">
 
               <Realisation p="Dans notre groupe, je me suis occupé de la partie design et dynamique du site. Pour cela, j’ai utilisé jQuery et Ajax. J’ai également utilisé la librairie slick, afin de produire un carrousel qui répondais à mes attentes et qui était très facile d’utilisation." :imgPath="['PPE/2eme_annee/Judge_movies/accueil.png']"></Realisation>
 
@@ -160,7 +160,7 @@
               <Realisation p="Si un Acteur n’est pas dans la liste, nous avons juste à cliquer sur le bouton à droite pour faire apparaitre un formulaire de saisie. Ce dernier ajoute l’acteur au select sans avoir à rafraichir la page, elle se charge automatiquement grâce à Ajax." :imgPath="['PPE/2eme_annee/Judge_movies/ajoute_real.png']"></Realisation>
             </div>
 
-            <div v-if="name == 'GSB, Vuejs et création d’API'">
+            <div v-if="name == schoolDesc.BTS.PPE[3].name">
               <Realisation p="J’ai commencé par faire la partie graphique du site avant de commencer tout le back-end. Je voulais que la page de recherche soit éducative, simple d’utilisation. J’ai alors mis une barre de recherche au milieu de l’écran et qui montera lorsqu’on saisit une information." :imgPath="['PPE/2eme_annee/GSB/barre_recherche.png', 'PPE/2eme_annee/GSB/recherche_visiteur.png']"></Realisation>
 
               <Realisation p="La recherche d’un visiteur se fait grâce à un web service où la méthode GET est utilisé. On envoie les données GET dans l’url en tapant simplement le nom de la page suivis d’un point d’interrogation, le nom de la variable et la donnée à envoyer. On peut aussi tester notre Api avec Postman qui est un environnement de développement pour les API." :imgPath="['PPE/2eme_annee/GSB/postman_visiteur_id.png']"></Realisation>
@@ -174,7 +174,7 @@
               <Realisation p="Revenons à notre recherche. Après avoir fait la recherche par nom nous avons une collection de visiteur que je stock dans une variable locale pour réutiliser les données. Je fais ensuite un v-for pour parcourir tous les visiteurs et faire afficher le tableau." :imgPath="['PPE/2eme_annee/GSB/code_rechercher_visiteur.png']"></Realisation>
             </div>
 
-            <div v-if="name == 'C++: Les arbres et les Template'">
+            <div v-if="name == schoolDesc.UQAM.ecole[0].name">
               <Realisation p="On m’a donné ce modèle UML." :imgPath="['ecole/INF3105/INF3105-Pile.png']"></Realisation>
               <Realisation p="A partir de ça, on a dû compléter chaque fonction" :imgPath="['ecole/INF3105/class_pile.png']"></Realisation>
               <Realisation p="On a ensuite étudié l’arbre AVL, ainsi que plusieurs arbres comme rouge-noir ou encore des arbres map. Pour l’instant, l’arbre rouge-noir est celui que je n’ai pas implémenter mais que j’ai quand même pu apprendre schématiquement et logiquement. Encore une fois on nous a donner un modèle UML pour l’arbre AVL." :imgPath="['ecole/INF3105/INF3105-ArbreAVL.png']"></Realisation>
