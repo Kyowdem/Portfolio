@@ -152,7 +152,6 @@ export default {
   },
   mounted() {
     this.shuffle(this.skills);
-    console.dir(schoolDesc.BTS.PPE[2].name);
   },
 };
 </script>
