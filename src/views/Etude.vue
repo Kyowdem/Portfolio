@@ -7,12 +7,12 @@
         v-if="$route.params.etudeName == 'BTS'"
         class="row justify-content-md-around activitiesList"
       >
+        <!-- Resolve update problem when navaigation between UQAM and BTS -->
         <div class=""></div>
         <div class="col-md-6 col-lg-4">
           <Table name="PPE" title="Projet d'école"></Table>
         </div>
 
-        <div class=""></div>
         <div class="col-md-6 col-lg-4">
           <Table name="stage" title="Stage en entreprise"></Table>
         </div>
