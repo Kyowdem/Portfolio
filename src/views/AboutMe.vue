@@ -109,7 +109,10 @@ export default {
     return {
       showCV: true,
       projects: [
-        { name: schoolDesc.BTS.PPE[2].name, href: "/etude/BTS/PPE/Vue.js: 'GSB' et création d’API" },
+        {
+          name: schoolDesc.BTS.PPE[2].name,
+          href: "/etude/BTS/PPE/Vue.js: 'GSB' et création d’API",
+        },
         {
           name: schoolDesc.BTS.stage[3].name,
           href: "/etude/BTS/stage/node.js et Tesseract: Lire une facture",

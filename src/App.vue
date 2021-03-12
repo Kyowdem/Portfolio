@@ -36,4 +36,22 @@ export default {
 #nav a.router-link-exact-active {
   color: #42b983;
 }
+
+/* change scroll bar */
+body::-webkit-scrollbar {
+  width: 12px;
+  background-color: #000;
+}
+
+body::-webkit-scrollbar-track{
+  border-radius: 3px;
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb{
+  border-radius:5px;
+  background-color:#FFD400;
+  border:2px solid rgb(124, 124, 124)
+}
+
 </style>
