@@ -126,7 +126,7 @@ div.borderRectangle p {
 }
 
 .typing-effect {
-  width: 68%;
+  width: 54ch;
   animation: typing 3.5s steps(54), blink 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
