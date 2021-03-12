@@ -11,7 +11,7 @@ import Navbar from "@/components/Navbar.vue";
 export default {
   components: {
     Navbar,
-  }
+  },
 };
 </script>
 
@@ -43,15 +43,14 @@ body::-webkit-scrollbar {
   background-color: #000;
 }
 
-body::-webkit-scrollbar-track{
+body::-webkit-scrollbar-track {
   border-radius: 3px;
   background-color: transparent;
 }
 
-body::-webkit-scrollbar-thumb{
-  border-radius:5px;
-  background-color:#FFD400;
-  border:2px solid rgb(124, 124, 124)
+body::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #ffd400;
+  border: 2px solid rgb(124, 124, 124);
 }
-
 </style>
