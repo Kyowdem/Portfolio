@@ -53,9 +53,9 @@
 export default {
   data() {
     return {
-      title: "Portfolio",
+      title: "Home",
       columns: [
-        // { href: "/contact", name: "Contact" },
+        { href: "/portfolio", name: "Portfolio" },
         { href: "/aboutMe", name: "A propos" },
       ], // An object inside an array with params: href and name
       // {href: "#", name: "name"}
