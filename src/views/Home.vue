@@ -9,7 +9,9 @@
           <h1>Collomb Mehdi</h1>
         </div>
         <div class="col-md-12 col-lg-10 col-sm-11">
-          <p>Developpeur Full-stack, application mobile et Windows.</p>
+          <p class="typing-effect">
+            Developpeur Full-stack, application mobile et Windows.
+          </p>
         </div>
       </div>
       <div class="row justify-content-center aboutMe">
@@ -21,7 +23,9 @@
           title="Cliquez pour en savoir plus"
         >
           <transition name="fade" mode="out-in">
-            <p key="1" class="normalText" v-if="showAboutMe">Plus a propos de moi</p>
+            <p key="1" class="normalText" v-if="showAboutMe">
+              Plus a propos de moi
+            </p>
             <p key="2" class="bigText" v-else>?</p>
           </transition>
         </div>
@@ -118,6 +122,30 @@ div.borderRectangle p {
 @media (min-width: 992px) {
   p.normalText {
     font-size: 94%;
+  }
+}
+
+.typing-effect {
+  width: 68%;
+  animation: typing 3.5s steps(54), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 1.2em;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
   }
 }
 </style>
