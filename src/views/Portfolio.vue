@@ -17,7 +17,16 @@
         <label class="form-check-label" :for="filter">{{ filter }}</label>
       </div>
     </div>
-    <div class="row project">bar</div>
+    <div class="row project">
+      <div class="col-md-12">
+        <h3 class="titre">Titre</h3>
+        <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum culpa voluptate eligendi tempore fuga, recusandae facilis voluptates modi eveniet veniam doloribus officia maiores dolor facere quae earum numquam optio sunt.</p>
+        <div>
+          <p class="filter">filter: </p>
+          <p class="date">AAAA/MM/JJ</p>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -34,4 +43,17 @@ export default {
 </script>
 
 <style>
+.project>div {
+  background: rgba(128, 128, 128, 0.4);
+  box-shadow: 5px 5px 5px grey;
+}
+.project .date {
+  text-align: end
+}
+.project .text {
+  text-align: justify;
+}
+.project .titre {
+  text-align: start;
+}
 </style>
