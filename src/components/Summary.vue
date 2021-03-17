@@ -3,8 +3,8 @@
     <h3 class="titre">{{ title }}</h3>
     <p class="text">{{ describe }}</p>
     <div class="row">
-      <div class="col-md-2 filter"><p>filter:</p></div>
-      <div class="col-md-8">
+      <div class="col-md-1 filter"><p>filter:</p></div>
+      <div class="col-md-9 filters">
         <p v-for="filter in filters" :key="filter">{{ filter }}</p>
       </div>
       <div class="col-md-2 date">
@@ -37,7 +37,8 @@ export default {
   text-align: justify;
 }
 .project .titre,
-.project .filter {
+.project .filter,
+.project .filters {
   text-align: start;
 }
 </style>
