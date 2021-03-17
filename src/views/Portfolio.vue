@@ -48,6 +48,22 @@ export default {
       selectedFilter: "",
     };
   },
+  watch: {
+    selectedFilter: function () {
+      this.filterPortfolio();
+    },
+  },
+  methods: {
+    filterPortfolio() {
+      this.Portfolio = require("@/assets/json/portfolio.json");
+      var selectedFilter = this.selectedFilter;
+
+      if (this.selectedFilter)
+        this.Portfolio = this.Portfolio.filter((prt) =>
+          prt.filters.some((filter) => filter == selectedFilter)
+        );
+    },
+  },
 };
 </script>
 
