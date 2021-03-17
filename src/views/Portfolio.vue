@@ -19,22 +19,31 @@
     </div>
     <div class="row project">
       <div class="col-md-12">
-        <Summary title="Titre" describe="lorem ..." :filters="['C++']" date="AAAA/MM/JJ"></Summary>
+        <Summary
+          v-for="prt in Portfolio"
+          :key="prt.title"
+          :title="prt.title"
+          :describe="prt.describe"
+          :filters="prt.filters"
+          :date="prt.date"
+        ></Summary>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import Summary from '@/components/Summary.vue'
+import Summary from "@/components/Summary.vue";
+import Portfolio from "@/assets/json/portfolio.json";
 
 export default {
   name: "Portfolio",
   components: {
-    Summary
+    Summary,
   },
   data() {
     return {
+      Portfolio,
       filters: ["vue.js", "javascript", "HTML", "CSS", "SQL", "C#", "C++"],
       selectedFilter: "",
     };
