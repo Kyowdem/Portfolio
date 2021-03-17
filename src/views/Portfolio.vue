@@ -21,9 +21,10 @@
       <div class="col-md-12">
         <h3 class="titre">Titre</h3>
         <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum culpa voluptate eligendi tempore fuga, recusandae facilis voluptates modi eveniet veniam doloribus officia maiores dolor facere quae earum numquam optio sunt.</p>
-        <div>
-          <p class="filter">filter: </p>
-          <p class="date">AAAA/MM/JJ</p>
+        <div class="row">
+          <div class="col-md-2 filter"><p>filter: </p></div>
+          <div class="col-md-8"></div>
+          <div class="col-md-2 date"><p>AAAA/MM/JJ</p></div>
         </div>
       </div>
     </div>
@@ -53,7 +54,7 @@ export default {
 .project .text {
   text-align: justify;
 }
-.project .titre {
+.project .titre, .project .filter {
   text-align: start;
 }
 </style>
