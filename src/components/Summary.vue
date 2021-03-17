@@ -5,7 +5,9 @@
     <div class="row">
       <div class="col-md-1 filter"><p>filter:</p></div>
       <div class="col-md-9 filters">
-        <p v-for="filter in filters" :key="filter">{{ filter }}</p>
+        <ul>
+          <li v-for="filter in filters" :key="filter">{{ filter }}</li>
+        </ul>
       </div>
       <div class="col-md-2 date">
         <p>{{ date }}</p>
@@ -30,15 +32,23 @@ export default {
   background: rgba(128, 128, 128, 0.4);
   box-shadow: 5px 5px 5px grey;
 }
+
 .project .date {
   text-align: end;
 }
+
 .project .text {
   text-align: justify;
 }
+
 .project .titre,
 .project .filter,
 .project .filters {
   text-align: start;
+}
+
+.filters ul>li {
+  display: inline;
+  padding-right: 10px;
 }
 </style>
