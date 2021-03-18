@@ -53,7 +53,19 @@ export default {
       this.filterPortfolio();
     },
   },
+  mounted() {
+    // this.setFiltersByPortfolio();
+  },
   methods: {
+    setFiltersByPortfolio() {
+      var filtersPortfolio = [];
+
+      this.Portfolio.forEach((prt) => {
+        filtersPortfolio = filtersPortfolio.concat(prt.filters);
+      });
+
+      this.filters = [...new Set(filtersPortfolio)];
+    },
     filterPortfolio() {
       this.Portfolio = require("@/assets/json/portfolio.json");
       var selectedFilter = this.selectedFilter;
