@@ -57,6 +57,7 @@ export default {
     // this.setFiltersByPortfolio();
   },
   methods: {
+    // Set all filters through filter in portfolio
     setFiltersByPortfolio() {
       var filtersPortfolio = [];
 
@@ -66,6 +67,7 @@ export default {
 
       this.filters = [...new Set(filtersPortfolio)];
     },
+    // When filter changed, reload portfolio
     filterPortfolio() {
       this.Portfolio = require("@/assets/json/portfolio.json");
       var selectedFilter = this.selectedFilter;
