@@ -3,7 +3,7 @@
     <h3 class="titre">{{ title }}</h3>
     <p class="text">{{ describe }}</p>
     <div class="row">
-      <div class="col-md-1 filter"><p>filter:</p></div>
+      <div class="col-md-1 filter"><p>filtres:</p></div>
       <div class="col-md-9 filters">
         <ul>
           <li v-for="filter in filters" :key="filter">{{ filter }}</li>
