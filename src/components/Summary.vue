@@ -49,6 +49,9 @@ export default {
 
 .filters ul>li {
   display: inline;
-  padding-right: 10px;
+}
+
+.filters ul>li:not(:last-child) {
+  margin-right: 10px;
 }
 </style>
