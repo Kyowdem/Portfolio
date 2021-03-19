@@ -54,6 +54,7 @@ export default {
     },
   },
   mounted() {
+    this.Portfolio.length = 1;
     // this.setFiltersByPortfolio();
   },
   methods: {
@@ -86,5 +87,9 @@ export default {
 .filter .form-check > label,
 .filter .form-check > input {
   cursor: pointer;
+}
+
+div.project div.col.md>div {
+  margin-bottom: 1em;
 }
 </style>

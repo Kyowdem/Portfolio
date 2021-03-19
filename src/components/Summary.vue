@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="summary">
     <h3 class="titre">{{ title }}</h3>
     <p class="text">{{ describe }}</p>
     <div class="row">
@@ -28,22 +28,22 @@ export default {
 </script>
 
 <style>
-.project > div {
+div.summary {
   background: rgba(128, 128, 128, 0.4);
   box-shadow: 5px 5px 5px grey;
 }
 
-.project .date {
+.summary .date {
   text-align: end;
 }
 
-.project .text {
+.summary .text {
   text-align: justify;
 }
 
-.project .titre,
-.project .filter,
-.project .filters {
+.summary .titre,
+.summary .filter,
+.summary .filters {
   text-align: start;
 }
 
