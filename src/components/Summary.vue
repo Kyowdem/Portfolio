@@ -1,18 +1,20 @@
 <template>
   <div class="summary">
-    <h3 class="titre">{{ title }}</h3>
-    <p class="text">{{ describe }}</p>
-    <div class="row">
-      <div class="col-md-1 filter"><p>filtres:</p></div>
-      <div class="col-md-9 filters">
-        <ul>
-          <li v-for="filter in filters" :key="filter">
-            <Logo width="30px" :imgName="filter"></Logo>
-          </li>
-        </ul>
-      </div>
-      <div class="col-md-2 date">
-        <p>{{ date }}</p>
+    <div class="insideSummary">
+      <h3 class="titre">{{ title }}</h3>
+      <p class="text">{{ describe }}</p>
+      <div class="row">
+        <div class="col-md-1 filter"><p>filtres:</p></div>
+        <div class="col-md-9 filters">
+          <ul>
+            <li v-for="filter in filters" :key="filter">
+              <Logo width="30px" :imgName="filter"></Logo>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-2 date">
+          <p>{{ date }}</p>
+        </div>
       </div>
     </div>
   </div>
@@ -35,8 +37,8 @@ export default {
 </script>
 
 <style>
-.summary h3.titre {
-  padding-left: 10px;
+.insideSummary {
+  padding: 10px;
 }
 
 div.summary:hover {
