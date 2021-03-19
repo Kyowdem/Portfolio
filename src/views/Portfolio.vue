@@ -16,9 +16,10 @@
         />
         <label class="form-check-label" :for="filter">
           <img
-            :alt="filter"
             width="50px"
             :src="require(`@/assets/img/icon/${filter.toLowerCase()}-logo.png`)"
+            :alt="filter"
+            :title="filter"
           />
         </label>
       </div>
