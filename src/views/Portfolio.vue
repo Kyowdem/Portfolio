@@ -14,7 +14,13 @@
           :id="filter"
           :value="filter"
         />
-        <label class="form-check-label" :for="filter">{{ filter }}</label>
+        <label class="form-check-label" :for="filter">
+          <img
+            :alt="filter"
+            width="50px"
+            :src="require(`@/assets/img/icon/${filter.toLowerCase()}-logo.png`)"
+          />
+        </label>
       </div>
     </div>
     <div class="row project">
@@ -88,7 +94,7 @@ export default {
   cursor: pointer;
 }
 
-div.project div.col.md>div {
+div.project div.col.md > div {
   margin-bottom: 1em;
 }
 
