@@ -2,49 +2,49 @@
     {
         "title": "JavaScript: Mes premiers pas",
         "describe": "",
-        "filters": [],
+        "filters": ["Javascript"],
         "date": "2018-06"
     },
     {
         "title": "jQuery.ajax: le chargement des pages",
         "describe": "",
-        "filters": [],
+        "filters": ["Javascript", "jQuery", "Ajax"],
         "date": "2018-06"
     },
     {
         "title": "jQuery-ui: Partie visuel, signalement d’une erreur.",
         "describe": "",
-        "filters": [],
+        "filters": ["HTML", "CSS", "Javascript", "jQuery"],
         "date": "2019-02"
     },
     {
         "title": "node.js et Tesseract: Lire une facture",
         "describe": "",
-        "filters": [],
+        "filters": ["Javascript", "node.js"],
         "date": "2019-02"
     },
     {
         "title": "SQL et MLR: Duch’Bagels, Base de données",
         "describe": "",
-        "filters": [],
+        "filters": ["SQL"],
         "date": "2017-10"
     },
     {
         "title": "Laravel: 'Judge Movies' Projet de groupe",
         "describe": "",
-        "filters": [],
+        "filters": ["HTML", "CSS", "PHP", "Laravel", "Javascript", "jQuery"],
         "date": "2018-11"
     },
     {
         "title": "Vue.js: 'GSB' et création d’API",
         "describe": "",
-        "filters": [],
+        "filters": ["Javascript", "vue.js"],
         "date": "2019-04"
     },
     {
         "title": "C++: Les arbres et les Template",
         "describe": "",
-        "filters": [],
+        "filters": ["C++"],
         "date": "2020-11"
     }
 ]
