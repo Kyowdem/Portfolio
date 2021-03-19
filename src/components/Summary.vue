@@ -35,9 +35,14 @@ export default {
 </script>
 
 <style>
+div.summary:hover {
+  transform: scale(1.05);
+}
+
 div.summary {
   background: rgba(128, 128, 128, 0.4);
   box-shadow: 5px 5px 5px grey;
+  transition: all .5s ease;
 }
 
 .summary .date {
