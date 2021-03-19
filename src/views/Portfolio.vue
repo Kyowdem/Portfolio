@@ -15,12 +15,7 @@
           :value="filter"
         />
         <label class="form-check-label" :for="filter">
-          <img
-            width="50px"
-            :src="require(`@/assets/img/icon/${filter.toLowerCase()}-logo.png`)"
-            :alt="filter"
-            :title="filter"
-          />
+          <Logo width="50px" :imgName="filter"></Logo>
         </label>
       </div>
     </div>
@@ -41,12 +36,14 @@
 
 <script>
 import Summary from "@/components/Summary.vue";
+import Logo from "@/components/Logo.vue";
 import Portfolio from "@/assets/json/portfolio.json";
 
 export default {
   name: "Portfolio",
   components: {
     Summary,
+    Logo,
   },
   data() {
     return {

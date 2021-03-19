@@ -7,14 +7,7 @@
       <div class="col-md-9 filters">
         <ul>
           <li v-for="filter in filters" :key="filter">
-            <img
-              width="30px"
-              :src="
-                require(`@/assets/img/icon/${filter.toLowerCase()}-logo.png`)
-              "
-              :alt="filter"
-              :title="filter"
-            />
+            <Logo width="30px" :imgName="filter"></Logo>
           </li>
         </ul>
       </div>
@@ -26,7 +19,12 @@
 </template>
 
 <script>
+import Logo from "@/components/Logo.vue";
+
 export default {
+  components: {
+    Logo,
+  },
   props: {
     title: String,
     describe: String,
