@@ -1,5 +1,5 @@
 <template>
-  <div class="summary">
+  <div class="summary" @click="GoTo()">
     <div class="insideSummary">
       <h3 class="titre">{{ title }}</h3>
       <p class="text">{{ describe }}</p>
@@ -33,11 +33,17 @@ export default {
     filters: Array,
     date: String,
   },
+  methods: {
+    GoTo() {
+      this.$router.push(`/portfolio/${this.title}`)
+    }
+  }
 };
 </script>
 
 <style>
 .insideSummary {
+  cursor: pointer;
   padding: 10px;
 }
 
