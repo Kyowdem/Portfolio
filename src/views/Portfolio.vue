@@ -54,7 +54,6 @@ export default {
     },
   },
   mounted() {
-    this.Portfolio.length = 1;
     // this.setFiltersByPortfolio();
   },
   methods: {
@@ -91,5 +90,9 @@ export default {
 
 div.project div.col.md>div {
   margin-bottom: 1em;
+}
+
+div.summary:not(:last-child) {
+  margin-bottom: 5em;
 }
 </style>
