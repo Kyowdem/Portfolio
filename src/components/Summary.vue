@@ -35,6 +35,10 @@ export default {
 </script>
 
 <style>
+.summary h3.titre {
+  padding-left: 10px;
+}
+
 div.summary:hover {
   transform: scale(1.05);
 }
