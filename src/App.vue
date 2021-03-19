@@ -54,7 +54,7 @@ body::-webkit-scrollbar-thumb {
   border: 2px solid rgb(124, 124, 124);
 }
 
-div.container div.row:not(:last-child) {
+div.container>div.row:not(:last-child) {
   margin-bottom: 3em;
 }
 </style>
