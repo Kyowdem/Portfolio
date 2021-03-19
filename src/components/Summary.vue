@@ -6,7 +6,16 @@
       <div class="col-md-1 filter"><p>filtres:</p></div>
       <div class="col-md-9 filters">
         <ul>
-          <li v-for="filter in filters" :key="filter">{{ filter }}</li>
+          <li v-for="filter in filters" :key="filter">
+            <img
+              width="30px"
+              :src="
+                require(`@/assets/img/icon/${filter.toLowerCase()}-logo.png`)
+              "
+              :alt="filter"
+              :title="filter"
+            />
+          </li>
         </ul>
       </div>
       <div class="col-md-2 date">
@@ -47,11 +56,15 @@ div.summary {
   text-align: start;
 }
 
-.filters ul>li {
+.filters ul > li {
   display: inline;
 }
 
-.filters ul>li:not(:last-child) {
+.filters ul {
+  padding: 0;
+}
+
+.filters ul > li:not(:last-child) {
   margin-right: 10px;
 }
 </style>
