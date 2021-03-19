@@ -58,6 +58,11 @@ export default {
     },
   },
   mounted() {
+    this.Portfolio.sort(
+      (a, b) =>
+        parseInt(b.date.split("-").join("")) -
+        parseInt(a.date.split("-").join(""))
+    );
     this.setFiltersByPortfolio();
   },
   methods: {
