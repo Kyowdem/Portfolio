@@ -44,7 +44,7 @@ export default {
   data() {
     return {
       Portfolio,
-      filters: ["vue.js", "javascript", "HTML", "CSS", "SQL", "C#", "C++"],
+      filters: [],
       selectedFilter: "",
     };
   },
@@ -54,7 +54,7 @@ export default {
     },
   },
   mounted() {
-    // this.setFiltersByPortfolio();
+    this.setFiltersByPortfolio();
   },
   methods: {
     // Set all filters through filter in portfolio
