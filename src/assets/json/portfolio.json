@@ -58,7 +58,7 @@
     },
     {
         "title": "Vue.js: 'GSB' et création d’API",
-        "describe": "",
+        "describe": "Mon premier projet avec le framework vue.js. Le thème du projet était crée par l'école. C'etait une entreprise de laboratoire fictive, il fallait faire de multiple recherche. Un projet très libre.",
         "filters": [
             "Javascript",
             "vue.js"
