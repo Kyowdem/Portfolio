@@ -9,7 +9,7 @@
     },
     {
         "title": "jQuery.ajax: le chargement des pages",
-        "describe": "",
+        "describe": "La page est en javascript pur, et grâce à ajax, le chargement des pages se fait dynamiquement et surtout sur la meme page, aucune actualisation n'est faite.",
         "filters": [
             "Javascript",
             "jQuery",
@@ -19,12 +19,13 @@
     },
     {
         "title": "jQuery-ui: Partie visuel, signalement d’une erreur.",
-        "describe": "",
+        "describe": "Creation d'une pop-up pour permettre à un employé de signaler une erreur, sur ses données personnelles.",
         "filters": [
             "HTML",
             "CSS",
             "Javascript",
-            "jQuery"
+            "jQuery",
+            "jQuery-ui"
         ],
         "date": "2019-02"
     },
