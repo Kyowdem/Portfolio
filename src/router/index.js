@@ -16,8 +16,6 @@ const routes = [
   },
   { path: '/portfolio', component: () => import('../views/Portfolio') },
   { path: "/portfolio/:project", component: () => import('../views/Project') },
-  { path: '/etude/:etudeName', component: () => import('../views/Etude.vue') },
-  { path: '/etude/:etudeName/:typeOfActivity/:activity', component: () => import('../views/Etude.vue') },
   { path: '*', component: Home }
 ]
 

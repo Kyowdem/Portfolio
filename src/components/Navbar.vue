@@ -59,15 +59,7 @@ export default {
         { href: "/aboutMe", name: "A propos" },
       ], // An object inside an array with params: href and name
       // {href: "#", name: "name"}
-      columnsList: [
-        {
-          name: "Etude",
-          list: [
-            { href: "/etude/BTS", name: "BTS" },
-            { href: "/etude/UQAM", name: "UQAM" },
-          ],
-        },
-      ], // An object insite an array with params: name and list. Insite list set columns
+      columnsList: [], // An object insite an array with params: name and list. Insite list set columns
       // {name: "name", list: [ {href: "#", name: "name"}, {href: "#", name: "name"} ]}
     };
   },
