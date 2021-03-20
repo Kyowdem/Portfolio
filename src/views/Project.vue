@@ -1,12 +1,14 @@
 <template>
   <div>
-    <div class="container-fluid activity">
+    <div class="container-fluid project">
       <div class="row justify-content-center">
-        <h1>{{ projectName }}</h1>
+        <div class="col-md-12">
+          <h1>{{ projectName }}</h1>
+        </div>
       </div>
-      <div class="row">
+      <div class="row justify-content-center">
         <div class="col-md-12"><h2>Realisation</h2></div>
-        <div class="col-md-12 project">
+        <div class="col-md-12 col-lg-8 explainProject">
           <div v-if="projectName == projects[0].name">
             <Realisation
               p="J’ai fait une première page avec le peu de donnée que l’on m’avait dit avec de simple carré et du texte dedans."
@@ -270,7 +272,6 @@
         </div>
       </div>
     </div>
-    {{ projectName }}
   </div>
 </template>
 
@@ -298,4 +299,18 @@ export default {
 </script>
 
 <style>
+@media (min-width: 992px) {
+  .project .explainProject {
+    background-color: rgba(200, 200, 200, 0.1);
+  }
+}
+
+.explainProject .row:not(:last-child) {
+  margin-bottom: 4em;
+}
+
+.project > .row:last-child > div:not(:last-child) {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
 </style>
