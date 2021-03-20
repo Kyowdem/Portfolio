@@ -30,7 +30,7 @@
     },
     {
         "title": "node.js et Tesseract: Lire une facture",
-        "describe": "",
+        "describe": "Le but étant que l'application Tesseract lise une note de frais, et qu'avec node.js je puisse retrouver, grâce à un algorithme, le montant de la note pour qu'elle soit directement stocké dans la base de données.",
         "filters": [
             "Javascript",
             "node.js"
