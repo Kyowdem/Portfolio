@@ -67,7 +67,7 @@
     },
     {
         "title": "C++: Les arbres et les Template",
-        "describe": "",
+        "describe": "Pour un cours de C++, il fallait créer des Templates (Pile, ArbreAVL, ...) pour qu'on puisse mieux comprendres les fonctions et les algorithmes qui sont utilisés",
         "filters": [
             "C++"
         ],
