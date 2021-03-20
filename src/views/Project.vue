@@ -113,7 +113,7 @@
                 <img
                   :src="
                     require('@/' +
-                      this.imgSchPath +
+                      'assets/img/school/' +
                       'stage/2eme_annee/ticket_caisse.png')
                   "
                   alt="ticket_caisse.png"
@@ -126,7 +126,7 @@
                 <img
                   :src="
                     require('@/' +
-                      this.imgSchPath +
+                      'assets/img/school/' +
                       'stage/2eme_annee/texte_stdout.png')
                   "
                   alt="texte_stdout.png"
