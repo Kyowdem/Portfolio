@@ -39,7 +39,7 @@
     },
     {
         "title": "SQL et MLR: Duch’Bagels, Base de données",
-        "describe": "",
+        "describe": "Un projet d'école nous permettant de nous initier a faire des MCD, les convertirs en MLR, pour ensuite les convertir en SQL et y  faire des jeux d'essaie pour tester nos données et les requêtes",
         "filters": [
             "SQL"
         ],
