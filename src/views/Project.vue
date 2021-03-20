@@ -293,6 +293,9 @@ export default {
     };
   },
   mounted() {
+    // scroll top on click in project
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+
     this.projectName = this.$route.params.project;
   },
 };
