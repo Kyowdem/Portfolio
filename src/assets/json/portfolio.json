@@ -47,7 +47,7 @@
     },
     {
         "title": "Laravel: 'Judge Movies' Projet de groupe",
-        "describe": "",
+        "describe": "Un travail d'ecole en équipe de 4. On s'est occupé de faire un site de critique de film. Le travail nous initiait principalement à l'utilisation de git et de github.",
         "filters": [
             "PHP",
             "Laravel",
