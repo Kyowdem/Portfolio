@@ -99,7 +99,7 @@
 import $ from "jquery";
 import Skill from "@/components/Skill.vue";
 import skills from "@/assets/json/skills.json";
-import schoolDesc from "@/assets/json/schoolDesc.json";
+import portfolioProjects from "@/assets/json/projects.json";
 
 export default {
   components: {
@@ -110,12 +110,12 @@ export default {
       showCV: true,
       projects: [
         {
-          name: schoolDesc.BTS.PPE[2].name,
-          href: "/etude/BTS/PPE/Vue.js: 'GSB' et création d’API",
+          name: portfolioProjects[6].name,
+          href: `/portfolio/${portfolioProjects[6].name}`,
         },
         {
-          name: schoolDesc.BTS.stage[3].name,
-          href: "/etude/BTS/stage/node.js et Tesseract: Lire une facture",
+          name: portfolioProjects[3].name,
+          href: `/portfolio/${portfolioProjects[3].name}`,
         },
       ],
       skills,

@@ -277,7 +277,6 @@
 
 <script>
 import Realisation from "@/components/Realisation.vue";
-import schoolDesc from "@/assets/json/schoolDesc.json";
 import projects from "@/assets/json/projects.json";
 
 export default {
@@ -287,7 +286,6 @@ export default {
   },
   data() {
     return {
-      schoolDesc,
       projects,
       projectName: "",
     };
