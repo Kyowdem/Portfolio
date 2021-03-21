@@ -20,12 +20,19 @@
             Je m'appelle Mehdi Collomb, j'ai 21 ans et je suis un développeur en
             apprentissage. J'ai commencé mes études de développeur en France
             dans un
-            <router-link to="/etude/BTS">BTS</router-link>, pendant 2 années où
-            j'ai pu aussi faire des stages en entreprise. Je suis venue
-            m'installer au Québec pour pouvoir finir mes études de développeur.
-            Je fais actuellement un baccalauréat Génie logiciel dans
-            l'université de l' <router-link to="/etude/UQAM">UQAM</router-link>.
-            <br />Pour voir mes expériences en développement
+            <a
+              href="https://www.martiniere-duchere.fr/formations/superieur/bts-sio/"
+              target="_blank"
+              >BTS SIO option SLAM</a
+            >, pendant 2 années où j'ai pu aussi faire des stages en entreprise.
+            Je suis venue m'installer au Québec pour pouvoir finir mes études de
+            développeur. Je fais actuellement un baccalauréat Génie logiciel
+            dans l'université de l'
+            <a
+              href="https://etudier.uqam.ca/programme?code=7316"
+              target="_blank"
+              >UQAM</a
+            >. <br />Pour voir mes expériences en développement
             <b @click="openNavbarSchool()">cliquez ici</b>
             et choisissez le parcours
           </p>
