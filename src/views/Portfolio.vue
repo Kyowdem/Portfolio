@@ -11,6 +11,7 @@
           type="radio"
           name="inlineRadioOptions"
           v-model="selectedFilter"
+          @click="uncheckedRadio(selectedFilter)"
           :id="filter"
           :value="filter"
         />
@@ -85,6 +86,10 @@ export default {
         this.Portfolio = this.Portfolio.filter((prt) =>
           prt.filters.some((filter) => filter == selectedFilter)
         );
+    },
+    uncheckedRadio(oldSelectedFilter) {
+      if(oldSelectedFilter == this.selectedFilter)
+        this.selectedFilter = "";
     },
   },
 };
