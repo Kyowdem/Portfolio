@@ -37,21 +37,8 @@
             et choisissez le parcours
           </p>
         </div>
-        <div
-          class="col-md-2 col-lg-1 textCenter CV"
-          @mouseenter="showCV = false"
-          @mouseleave="showCV = true"
-        >
-          <transition name="fade" mode="out-in">
-            <p v-if="showCV">Voir mon CV</p>
-            <a v-else :href="require('@/assets/img/cv/CV.jpg')" target="_blank">
-              <img
-                src="@/assets/img/icon/document_PDF.png"
-                alt="document_PDF.png"
-                class="img-fluid"
-              />
-            </a>
-          </transition>
+        <div class="col-md-2 col-lg-1 textCenter CV">
+          <a :href="require('@/assets/img/cv/CV.jpg')">Voir mon CV</a>
         </div>
       </div>
     </div>
@@ -114,7 +101,6 @@ export default {
   },
   data() {
     return {
-      showCV: true,
       projects: [
         {
           name: portfolioProjects[6].name,
@@ -208,4 +194,10 @@ div.description b:hover {
   font-weight: normal;
 }
 
+div.CV {
+  height: 125px;
+  border: 5px solid gold;
+  border-radius: 25px;
+  padding: 45px 0;
+}
 </style>
