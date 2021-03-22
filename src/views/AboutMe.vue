@@ -203,4 +203,9 @@ div.description b:hover {
   background-color: #1b1e21 !important;
   border-color: #1b1e21 !important;
 }
+
+.description a:hover {
+  font-weight: normal;
+}
+
 </style>
