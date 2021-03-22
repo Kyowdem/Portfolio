@@ -31,7 +31,7 @@
             <a
               href="https://etudier.uqam.ca/programme?code=7316"
               target="_blank"
-              >UQAM</a
+              >UQAM en génie logiciel</a
             >. <br />Pour voir mes expériences en développement
             <b @click="openNavbarSchool()">cliquez ici</b>
             et choisissez le parcours
